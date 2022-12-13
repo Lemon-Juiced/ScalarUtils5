@@ -22,6 +22,7 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.TINY_COAL.get()));
                         output.accept(new ItemStack(ModItems.FLOUR.get()));
                         output.accept(new ItemStack(ModItems.GLASS_CUTTER.get()));
+                        output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
 
                         output.accept(new ItemStack(ModBlocks.WHITE_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.ORANGE_LAMP.get()));
@@ -38,6 +39,8 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModBlocks.GREEN_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.RED_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.BLACK_LAMP.get()));
+
+                        output.accept(new ItemStack(ModBlocks.RUNEBOOSTER.get()));
                     })
                     .title(Component.translatable("itemGroup.scalar_utils"))
                     .build();
