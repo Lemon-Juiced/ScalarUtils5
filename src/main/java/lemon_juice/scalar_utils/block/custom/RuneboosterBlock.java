@@ -17,7 +17,7 @@ public class RuneboosterBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity livingEntity){
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 100)); // 5 Seconds
         }
 
         super.stepOn(level, pos, state, entity);
