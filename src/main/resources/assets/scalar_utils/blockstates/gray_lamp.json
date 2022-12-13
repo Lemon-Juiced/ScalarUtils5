@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "scalar_utils:block/gray_lamp_on" },
+    "lit=false": { "model": "scalar_utils:block/gray_lamp" }
+  }
+}

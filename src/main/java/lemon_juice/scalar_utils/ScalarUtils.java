@@ -1,6 +1,7 @@
 package lemon_juice.scalar_utils;
 
-import lemon_juice.scalar_utils.events.CreativeTabEvent;
+import lemon_juice.scalar_utils.block.ModBlocks;
+import lemon_juice.scalar_utils.event.CreativeTabEvent;
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,8 +18,9 @@ public class ScalarUtils {
     public ScalarUtils() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register Items
+        // Register Items & Blocks
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
