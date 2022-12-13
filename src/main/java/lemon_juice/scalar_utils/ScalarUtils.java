@@ -21,6 +21,8 @@ public class ScalarUtils {
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+
+        // Registers Creative Tab From CreativeTabEvent
         FMLJavaModLoadingContext.get().getModEventBus().addListener(CreativeTabEvent::onCreativeModeTabRegister);
 
         MinecraftForge.EVENT_BUS.register(this);
