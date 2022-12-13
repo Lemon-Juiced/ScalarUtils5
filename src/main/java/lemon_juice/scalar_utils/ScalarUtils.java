@@ -1,5 +1,6 @@
 package lemon_juice.scalar_utils;
 
+import lemon_juice.scalar_utils.events.CreativeTabEvent;
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +21,7 @@ public class ScalarUtils {
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(CreativeTabEvent::onCreativeModeTabRegister);
 
         MinecraftForge.EVENT_BUS.register(this);
 
