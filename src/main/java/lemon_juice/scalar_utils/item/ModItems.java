@@ -2,6 +2,7 @@ package lemon_juice.scalar_utils.item;
 
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.item.custom.AbstractTinyCoalItem;
+import lemon_juice.scalar_utils.item.custom.GlassCutterItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class ModItems {
 
     // Flour
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties()));
+
+    // Glass Cutter
+    public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

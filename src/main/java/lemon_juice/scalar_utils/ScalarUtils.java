@@ -3,6 +3,7 @@ package lemon_juice.scalar_utils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.event.CreativeTabEvent;
 import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,9 @@ public class ScalarUtils {
         // Register Items & Blocks
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        // Register Global Loot Modifiers
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

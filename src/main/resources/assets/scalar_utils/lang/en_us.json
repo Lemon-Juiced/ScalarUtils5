@@ -4,6 +4,8 @@
 
   "item.scalar_utils.flour": "Flour",
 
+  "item.scalar_utils.glass_cutter": "Glass Cutter",
+
   "block.scalar_utils.white_lamp": "White Lamp",
   "block.scalar_utils.orange_lamp": "Orange Lamp",
   "block.scalar_utils.magenta_lamp": "Magenta Lamp",
@@ -20,6 +22,8 @@
   "block.scalar_utils.green_lamp": "Green Lamp",
   "block.scalar_utils.red_lamp": "Red Lamp",
   "block.scalar_utils.black_lamp": "Black Lamp",
+
+  "glass_cutter.tooltip": "Breaks Glass and Ice",
 
   "itemGroup.scalar_utils": "Scalar Utils 5"
 }
