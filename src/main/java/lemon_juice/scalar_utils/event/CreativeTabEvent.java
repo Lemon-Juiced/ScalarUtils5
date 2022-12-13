@@ -21,6 +21,7 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));
                         output.accept(new ItemStack(ModItems.TINY_COAL.get()));
                         output.accept(new ItemStack(ModItems.FLOUR.get()));
+                        output.accept(new ItemStack(ModItems.GELATIN.get()));
                         output.accept(new ItemStack(ModItems.GLASS_CUTTER.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
 

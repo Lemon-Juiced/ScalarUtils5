@@ -19,6 +19,9 @@ public class ModItems {
     // Flour
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties()));
 
+    // Gelatin
+    public static final RegistryObject<Item> GELATIN = ITEMS.register("gelatin", () -> new Item(new Item.Properties()));
+
     // Glass Cutter
     public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));
 
