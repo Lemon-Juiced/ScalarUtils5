@@ -20,10 +20,10 @@ public class AbstractRuneboosterBlockItem extends BlockItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        if (seconds == 5) components.add(Component.translatable("basic_runebooster.tooltip").withStyle(ChatFormatting.BOLD));
-        else if (seconds == 10) components.add(Component.translatable("advanced_runebooster.tooltip").withStyle(ChatFormatting.BOLD));
-        else if (seconds == 15) components.add(Component.translatable("elite_runebooster.tooltip").withStyle(ChatFormatting.BOLD));
-        else components.add(Component.translatable("ultimate_runebooster.tooltip").withStyle(ChatFormatting.BOLD));
+        if (seconds == 5) components.add(Component.translatable("basic_runebooster.tooltip"));
+        else if (seconds == 10) components.add(Component.translatable("advanced_runebooster.tooltip"));
+        else if (seconds == 15) components.add(Component.translatable("elite_runebooster.tooltip"));
+        else components.add(Component.translatable("ultimate_runebooster.tooltip"));
 
         super.appendHoverText(stack, level, components, flag);
     }
