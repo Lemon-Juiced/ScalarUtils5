@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "scalar_utils:elite_runebooster",
+    "scalar_utils:ultimate_runebooster"
   ]
 }

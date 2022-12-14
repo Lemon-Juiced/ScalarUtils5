@@ -32,9 +32,11 @@
 
   "block.scalar_utils.basic_runebooster": "Basic Runebooster",
   "basic_runebooster.tooltip": "Step on to Float for Five Seconds",
-
+  "block.scalar_utils.advanced_runebooster": "Advanced Runebooster",
   "advanced_runebooster.tooltip": "Step on to Float for Ten Seconds",
+  "block.scalar_utils.elite_runebooster": "Elite Runebooster",
   "elite_runebooster.tooltip": "Step on to Float for Fifteen Seconds",
+  "block.scalar_utils.ultimate_runebooster": "Ultimate Runebooster",
   "ultimate_runebooster.tooltip": "Step on to Float for Twenty Seconds",
 
   "itemGroup.scalar_utils": "Scalar Utils 5"

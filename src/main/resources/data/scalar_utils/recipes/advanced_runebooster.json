@@ -13,14 +13,14 @@
       "item": "minecraft:amethyst_shard"
     },
     "B": {
-      "item": "minecraft:glass_bottle"
+      "item": "scalar_utils:basic_runebooster"
     },
     "R": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:gold_ingot"
     }
   },
   "result": {
-    "item": "scalar_utils:basic_runebooster",
+    "item": "scalar_utils:advanced_runebooster",
     "count": 1
   }
 }

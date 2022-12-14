@@ -43,6 +43,9 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModBlocks.BLACK_LAMP.get()));
 
                         output.accept(new ItemStack(ModBlocks.BASIC_RUNEBOOSTER.get()));
+                        output.accept(new ItemStack(ModBlocks.ADVANCED_RUNEBOOSTER.get()));
+                        output.accept(new ItemStack(ModBlocks.ELITE_RUNEBOOSTER.get()));
+                        output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEBOOSTER.get()));
                     })
                     .title(Component.translatable("itemGroup.scalar_utils"))
                     .build();
