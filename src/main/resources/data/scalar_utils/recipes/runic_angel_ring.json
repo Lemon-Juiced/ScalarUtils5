@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "brd"
+  ],
+  "key": {
+    "b": {
+      "item": "scalar_utils:runic_booster_plate"
+    },
+    "r": {
+      "item": "scalar_utils:ring"
+    },
+    "d": {
+      "item": "scalar_utils:runic_dropper_plate"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:runic_angel_ring",
+    "count": 1
+  }
+}

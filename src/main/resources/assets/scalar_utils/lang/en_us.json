@@ -11,6 +11,11 @@
   "item.scalar_utils.glass_cutter": "Glass Cutter",
   "glass_cutter.tooltip": "Breaks Glass and Ice",
 
+  "item.scalar_utils.ring": "Ring",
+
+  "item.scalar_utils.runic_angel_ring": "Runic Angel Ring",
+  "runic_angel_ring.tooltip": "Equip to Fly!",
+
   "item.scalar_utils.runic_plate": "Runic Plate",
   "item.scalar_utils.runic_booster_plate": "Runic Booster Plate",
   "runic_booster_plate.tooltip": "Hold Right-Click to Float",

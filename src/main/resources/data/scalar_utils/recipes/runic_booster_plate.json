@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#r#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:runic_plate"
+    },
+    "r": {
+      "item": "scalar_utils:ultimate_runebooster"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:runic_booster_plate",
+    "count": 1
+  }
+}

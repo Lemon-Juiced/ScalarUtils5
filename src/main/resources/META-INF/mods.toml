@@ -45,7 +45,7 @@ description='''
 Another Evolution For Scalar Utils.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.examplemod]] #optional
+[[dependencies.scalar_utils]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -57,10 +57,16 @@ Another Evolution For Scalar Utils.
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.examplemod]]
+[[dependencies.scalar_utils]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="[1.19.3,1.20)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.scalar_utils]]
+modId="curios"
+mandatory=false
+versionRange="[1.19.3-5.1.1.2,)"
+ordering="NONE"
+side="BOTH"

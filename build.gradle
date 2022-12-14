@@ -119,6 +119,10 @@ repositories {
     // Put repositories for dependencies here
     // ForgeGradle automatically adds the Forge maven and Maven Central for you
 
+    maven {
+        url = "https://maven.theillusivec4.top/"
+    }
+
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so:
     // flatDir {
     //     dir 'libs'
@@ -130,6 +134,10 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.19.3-44.0.18'
+
+    // Curios Dependency
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.3-5.1.1.2")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.3-5.1.1.2:api")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency

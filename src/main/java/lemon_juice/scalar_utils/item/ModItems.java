@@ -3,6 +3,7 @@ package lemon_juice.scalar_utils.item;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.item.custom.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,10 +22,16 @@ public class ModItems {
     // Glass Cutter
     public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));
 
+    // Ring
+    public static final RegistryObject<Item> RING= ITEMS.register("ring", () -> new Item(new Item.Properties()));
+
+    // Runic Angel Ring
+    public static final RegistryObject<Item> RUNIC_ANGEL_RING = ITEMS.register("runic_angel_ring", () -> new RunicAngelRingItem(new Item.Properties()));
+
     // Runic Plates
-    public static final  RegistryObject<Item> RUNIC_PLATE = ITEMS.register("runic_plate", () -> new Item(new Item.Properties()));
-    public static final  RegistryObject<Item> RUNIC_BOOSTER_PLATE = ITEMS.register("runic_booster_plate", () -> new RunicBoosterPlateItem(new Item.Properties()));
-    public static final  RegistryObject<Item> RUNIC_DROPPER_PLATE = ITEMS.register("runic_dropper_plate", () -> new RunicDropperPlateItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_PLATE = ITEMS.register("runic_plate", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_BOOSTER_PLATE = ITEMS.register("runic_booster_plate", () -> new RunicBoosterPlateItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_DROPPER_PLATE = ITEMS.register("runic_dropper_plate", () -> new RunicDropperPlateItem(new Item.Properties()));
 
     // Slimeball Alternatives
     public static final RegistryObject<Item> GELATIN = ITEMS.register("gelatin", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));

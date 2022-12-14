@@ -8,10 +8,14 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import top.theillusivec4.curios.api.SlotTypeMessage;
+import top.theillusivec4.curios.api.SlotTypePreset;
 
 @Mod(ScalarUtils.MOD_ID)
 public class ScalarUtils {
@@ -27,6 +31,7 @@ public class ScalarUtils {
         ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::enqueueIMC);
 
         // Registers Creative Tab From CreativeTabEvent
         FMLJavaModLoadingContext.get().getModEventBus().addListener(CreativeTabEvent::onCreativeModeTabRegister);
@@ -37,6 +42,11 @@ public class ScalarUtils {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
+    }
+
+    //InterModQueue For Curios
+    private void enqueueIMC(InterModEnqueueEvent event) {
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.RING.getMessageBuilder().build());
     }
 
 
