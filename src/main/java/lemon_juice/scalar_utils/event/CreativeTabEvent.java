@@ -46,6 +46,11 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModBlocks.ADVANCED_RUNEBOOSTER.get()));
                         output.accept(new ItemStack(ModBlocks.ELITE_RUNEBOOSTER.get()));
                         output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEBOOSTER.get()));
+
+                        output.accept(new ItemStack(ModBlocks.BASIC_RUNEDROPPER.get()));
+                        output.accept(new ItemStack(ModBlocks.ADVANCED_RUNEDROPPER.get()));
+                        output.accept(new ItemStack(ModBlocks.ELITE_RUNEDROPPER.get()));
+                        output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEDROPPER.get()));
                     })
                     .title(Component.translatable("itemGroup.scalar_utils"))
                     .build();

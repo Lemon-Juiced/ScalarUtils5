@@ -3,8 +3,10 @@ package lemon_juice.scalar_utils.block;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
 import lemon_juice.scalar_utils.block.custom.AbstractRuneboosterBlock;
+import lemon_juice.scalar_utils.block.custom.AbstractRunedropperBlock;
 import lemon_juice.scalar_utils.item.ModItems;
-import lemon_juice.scalar_utils.item.custom.AbstractRuneboosterBlockItem;
+import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRuneboosterBlockItem;
+import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRunedropperBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -45,6 +47,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> ELITE_RUNEBOOSTER = registerRuneboosterBlock("elite_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15), 15);
     public static final RegistryObject<Block> ULTIMATE_RUNEBOOSTER = registerRuneboosterBlock("ultimate_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
 
+    //Runedropper
+    public static final RegistryObject<Block> BASIC_RUNEDROPPER = registerRunedropperBlock("basic_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5), 5);
+    public static final RegistryObject<Block> ADVANCED_RUNEDROPPER = registerRunedropperBlock("advanced_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10), 10);
+    public static final RegistryObject<Block> ELITE_RUNEDROPPER= registerRunedropperBlock("elite_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15), 15);
+    public static final RegistryObject<Block> ULTIMATE_RUNEDROPPER = registerRunedropperBlock("ultimate_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
+
+
     /**************************** Specific Registry ****************************/
     private static <T extends Block> RegistryObject<T> registerRuneboosterBlock(String name, Supplier<T> block, int seconds) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -54,6 +63,16 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<Item> registerRuneboosterBlockItem(String name, RegistryObject<T> block, int seconds) {
         return ModItems.ITEMS.register(name, () -> new AbstractRuneboosterBlockItem(block.get(), new Item.Properties(), seconds));
+    }
+
+    private static <T extends Block> RegistryObject<T> registerRunedropperBlock(String name, Supplier<T> block, int seconds) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerRunedropperBlockItem(name, toReturn, seconds);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerRunedropperBlockItem(String name, RegistryObject<T> block, int seconds) {
+        return ModItems.ITEMS.register(name, () -> new AbstractRunedropperBlockItem(block.get(), new Item.Properties(), seconds));
     }
 
     /******************************** Registry ********************************/

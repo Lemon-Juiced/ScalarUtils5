@@ -4,6 +4,10 @@
     "scalar_utils:basic_runebooster",
     "scalar_utils:advanced_runebooster",
     "scalar_utils:elite_runebooster",
-    "scalar_utils:ultimate_runebooster"
+    "scalar_utils:ultimate_runebooster",
+    "scalar_utils:basic_runedropper",
+    "scalar_utils:advanced_runedropper",
+    "scalar_utils:elite_runedropper",
+    "scalar_utils:ultimate_runedropper"
   ]
 }

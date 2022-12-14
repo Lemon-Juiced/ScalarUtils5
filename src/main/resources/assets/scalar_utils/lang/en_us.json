@@ -39,5 +39,14 @@
   "block.scalar_utils.ultimate_runebooster": "Ultimate Runebooster",
   "ultimate_runebooster.tooltip": "Step on to Float for Twenty Seconds",
 
+  "block.scalar_utils.basic_runedropper": "Basic Runedropper",
+  "basic_runedropper.tooltip": "Right Click on to Slowfall for Five Seconds",
+  "block.scalar_utils.advanced_runedropper": "Advanced Runedropper",
+  "advanced_runedropper.tooltip": "Right Click on to Slowfall for Ten Seconds",
+  "block.scalar_utils.elite_runedropper": "Elite Runedropper",
+  "elite_runedropper.tooltip": "Right Click on to Slowfall for Fifteen Seconds",
+  "block.scalar_utils.ultimate_runedropper": "Ultimate Runedropper",
+  "ultimate_runedropper.tooltip": "Right Click on to Slowfall for Twenty Seconds",
+
   "itemGroup.scalar_utils": "Scalar Utils 5"
 }

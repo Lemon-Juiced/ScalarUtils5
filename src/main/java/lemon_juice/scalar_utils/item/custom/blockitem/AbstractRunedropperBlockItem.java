@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom;
+package lemon_juice.scalar_utils.item.custom.blockitem;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -10,19 +10,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class AbstractRuneboosterBlockItem extends BlockItem {
+public class AbstractRunedropperBlockItem extends BlockItem {
     private final int seconds;
-    public AbstractRuneboosterBlockItem(Block block, Properties properties, int seconds) {
+    public AbstractRunedropperBlockItem(Block block, Properties properties, int seconds) {
         super(block, properties);
         this.seconds = seconds;
     }
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        if (seconds == 5) components.add(Component.translatable("basic_runebooster.tooltip"));
-        else if (seconds == 10) components.add(Component.translatable("advanced_runebooster.tooltip"));
-        else if (seconds == 15) components.add(Component.translatable("elite_runebooster.tooltip"));
-        else components.add(Component.translatable("ultimate_runebooster.tooltip"));
+        if (seconds == 5) components.add(Component.translatable("basic_runedropper.tooltip"));
+        else if (seconds == 10) components.add(Component.translatable("advanced_runedropper.tooltip"));
+        else if (seconds == 15) components.add(Component.translatable("elite_runedropper.tooltip"));
+        else components.add(Component.translatable("ultimate_runedropper.tooltip"));
 
         super.appendHoverText(stack, level, components, flag);
     }

@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "side": "scalar_utils:block/ultimate_runedropper_side",
+    "front": "scalar_utils:block/ultimate_runedropper_side",
+    "top":"scalar_utils:block/ultimate_runedropper_top",
+    "bottom":"scalar_utils:block/runedropper_bottom"
+  }
+}
