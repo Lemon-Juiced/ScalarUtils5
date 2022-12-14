@@ -10,14 +10,17 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class RuneboosterBlock extends Block {
-    public RuneboosterBlock(Properties properties) {
+    private final int seconds;
+
+    public RuneboosterBlock(Properties properties, int seconds) {
         super(properties);
+        this.seconds = seconds;
     }
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity livingEntity){
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 100)); // 5 Seconds
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, seconds * 20));
         }
 
         super.stepOn(level, pos, state, entity);
