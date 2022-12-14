@@ -2,6 +2,8 @@
   "item.scalar_utils.tiny_charcoal": "Tiny Charcoal",
   "item.scalar_utils.tiny_coal": "Tiny Coal",
 
+  "item.scalar_utils.flax_seeds": "Flax Seeds",
+
   "item.scalar_utils.flour": "Flour",
 
   "item.scalar_utils.gelatin": "Gelatin",
@@ -20,7 +22,9 @@
   "item.scalar_utils.runic_booster_plate": "Runic Booster Plate",
   "runic_booster_plate.tooltip": "Hold Right-Click to Float",
   "item.scalar_utils.runic_dropper_plate": "Runic Dropper Plate",
-  "runic_booster_plate.tooltip": "Hold Right-Click to Slow Fall",
+  "runic_dropper_plate.tooltip": "Hold Right-Click to Slow Fall",
+
+  "block.scalar_utils.flax_crop": "Flax Crop",
 
   "block.scalar_utils.white_lamp": "White Lamp",
   "block.scalar_utils.orange_lamp": "Orange Lamp",

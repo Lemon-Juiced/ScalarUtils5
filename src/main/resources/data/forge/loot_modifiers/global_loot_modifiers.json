@@ -1,5 +1,5 @@
 {
-  "replace": "true",
+  "replace": "false",
   "entries": [
     "scalar_utils:black_glass_from_black_glass",
     "scalar_utils:black_glass_pane_from_black_glass_pane",
@@ -39,6 +39,8 @@
 
     "scalar_utils:blue_ice_from_blue_ice",
     "scalar_utils:ice_from_ice",
-    "scalar_utils:packed_ice_from_packed_ice"
+    "scalar_utils:packed_ice_from_packed_ice",
+
+    "scalar_utils:flax_seeds_from_grass"
   ]
 }

@@ -10,5 +10,5 @@
     }
   ],
   "item": "minecraft:black_stained_glass",
-  "type": "scalar_utils:add_item"
+  "type": "scalar_utils:add_glass_item"
 }

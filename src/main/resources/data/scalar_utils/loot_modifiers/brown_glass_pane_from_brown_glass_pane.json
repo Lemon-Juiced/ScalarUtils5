@@ -10,5 +10,5 @@
     }
   ],
   "item": "minecraft:brown_stained_glass_pane",
-  "type": "scalar_utils:add_item"
+  "type": "scalar_utils:add_glass_item"
 }

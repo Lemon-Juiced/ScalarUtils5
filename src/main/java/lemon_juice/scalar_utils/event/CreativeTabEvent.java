@@ -20,6 +20,7 @@ public class CreativeTabEvent {
                     .displayItems((features, output, hasPermissions) -> {
                         output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));
                         output.accept(new ItemStack(ModItems.TINY_COAL.get()));
+                        output.accept(new ItemStack(ModItems.FLAX_SEEDS.get()));
                         output.accept(new ItemStack(ModItems.FLOUR.get()));
                         output.accept(new ItemStack(ModItems.GELATIN.get()));
                         output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
