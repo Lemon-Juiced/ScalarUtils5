@@ -1,6 +1,5 @@
 package lemon_juice.scalar_utils.item.custom;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
