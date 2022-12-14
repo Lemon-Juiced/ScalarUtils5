@@ -61,5 +61,7 @@
   "block.scalar_utils.ultimate_runedropper": "Ultimate Runedropper",
   "ultimate_runedropper.tooltip": "Right Click on to Slowfall for Twenty Seconds",
 
+  "wip.tooltip": "WIP",
+
   "itemGroup.scalar_utils": "Scalar Utils 5"
 }

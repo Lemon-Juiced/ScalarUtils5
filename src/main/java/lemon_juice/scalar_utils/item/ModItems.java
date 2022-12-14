@@ -19,7 +19,7 @@ public class ModItems {
     public static final RegistryObject<Item> TINY_COAL = ITEMS.register("tiny_coal", () -> new AbstractTinyCoalItem(new Item.Properties()));
 
     // Flax Seeds
-    public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new ItemNameBlockItem(ModBlocks.FLAX_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new FlaxSeedsItem(ModBlocks.FLAX_CROP.get(), new Item.Properties()));
 
     // Flour
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties()));
