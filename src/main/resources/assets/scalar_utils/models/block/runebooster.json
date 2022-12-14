@@ -1,9 +1,0 @@
-{
-  "parent": "block/orientable",
-  "textures": {
-    "side": "scalar_utils:block/runebooster_side",
-    "front": "scalar_utils:block/runebooster_side",
-    "top":"scalar_utils:block/runebooster_top",
-    "bottom":"scalar_utils:block/runebooster_bottom"
-  }
-}

@@ -9,10 +9,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class RuneboosterBlock extends Block {
+public class AbstractRuneboosterBlock extends Block {
     private final int seconds;
 
-    public RuneboosterBlock(Properties properties, int seconds) {
+    public AbstractRuneboosterBlock(Properties properties, int seconds) {
         super(properties);
         this.seconds = seconds;
     }

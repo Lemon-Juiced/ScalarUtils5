@@ -2,10 +2,10 @@ package lemon_juice.scalar_utils.block;
 
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
-import lemon_juice.scalar_utils.block.custom.RuneboosterBlock;
+import lemon_juice.scalar_utils.block.custom.AbstractRuneboosterBlock;
 import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.item.custom.AbstractRuneboosterBlockItem;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -40,7 +40,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACK_LAMP = registerBlock("black_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
 
     // Runebooster
-    public static final RegistryObject<Block> RUNEBOOSTER = registerBlock("runebooster", () -> new RuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5));
+    public static final RegistryObject<Block> BASIC_RUNEBOOSTER = registerRuneboosterBlock("basic_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5), 5);
+
+    /**************************** Specific Registry ****************************/
+    private static <T extends Block> RegistryObject<T> registerRuneboosterBlock(String name, Supplier<T> block, int seconds) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerRuneboosterBlockItem(name, toReturn, seconds);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerRuneboosterBlockItem(String name, RegistryObject<T> block, int seconds) {
+        return ModItems.ITEMS.register(name, () -> new AbstractRuneboosterBlockItem(block.get(), new Item.Properties(), seconds));
+    }
 
     /******************************** Registry ********************************/
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

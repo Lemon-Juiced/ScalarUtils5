@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "scalar_utils:runebooster",
+    "item": "scalar_utils:basic_runebooster",
     "count": 1
   }
 }

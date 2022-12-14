@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "scalar_utils:runebooster"
+          "name": "scalar_utils:basic_runebooster"
         }
       ],
       "rolls": 1.0

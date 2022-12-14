@@ -42,7 +42,7 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModBlocks.RED_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.BLACK_LAMP.get()));
 
-                        output.accept(new ItemStack(ModBlocks.RUNEBOOSTER.get()));
+                        output.accept(new ItemStack(ModBlocks.BASIC_RUNEBOOSTER.get()));
                     })
                     .title(Component.translatable("itemGroup.scalar_utils"))
                     .build();

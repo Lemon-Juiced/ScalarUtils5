@@ -7,6 +7,7 @@
   "item.scalar_utils.gelatin": "Gelatin",
 
   "item.scalar_utils.glass_cutter": "Glass Cutter",
+  "glass_cutter.tooltip": "Breaks Glass and Ice",
 
   "item.scalar_utils.runic_plate": "Runic Plate",
 
@@ -29,9 +30,12 @@
   "block.scalar_utils.red_lamp": "Red Lamp",
   "block.scalar_utils.black_lamp": "Black Lamp",
 
-  "block.scalar_utils.runebooster": "Runebooster",
+  "block.scalar_utils.basic_runebooster": "Basic Runebooster",
+  "basic_runebooster.tooltip": "Step on to Float for Five Seconds",
 
-  "glass_cutter.tooltip": "Breaks Glass and Ice",
+  "advanced_runebooster.tooltip": "Step on to Float for Ten Seconds",
+  "elite_runebooster.tooltip": "Step on to Float for Fifteen Seconds",
+  "ultimate_runebooster.tooltip": "Step on to Float for Twenty Seconds",
 
   "itemGroup.scalar_utils": "Scalar Utils 5"
 }
