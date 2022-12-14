@@ -40,7 +40,7 @@ public class GlassCutterItem extends PickaxeItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("glass_cutter.tooltip").withStyle(ChatFormatting.BOLD));
+        components.add(Component.translatable("glass_cutter.tooltip"));
         super.appendHoverText(stack, level, components, flag);
     }
 }

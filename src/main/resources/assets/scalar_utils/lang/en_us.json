@@ -5,13 +5,13 @@
   "item.scalar_utils.flour": "Flour",
 
   "item.scalar_utils.gelatin": "Gelatin",
+  "item.scalar_utils.wheat_slime_ball": "Wheat Slimeball",
+  "slime_ball_alternative.tooltip": "Slimeball Alternative",
 
   "item.scalar_utils.glass_cutter": "Glass Cutter",
   "glass_cutter.tooltip": "Breaks Glass and Ice",
 
   "item.scalar_utils.runic_plate": "Runic Plate",
-
-  "item.scalar_utils.wheat_slime_ball": "Wheat Slimeball",
 
   "block.scalar_utils.white_lamp": "White Lamp",
   "block.scalar_utils.orange_lamp": "Orange Lamp",
