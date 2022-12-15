@@ -65,8 +65,8 @@ Another Evolution For Scalar Utils.
     ordering="NONE"
     side="BOTH"
 [[dependencies.scalar_utils]]
-modId="curios"
-mandatory=false
-versionRange="[1.19.3-5.1.1.2,)"
-ordering="NONE"
-side="BOTH"
+    modId="curios"
+    mandatory=true
+    versionRange="[1.19.3-5.1.1.2,)"
+    ordering="NONE"
+    side="BOTH"
