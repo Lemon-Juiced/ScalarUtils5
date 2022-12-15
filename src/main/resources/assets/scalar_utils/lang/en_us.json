@@ -53,13 +53,13 @@
   "ultimate_runebooster.tooltip": "Step on to Float for Twenty Seconds",
 
   "block.scalar_utils.basic_runedropper": "Basic Runedropper",
-  "basic_runedropper.tooltip": "Right Click on to Slowfall for Five Seconds",
+  "basic_runedropper.tooltip": "Absorbs Five Extra Blocks of Fall Damage",
   "block.scalar_utils.advanced_runedropper": "Advanced Runedropper",
-  "advanced_runedropper.tooltip": "Right Click on to Slowfall for Ten Seconds",
+  "advanced_runedropper.tooltip": "Absorbs Ten Extra Blocks of Fall Damage",
   "block.scalar_utils.elite_runedropper": "Elite Runedropper",
-  "elite_runedropper.tooltip": "Right Click on to Slowfall for Fifteen Seconds",
+  "elite_runedropper.tooltip": "Absorbs Fifteen Extra Blocks of Fall Damage",
   "block.scalar_utils.ultimate_runedropper": "Ultimate Runedropper",
-  "ultimate_runedropper.tooltip": "Right Click on to Slowfall for Twenty Seconds",
+  "ultimate_runedropper.tooltip": "Absorbs Twenty Extra Blocks of Fall Damage",
 
   "wip.tooltip": "WIP",
 
