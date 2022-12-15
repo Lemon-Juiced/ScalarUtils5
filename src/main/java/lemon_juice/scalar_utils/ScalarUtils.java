@@ -47,6 +47,7 @@ public class ScalarUtils {
     //InterModQueue For Curios
     private void enqueueIMC(InterModEnqueueEvent event) {
         InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.RING.getMessageBuilder().build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.CHARM.getMessageBuilder().build());
     }
 
 

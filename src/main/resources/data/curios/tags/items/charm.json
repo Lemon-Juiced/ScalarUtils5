@@ -1,0 +1,7 @@
+{
+  "replace": "false",
+  "values": [
+    "scalar_utils:runic_booster_plate",
+    "scalar_utils:runic_dropper_plate"
+  ]
+}

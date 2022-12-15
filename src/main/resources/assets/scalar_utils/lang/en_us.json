@@ -20,9 +20,9 @@
 
   "item.scalar_utils.runic_plate": "Runic Plate",
   "item.scalar_utils.runic_booster_plate": "Runic Booster Plate",
-  "runic_booster_plate.tooltip": "Hold Right-Click to Float",
+  "runic_booster_plate.tooltip": "Hold Right-Click to Float or Equip for Jump Boost",
   "item.scalar_utils.runic_dropper_plate": "Runic Dropper Plate",
-  "runic_dropper_plate.tooltip": "Hold Right-Click to Slow Fall",
+  "runic_dropper_plate.tooltip": "Hold Right-Click to Slow Fall or Equip for Slow Falling",
 
   "block.scalar_utils.flax_crop": "Flax Crop",
 
