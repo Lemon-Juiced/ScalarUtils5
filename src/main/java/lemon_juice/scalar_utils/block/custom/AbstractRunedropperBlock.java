@@ -15,7 +15,7 @@ public class AbstractRunedropperBlock extends Block {
         this.blocks = blocks;
     }
 
-    //Stops Entities from taking fall damage on unless they "suppress the bounce"
+    //Stops Entities from Taking Fall Damage on Unless they "Suppress the Bounce"
     @Override
     public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
         if(entity.isSuppressingBounce()){
