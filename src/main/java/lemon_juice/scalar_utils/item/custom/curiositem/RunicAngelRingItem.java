@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom;
+package lemon_juice.scalar_utils.item.custom.curiositem;
 
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.core.Direction;
