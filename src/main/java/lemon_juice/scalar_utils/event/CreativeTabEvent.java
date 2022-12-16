@@ -32,20 +32,21 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
 
                         output.accept(new ItemStack(ModBlocks.WHITE_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.ORANGE_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.MAGENTA_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.LIGHT_BLUE_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.YELLOW_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.PINK_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.GRAY_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.LIGHT_GRAY_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.CYAN_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.PURPLE_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.BLUE_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.BROWN_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.GREEN_LAMP.get()));
-                        output.accept(new ItemStack(ModBlocks.RED_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.GRAY_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.BLACK_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.BROWN_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.RED_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.ORANGE_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.YELLOW_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.LIME_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.GREEN_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.CYAN_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.LIGHT_BLUE_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.BLUE_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.PURPLE_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.MAGENTA_LAMP.get()));
+                        output.accept(new ItemStack(ModBlocks.PINK_LAMP.get()));
 
                         output.accept(new ItemStack(ModBlocks.BASIC_RUNEBOOSTER.get()));
                         output.accept(new ItemStack(ModBlocks.ADVANCED_RUNEBOOSTER.get()));
