@@ -7,7 +7,9 @@ import lemon_juice.scalar_utils.item.custom.curiositem.RunicAngelRingItem;
 import lemon_juice.scalar_utils.item.custom.curiositem.RunicBoosterPlateItem;
 import lemon_juice.scalar_utils.item.custom.curiositem.RunicDropperPlateItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.GlassCutterItem;
+import lemon_juice.scalar_utils.item.custom.diggeritem.TunnelerItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -43,6 +45,14 @@ public class ModItems {
     // Slimeball Alternatives
     public static final RegistryObject<Item> GELATIN = ITEMS.register("gelatin", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
     public static final RegistryObject<Item> WHEAT_SLIME_BALL = ITEMS.register("wheat_slime_ball", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
+
+    // Tunnelers
+    public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(Tiers.WOOD, new Item.Properties(), 1));
+    public static final RegistryObject<Item> STONE_TUNNELER = ITEMS.register("stone_tunneler", () -> new TunnelerItem(Tiers.STONE, new Item.Properties(), 1));
+    public static final RegistryObject<Item> IRON_TUNNELER = ITEMS.register("iron_tunneler", () -> new TunnelerItem(Tiers.IRON, new Item.Properties(), 1));
+    public static final RegistryObject<Item> GOLDEN_TUNNELER = ITEMS.register("golden_tunneler", () -> new TunnelerItem(Tiers.GOLD, new Item.Properties(), 1));
+    public static final RegistryObject<Item> DIAMOND_TUNNELER = ITEMS.register("diamond_tunneler", () -> new TunnelerItem(Tiers.DIAMOND, new Item.Properties(), 2));
+    public static final RegistryObject<Item> NETHERITE_TUNNELER = ITEMS.register("netherite_tunneler", () -> new TunnelerItem(Tiers.NETHERITE, new Item.Properties(), 3));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

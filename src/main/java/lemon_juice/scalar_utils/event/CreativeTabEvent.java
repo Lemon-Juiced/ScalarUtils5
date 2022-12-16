@@ -30,6 +30,12 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
+                        output.accept(new ItemStack(ModItems.WOODEN_TUNNELER.get()));
+                        output.accept(new ItemStack(ModItems.STONE_TUNNELER.get()));
+                        output.accept(new ItemStack(ModItems.IRON_TUNNELER.get()));
+                        output.accept(new ItemStack(ModItems.GOLDEN_TUNNELER.get()));
+                        output.accept(new ItemStack(ModItems.DIAMOND_TUNNELER.get()));
+                        output.accept(new ItemStack(ModItems.NETHERITE_TUNNELER.get()));
 
                         output.accept(new ItemStack(ModBlocks.WHITE_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.LIGHT_GRAY_LAMP.get()));

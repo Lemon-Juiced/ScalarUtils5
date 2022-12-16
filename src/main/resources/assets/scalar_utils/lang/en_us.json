@@ -24,6 +24,16 @@
   "item.scalar_utils.runic_dropper_plate": "Runic Dropper Plate",
   "runic_dropper_plate.tooltip": "Hold Right-Click to Slow Fall or Equip for Slow Falling",
 
+  "item.scalar_utils.wooden_tunneler": "Wooden Tunneler",
+  "item.scalar_utils.stone_tunneler": "Stone Tunneler",
+  "item.scalar_utils.iron_tunneler": "Iron Tunneler",
+  "item.scalar_utils.golden_tunneler": "Golden Tunneler",
+  "tunneler_r1.tooltip": "Mines a 3x3 Tunnel",
+  "item.scalar_utils.diamond_tunneler": "Diamond Tunneler",
+  "tunneler_r2.tooltip": "Mines a 5x5 Tunnel",
+  "item.scalar_utils.netherite_tunneler": "Netherite Tunneler",
+  "tunneler_r3.tooltip": "Mines a 7x7 Tunnel",
+
   "block.scalar_utils.flax_crop": "Flax Crop",
 
   "block.scalar_utils.white_lamp": "White Lamp",
