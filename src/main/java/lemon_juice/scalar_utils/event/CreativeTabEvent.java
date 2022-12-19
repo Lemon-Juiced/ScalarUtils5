@@ -37,6 +37,8 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.DIAMOND_TUNNELER.get()));
                         output.accept(new ItemStack(ModItems.NETHERITE_TUNNELER.get()));
 
+                        output.accept(new ItemStack(ModBlocks.CLEAR_GLASS.get()));
+
                         output.accept(new ItemStack(ModBlocks.WHITE_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.LIGHT_GRAY_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.GRAY_LAMP.get()));

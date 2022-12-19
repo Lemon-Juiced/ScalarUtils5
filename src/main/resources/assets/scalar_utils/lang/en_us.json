@@ -34,6 +34,8 @@
   "item.scalar_utils.netherite_tunneler": "Netherite Tunneler",
   "tunneler_r3.tooltip": "Mines a 7x7 Tunnel",
 
+  "block.scalar_utils.clear_glass": "Clear Glass",
+
   "block.scalar_utils.flax_crop": "Flax Crop",
 
   "block.scalar_utils.white_lamp": "White Lamp",
