@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "scalar_utils:block/reinforced_glass" }
+  }
+}

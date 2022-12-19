@@ -56,6 +56,7 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModBlocks.MAGENTA_LAMP.get()));
                         output.accept(new ItemStack(ModBlocks.PINK_LAMP.get()));
 
+                        output.accept(new ItemStack(ModBlocks.REINFORCED_GLASS.get()));
                         output.accept(new ItemStack(ModBlocks.REINFORCED_OBSIDIAN.get()));
 
                         output.accept(new ItemStack(ModBlocks.BASIC_RUNEBOOSTER.get()));
