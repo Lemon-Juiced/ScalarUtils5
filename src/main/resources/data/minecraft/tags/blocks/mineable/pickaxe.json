@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "scalar_utils:reinforced_obsidian",
     "scalar_utils:basic_runebooster",
     "scalar_utils:advanced_runebooster",
     "scalar_utils:elite_runebooster",

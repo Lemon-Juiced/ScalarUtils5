@@ -53,6 +53,8 @@
   "block.scalar_utils.magenta_lamp": "Magenta Lamp",
   "block.scalar_utils.pink_lamp": "Pink Lamp",
 
+  "block.scalar_utils.reinforced_obsidian": "Reinforced Obsidian",
+
   "block.scalar_utils.basic_runebooster": "Basic Runebooster",
   "basic_runebooster.tooltip": "Step on to Float for Five Seconds",
   "block.scalar_utils.advanced_runebooster": "Advanced Runebooster",
