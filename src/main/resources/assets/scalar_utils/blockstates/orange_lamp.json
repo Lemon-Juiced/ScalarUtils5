@@ -1,6 +1,6 @@
 {
   "variants": {
-    "lit=true": { "model": "scalar_utils:block/orange_lamp_on" },
-    "lit=false": { "model": "scalar_utils:block/orange_lamp" }
+    "lit=false": { "model": "scalar_utils:block/orange_lamp" },
+    "lit=true": { "model": "scalar_utils:block/orange_lamp_on" }
   }
 }
