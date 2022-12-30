@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom;
+package lemon_juice.scalar_utils.item.custom.wipitem;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;

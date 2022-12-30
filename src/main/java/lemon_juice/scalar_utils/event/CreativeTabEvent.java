@@ -38,7 +38,7 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModBlocks.ELITE_RUNEDROPPER.get()));
                         output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEDROPPER.get()));
 
-                        output.accept(new ItemStack(ModBlocks.STONE_TORCH.get()));
+                        output.accept(new ItemStack(ModItems.STONE_TORCH.get()));
                     })
                     .title(Component.translatable("itemGroup.scalar_utils_blocks"))
                     .build();
@@ -56,6 +56,7 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
                         output.accept(new ItemStack(ModItems.RING.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
+                        output.accept(new ItemStack(ModItems.STONE_ROD.get()));
                     })
                     .title(Component.translatable("itemGroup.scalar_utils_items"))
                     .build();

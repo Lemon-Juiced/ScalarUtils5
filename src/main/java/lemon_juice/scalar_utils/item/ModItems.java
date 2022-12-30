@@ -8,6 +8,8 @@ import lemon_juice.scalar_utils.item.custom.curiositem.RunicBoosterPlateItem;
 import lemon_juice.scalar_utils.item.custom.curiositem.RunicDropperPlateItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.TunnelerItem;
+import lemon_juice.scalar_utils.item.custom.wipitem.FlaxSeedsItem;
+import lemon_juice.scalar_utils.item.custom.wipitem.StoneTorchItem;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.StandingAndWallBlockItem;
@@ -51,8 +53,11 @@ public class ModItems {
     public static final RegistryObject<Item> GELATIN = ITEMS.register("gelatin", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
     public static final RegistryObject<Item> WHEAT_SLIME_BALL = ITEMS.register("wheat_slime_ball", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
 
+    // Stone Rod
+    public static final RegistryObject<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
+
     // Stone Torch BlockItem
-    public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StoneTorchItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     // Tunnelers
     public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(Tiers.WOOD, new Item.Properties(), 1));
