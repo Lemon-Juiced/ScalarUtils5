@@ -26,7 +26,7 @@ public class ModItems {
     public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new FlaxSeedsItem(ModBlocks.FLAX_CROP.get(), new Item.Properties()));
 
     // Flour
-    public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new FlourItem(new Item.Properties()));
 
     // Glass Cutter
     public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));

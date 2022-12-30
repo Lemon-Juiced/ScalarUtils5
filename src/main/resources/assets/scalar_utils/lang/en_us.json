@@ -1,10 +1,12 @@
 {
   "item.scalar_utils.tiny_charcoal": "Tiny Charcoal",
   "item.scalar_utils.tiny_coal": "Tiny Coal",
+  "abstract_tiny_coal.tooltip": "Smelts One Item",
 
   "item.scalar_utils.flax_seeds": "Flax Seeds",
 
   "item.scalar_utils.flour": "Flour",
+  "flour.tooltip": "Smelts Into Bread",
 
   "item.scalar_utils.gelatin": "Gelatin",
   "item.scalar_utils.wheat_slime_ball": "Wheat Slimeball",
@@ -80,5 +82,8 @@
 
   "wip.tooltip": "WIP",
 
-  "itemGroup.scalar_utils": "Scalar Utils 5"
+  "itemGroup.scalar_utils_blocks": "Scalar Utils 5: Blocks",
+  "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
+  "itemGroup.scalar_utils_lamps": "Scalar Utils 5: Lamps",
+  "itemGroup.scalar_utils_tools": "Scalar Utils 5: Tools"
 }
