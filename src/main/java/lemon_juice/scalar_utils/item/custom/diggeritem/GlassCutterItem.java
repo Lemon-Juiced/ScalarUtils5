@@ -12,8 +12,9 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class GlassCutterItem extends PickaxeItem {
+    // Tier Is Set To Netherite To Avoid Conflicts With Reinforced Glass (Needs Diamond Tier To Mine)
     public GlassCutterItem(Properties properties) {
-        super(Tiers.IRON, 1, 1f, properties);
+        super(Tiers.NETHERITE, 1, 1f, properties);
     }
 
     @Override
