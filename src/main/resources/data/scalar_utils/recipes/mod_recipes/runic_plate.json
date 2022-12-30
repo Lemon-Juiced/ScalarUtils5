@@ -1,13 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#A#",
+    " # "
+  ],
+  "key": {
+    "#": {
       "item": "minecraft:stone"
     },
-    {
-      "item": "scalar_utils:runecarving_knife"
+    "A": {
+      "item": "minecraft:amethyst_shard"
     }
-  ],
+  },
   "result": {
     "item": "scalar_utils:runic_plate",
     "count": 2
