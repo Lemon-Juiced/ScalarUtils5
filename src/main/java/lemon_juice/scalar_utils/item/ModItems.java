@@ -32,7 +32,10 @@ public class ModItems {
     public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));
 
     // Ring
-    public static final RegistryObject<Item> RING= ITEMS.register("ring", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RING = ITEMS.register("ring", () -> new Item(new Item.Properties()));
+
+    // Rune Carving Knife
+    public static final RegistryObject<Item> RUNECARVING_KNIFE = ITEMS.register("runecarving_knife", () -> new RuneCarvingKnifeItem(new Item.Properties()));
 
     // Runic Angel Ring
     public static final RegistryObject<Item> RUNIC_ANGEL_RING = ITEMS.register("runic_angel_ring", () -> new RunicAngelRingItem(new Item.Properties()));

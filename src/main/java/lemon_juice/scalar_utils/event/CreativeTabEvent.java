@@ -26,6 +26,7 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
                         output.accept(new ItemStack(ModItems.GLASS_CUTTER.get()));
                         output.accept(new ItemStack(ModItems.RING.get()));
+                        output.accept(new ItemStack(ModItems.RUNECARVING_KNIFE.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_ANGEL_RING.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));

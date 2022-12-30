@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "scalar_utils:runecarving_knife"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:runic_plate",
+    "count": 2
+  }
+}
