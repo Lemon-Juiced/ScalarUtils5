@@ -8,6 +8,7 @@ import lemon_juice.scalar_utils.block.custom.AbstractRunedropperBlock;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRuneboosterBlockItem;
 import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRunedropperBlockItem;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -63,6 +64,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> ADVANCED_RUNEDROPPER = registerRunedropperBlock("advanced_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10), 10);
     public static final RegistryObject<Block> ELITE_RUNEDROPPER= registerRunedropperBlock("elite_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15), 15);
     public static final RegistryObject<Block> ULTIMATE_RUNEDROPPER = registerRunedropperBlock("ultimate_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
+
+    // Stone Torch
+    public static final RegistryObject<Block> STONE_TORCH = registerBlockWithoutBlockItem("stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
+        return 14;
+    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> STONE_WALL_TORCH = registerBlockWithoutBlockItem("stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
+        return 14;
+    }).sound(SoundType.WOOD), ParticleTypes.FLAME)); //Omits dropsLike method from Minecraft's WALL_TORCH (Fixed by Loot Table?)
 
     /**************************** Specific Registry ****************************/
     private static <T extends Block> RegistryObject<T> registerRuneboosterBlock(String name, Supplier<T> block, int seconds) {
