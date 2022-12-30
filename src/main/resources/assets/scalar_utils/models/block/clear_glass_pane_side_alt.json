@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "scalar_utils:block/clear_glass_pane_top",
+    "pane": "scalar_utils:block/clear_glass"
+  },
+  "render_type": "translucent"
+}

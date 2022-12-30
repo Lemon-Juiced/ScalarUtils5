@@ -39,6 +39,7 @@
   "tunneler_r3.tooltip": "Mines a 7x7 Tunnel",
 
   "block.scalar_utils.clear_glass": "Clear Glass",
+  "block.scalar_utils.clear_glass_pane": "Clear Glass Pane",
 
   "block.scalar_utils.flax_crop": "Flax Crop",
 

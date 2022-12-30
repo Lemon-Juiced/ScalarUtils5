@@ -25,6 +25,7 @@ public class ModBlocks {
 
     // Clear Glass
     public static final RegistryObject<Block> CLEAR_GLASS = registerBlock("clear_glass", () -> new GlassBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).noOcclusion()));
+    public static final RegistryObject<Block> CLEAR_GLASS_PANE = registerBlock("clear_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(0.3F).noOcclusion()));
 
     // Flax Crop
     public static final RegistryObject<Block> FLAX_CROP = registerBlockWithoutBlockItem("flax_crop", () -> new FlaxCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));

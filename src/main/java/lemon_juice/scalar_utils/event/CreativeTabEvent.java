@@ -24,6 +24,7 @@ public class CreativeTabEvent {
             builder.icon(() -> new ItemStack(ModBlocks.ULTIMATE_RUNEBOOSTER.get()))
                     .displayItems((features, output, hasPermissions) -> {
                         output.accept(new ItemStack(ModBlocks.CLEAR_GLASS.get()));
+                        output.accept(new ItemStack(ModBlocks.CLEAR_GLASS_PANE.get()));
                         output.accept(new ItemStack(ModBlocks.REINFORCED_GLASS.get()));
                         output.accept(new ItemStack(ModBlocks.REINFORCED_OBSIDIAN.get()));
 
