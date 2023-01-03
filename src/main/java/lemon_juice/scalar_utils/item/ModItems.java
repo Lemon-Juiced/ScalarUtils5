@@ -8,11 +8,10 @@ import lemon_juice.scalar_utils.item.custom.curiositem.RunicBoosterPlateItem;
 import lemon_juice.scalar_utils.item.custom.curiositem.RunicDropperPlateItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.TunnelerItem;
-import lemon_juice.scalar_utils.item.custom.wipitem.FlaxSeedsItem;
 import lemon_juice.scalar_utils.item.custom.wipitem.StoneTorchItem;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,7 +26,7 @@ public class ModItems {
     public static final RegistryObject<Item> TINY_COAL = ITEMS.register("tiny_coal", () -> new AbstractTinyCoalItem(new Item.Properties()));
 
     // Flax Seeds
-    public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new FlaxSeedsItem(ModBlocks.FLAX_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new ItemNameBlockItem(ModBlocks.FLAX_CROP.get(), new Item.Properties()));
 
     // Flour
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new FlourItem(new Item.Properties()));
