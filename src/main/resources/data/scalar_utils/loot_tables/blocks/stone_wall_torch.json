@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "scalar_utils:stone_wall_torch"
+          "name": "scalar_utils:stone_torch"
         }
       ],
       "rolls": 1.0
