@@ -8,9 +8,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class AbstractRunedropperBlock extends Block {
-    private final int blocks;
+    private final float blocks;
 
-    public AbstractRunedropperBlock(Properties properties, int blocks) {
+    public AbstractRunedropperBlock(Properties properties, float blocks) {
         super(properties);
         this.blocks = blocks;
     }

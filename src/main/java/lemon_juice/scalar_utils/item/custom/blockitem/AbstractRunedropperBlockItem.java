@@ -11,17 +11,17 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class AbstractRunedropperBlockItem extends BlockItem {
-    private final int seconds;
-    public AbstractRunedropperBlockItem(Block block, Properties properties, int seconds) {
+    private final int blocks;
+    public AbstractRunedropperBlockItem(Block block, Properties properties, int blocks) {
         super(block, properties);
-        this.seconds = seconds;
+        this.blocks = blocks;
     }
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        if (seconds == 5) components.add(Component.translatable("basic_runedropper.tooltip"));
-        else if (seconds == 10) components.add(Component.translatable("advanced_runedropper.tooltip"));
-        else if (seconds == 15) components.add(Component.translatable("elite_runedropper.tooltip"));
+        if (blocks == 5) components.add(Component.translatable("basic_runedropper.tooltip"));
+        else if (blocks == 10) components.add(Component.translatable("advanced_runedropper.tooltip"));
+        else if (blocks == 15) components.add(Component.translatable("elite_runedropper.tooltip"));
         else components.add(Component.translatable("ultimate_runedropper.tooltip"));
 
         super.appendHoverText(stack, level, components, flag);

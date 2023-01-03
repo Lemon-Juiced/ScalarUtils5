@@ -60,9 +60,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ULTIMATE_RUNEBOOSTER = registerRuneboosterBlock("ultimate_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
 
     // Runedropper
-    public static final RegistryObject<Block> BASIC_RUNEDROPPER = registerRunedropperBlock("basic_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5), 5);
-    public static final RegistryObject<Block> ADVANCED_RUNEDROPPER = registerRunedropperBlock("advanced_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10), 10);
-    public static final RegistryObject<Block> ELITE_RUNEDROPPER= registerRunedropperBlock("elite_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15), 15);
+    public static final RegistryObject<Block> BASIC_RUNEDROPPER = registerRunedropperBlock("basic_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5f), 5);
+    public static final RegistryObject<Block> ADVANCED_RUNEDROPPER = registerRunedropperBlock("advanced_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10f), 10);
+    public static final RegistryObject<Block> ELITE_RUNEDROPPER= registerRunedropperBlock("elite_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15f), 15);
     public static final RegistryObject<Block> ULTIMATE_RUNEDROPPER = registerRunedropperBlock("ultimate_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
 
     // Stone Torch
@@ -90,8 +90,8 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerRunedropperBlockItem(String name, RegistryObject<T> block, int seconds) {
-        return ModItems.ITEMS.register(name, () -> new AbstractRunedropperBlockItem(block.get(), new Item.Properties(), seconds));
+    private static <T extends Block> RegistryObject<Item> registerRunedropperBlockItem(String name, RegistryObject<T> block, int blocks) {
+        return ModItems.ITEMS.register(name, () -> new AbstractRunedropperBlockItem(block.get(), new Item.Properties(), blocks));
     }
 
     /******************************** Registry ********************************/
