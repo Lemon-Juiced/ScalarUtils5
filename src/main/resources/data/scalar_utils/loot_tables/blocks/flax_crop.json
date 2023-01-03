@@ -10,6 +10,29 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "scalar_utils:flax_crop",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "7"
+              }
+            },
+            {
+              "chance": 0.50,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "minecraft:string"
+        }
+      ],
+      "rolls": 3.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
           "type": "minecraft:alternatives",
           "children": [
             {
