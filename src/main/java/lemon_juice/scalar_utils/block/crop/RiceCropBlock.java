@@ -5,7 +5,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-public class RiceCropBlock extends CropBlock {
+public class RiceCropBlock extends AbstractBaseCropBlock {
     public RiceCropBlock(Properties properties) {
         super(properties);
     }
