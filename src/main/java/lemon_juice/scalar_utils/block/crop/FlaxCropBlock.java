@@ -9,10 +9,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-public class FlaxCropBlock extends CropBlock {
-    private static final int minAge = 0;
-    private static final int maxAge = 7;
-    public static final IntegerProperty AGE = IntegerProperty.create("age", minAge, maxAge);
+public class FlaxCropBlock extends AbstractBaseCrop {
 
     public FlaxCropBlock(Properties properties) {
         super(properties);
@@ -21,21 +18,6 @@ public class FlaxCropBlock extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
         return ModItems.FLAX_SEEDS.get();
-    }
-
-    @Override
-    public IntegerProperty getAgeProperty() {
-        return AGE;
-    }
-
-    @Override
-    public int getMaxAge() {
-        return MAX_AGE;
-    }
-
-    @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(AGE);
     }
 
 }

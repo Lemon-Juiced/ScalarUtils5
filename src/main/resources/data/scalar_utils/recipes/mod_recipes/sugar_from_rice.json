@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:rice"
+    }
+  ],
+  "result": {
+    "item": "minecraft:sugar"
+  }
+}

@@ -53,7 +53,9 @@ public class CreativeTabEvent {
                         output.accept(new ItemStack(ModItems.FLAX_SEEDS.get()));
                         output.accept(new ItemStack(ModItems.FLOUR.get()));
                         output.accept(new ItemStack(ModItems.GELATIN.get()));
+                        output.accept(new ItemStack(ModItems.RICE_SLIME_BALL.get()));
                         output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
+                        output.accept(new ItemStack(ModItems.RICE.get()));
                         output.accept(new ItemStack(ModItems.RING.get()));
                         output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
                         output.accept(new ItemStack(ModItems.STONE_ROD.get()));

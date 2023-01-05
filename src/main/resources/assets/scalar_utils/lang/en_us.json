@@ -9,11 +9,14 @@
   "flour.tooltip": "Smelts Into Bread",
 
   "item.scalar_utils.gelatin": "Gelatin",
+  "item.scalar_utils.rice_slime_ball": "Rice Slimeball",
   "item.scalar_utils.wheat_slime_ball": "Wheat Slimeball",
   "slime_ball_alternative.tooltip": "Slimeball Alternative",
 
   "item.scalar_utils.glass_cutter": "Glass Cutter",
   "glass_cutter.tooltip": "Breaks Glass and Ice",
+
+  "item.scalar_utils.rice": "Rice",
 
   "item.scalar_utils.ring": "Ring",
 
@@ -66,6 +69,8 @@
 
   "block.scalar_utils.reinforced_glass": "Reinforced Glass",
   "block.scalar_utils.reinforced_obsidian": "Reinforced Obsidian",
+
+  "block.scalar_utils.rice_crop": "Rice Crop",
 
   "block.scalar_utils.basic_runebooster": "Basic Runebooster",
   "basic_runebooster.tooltip": "Step on to Float for Five Seconds",

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#forge:slimeball/gelatin",
+    "#forge:slimeball/rice",
     "#forge:slimeball/wheat"
   ]
 }

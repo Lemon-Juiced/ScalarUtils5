@@ -9,6 +9,7 @@ import lemon_juice.scalar_utils.item.custom.curiositem.RunicDropperPlateItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.TunnelerItem;
 import net.minecraft.core.Direction;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.StandingAndWallBlockItem;
@@ -34,6 +35,9 @@ public class ModItems {
     // Glass Cutter
     public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));
 
+    // Rice
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice", () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
+
     // Ring
     public static final RegistryObject<Item> RING = ITEMS.register("ring", () -> new Item(new Item.Properties()));
 
@@ -50,6 +54,7 @@ public class ModItems {
 
     // Slimeball Alternatives
     public static final RegistryObject<Item> GELATIN = ITEMS.register("gelatin", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
+        public static final RegistryObject<Item> RICE_SLIME_BALL = ITEMS.register("rice_slime_ball", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
     public static final RegistryObject<Item> WHEAT_SLIME_BALL = ITEMS.register("wheat_slime_ball", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
 
     // Stone Rod

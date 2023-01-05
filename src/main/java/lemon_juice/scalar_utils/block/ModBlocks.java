@@ -2,6 +2,7 @@ package lemon_juice.scalar_utils.block;
 
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.crop.FlaxCropBlock;
+import lemon_juice.scalar_utils.block.crop.RiceCropBlock;
 import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
 import lemon_juice.scalar_utils.block.custom.AbstractRuneboosterBlock;
 import lemon_juice.scalar_utils.block.custom.AbstractRunedropperBlock;
@@ -52,6 +53,9 @@ public class ModBlocks {
     // Reinforced Blocks
     public static final RegistryObject<Block> REINFORCED_GLASS = registerBlock("reinforced_glass", () -> new GlassBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(50.0F, 3600000.0F)));
+
+    // Rice Crop
+    public static final RegistryObject<Block> RICE_CROP = registerBlockWithoutBlockItem("rice_crop", () -> new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
     // Runebooster
     public static final RegistryObject<Block> BASIC_RUNEBOOSTER = registerRuneboosterBlock("basic_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5), 5);
