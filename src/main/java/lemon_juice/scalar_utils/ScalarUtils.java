@@ -1,11 +1,9 @@
 package lemon_juice.scalar_utils;
 
 import lemon_juice.scalar_utils.block.ModBlocks;
-import lemon_juice.scalar_utils.event.CreativeTabEvent;
+import lemon_juice.scalar_utils.creativetab.CreativeTab;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.loot.ModLootModifiers;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,14 +27,14 @@ public class ScalarUtils {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        // Register Creative Tab
+        modEventBus.addListener(CreativeTab::registerTabs);
+
         // Register Global Loot Modifiers
         ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::enqueueIMC);
-
-        // Registers Creative Tab From CreativeTabEvent
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(CreativeTabEvent::onCreativeModeTabRegister);
 
         MinecraftForge.EVENT_BUS.register(this);
 
