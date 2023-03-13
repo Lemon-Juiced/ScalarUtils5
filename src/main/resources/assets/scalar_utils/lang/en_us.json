@@ -1,21 +1,18 @@
 {
   "item.scalar_utils.tiny_charcoal": "Tiny Charcoal",
   "item.scalar_utils.tiny_coal": "Tiny Coal",
-  "abstract_tiny_coal.tooltip": "Smelts One Item",
-
-  "item.scalar_utils.flax_seeds": "Flax Seeds",
 
   "item.scalar_utils.flour": "Flour",
-  "flour.tooltip": "Smelts Into Bread",
 
   "item.scalar_utils.gelatin": "Gelatin",
   "item.scalar_utils.rice_slime_ball": "Rice Slimeball",
   "item.scalar_utils.wheat_slime_ball": "Wheat Slimeball",
-  "slime_ball_alternative.tooltip": "Slimeball Alternative",
 
   "item.scalar_utils.glass_cutter": "Glass Cutter",
-  "glass_cutter.tooltip": "Breaks Glass and Ice",
 
+  "item.scalar_utils.carrot_seeds": "Carrot Seeds",
+  "item.scalar_utils.flax_seeds": "Flax Seeds",
+  "item.scalar_utils.potato_seeds": "Potato Seeds",
   "item.scalar_utils.rice": "Rice",
 
   "item.scalar_utils.ring": "Ring",
@@ -23,13 +20,10 @@
   "item.scalar_utils.runecarving_knife": "Rune Carving Knife",
 
   "item.scalar_utils.runic_angel_ring": "Runic Angel Ring",
-  "runic_angel_ring.tooltip": "Equip to Fly!",
 
   "item.scalar_utils.runic_plate": "Runic Plate",
   "item.scalar_utils.runic_booster_plate": "Runic Booster Plate",
-  "runic_booster_plate.tooltip": "Hold Right-Click to Float or Equip for Jump Boost",
   "item.scalar_utils.runic_dropper_plate": "Runic Dropper Plate",
-  "runic_dropper_plate.tooltip": "Hold Right-Click to Slow Fall or Equip for Slow Falling",
 
   "item.scalar_utils.stone_rod": "Stone Rod",
 
@@ -39,16 +33,25 @@
   "item.scalar_utils.stone_tunneler": "Stone Tunneler",
   "item.scalar_utils.iron_tunneler": "Iron Tunneler",
   "item.scalar_utils.golden_tunneler": "Golden Tunneler",
-  "tunneler_r1.tooltip": "Mines a 3x3 Tunnel",
   "item.scalar_utils.diamond_tunneler": "Diamond Tunneler",
-  "tunneler_r2.tooltip": "Mines a 5x5 Tunnel",
   "item.scalar_utils.netherite_tunneler": "Netherite Tunneler",
+
+  "abstract_tiny_coal.tooltip": "Smelts One Item",
+  "flour.tooltip": "Smelts Into Bread",
+  "slime_ball_alternative.tooltip": "Slimeball Alternative",
+  "glass_cutter.tooltip": "Breaks Glass and Ice",
+  "runic_angel_ring.tooltip": "Equip to Fly!",
+  "runic_booster_plate.tooltip": "Grants the User Jump Boost",
+  "runic_dropper_plate.tooltip": "Grants the User Slow Falling",
+  "tunneler_r1.tooltip": "Mines a 3x3 Tunnel",
+  "tunneler_r2.tooltip": "Mines a 5x5 Tunnel",
   "tunneler_r3.tooltip": "Mines a 7x7 Tunnel",
 
   "block.scalar_utils.clear_glass": "Clear Glass",
   "block.scalar_utils.clear_glass_pane": "Clear Glass Pane",
 
   "block.scalar_utils.flax_crop": "Flax Crop",
+  "block.scalar_utils.rice_crop": "Rice Crop",
 
   "block.scalar_utils.white_lamp": "White Lamp",
   "block.scalar_utils.light_gray_lamp": "Light Gray Lamp",
@@ -70,24 +73,23 @@
   "block.scalar_utils.reinforced_glass": "Reinforced Glass",
   "block.scalar_utils.reinforced_obsidian": "Reinforced Obsidian",
 
-  "block.scalar_utils.rice_crop": "Rice Crop",
-
   "block.scalar_utils.basic_runebooster": "Basic Runebooster",
-  "basic_runebooster.tooltip": "Step on to Float for Five Seconds",
   "block.scalar_utils.advanced_runebooster": "Advanced Runebooster",
-  "advanced_runebooster.tooltip": "Step on to Float for Ten Seconds",
   "block.scalar_utils.elite_runebooster": "Elite Runebooster",
-  "elite_runebooster.tooltip": "Step on to Float for Fifteen Seconds",
   "block.scalar_utils.ultimate_runebooster": "Ultimate Runebooster",
-  "ultimate_runebooster.tooltip": "Step on to Float for Twenty Seconds",
 
   "block.scalar_utils.basic_runedropper": "Basic Runedropper",
-  "basic_runedropper.tooltip": "Absorbs Five Extra Blocks of Fall Damage",
   "block.scalar_utils.advanced_runedropper": "Advanced Runedropper",
-  "advanced_runedropper.tooltip": "Absorbs Ten Extra Blocks of Fall Damage",
   "block.scalar_utils.elite_runedropper": "Elite Runedropper",
-  "elite_runedropper.tooltip": "Absorbs Fifteen Extra Blocks of Fall Damage",
   "block.scalar_utils.ultimate_runedropper": "Ultimate Runedropper",
+
+  "basic_runebooster.tooltip": "Step on to Float for Five Seconds",
+  "advanced_runebooster.tooltip": "Step on to Float for Ten Seconds",
+  "elite_runebooster.tooltip": "Step on to Float for Fifteen Seconds",
+  "ultimate_runebooster.tooltip": "Step on to Float for Twenty Seconds",
+  "basic_runedropper.tooltip": "Absorbs Five Extra Blocks of Fall Damage",
+  "advanced_runedropper.tooltip": "Absorbs Ten Extra Blocks of Fall Damage",
+  "elite_runedropper.tooltip": "Absorbs Fifteen Extra Blocks of Fall Damage",
   "ultimate_runedropper.tooltip": "Absorbs Twenty Extra Blocks of Fall Damage",
 
   "block.scalar_utils.stone_torch": "Stone Torch",
@@ -95,6 +97,9 @@
 
   "wip.tooltip": "WIP",
 
+  "curios.identifier.rune": "Rune",
+
+  "itemGroup.scalar_utils_agriculture": "Scalar Utils 5: Agriculture",
   "itemGroup.scalar_utils_blocks": "Scalar Utils 5: Blocks",
   "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
   "itemGroup.scalar_utils_lamps": "Scalar Utils 5: Lamps",

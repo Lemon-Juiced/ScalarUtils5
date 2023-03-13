@@ -11,12 +11,25 @@ import net.minecraftforge.event.CreativeModeTabEvent;
 
 public class CreativeTab {
 
+    public static ResourceLocation SCALAR_UTILS_AGRICULTURE_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_agriculture");
     public static ResourceLocation SCALAR_UTILS_BLOCKS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_blocks");
     public static ResourceLocation SCALAR_UTILS_ITEMS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_items");
     public static ResourceLocation SCALAR_UTILS_LAMPS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_lamps");
     public static ResourceLocation SCALAR_UTILS_TOOLS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_tools");
 
     public static void registerTabs(CreativeModeTabEvent.Register event){
+        // Agriculture Tab
+        event.registerCreativeModeTab(SCALAR_UTILS_AGRICULTURE_TAB, builder -> builder
+                .title(Component.translatable("itemGroup.scalar_utils_agriculture"))
+                .icon(() -> new ItemStack(ModItems.FLOUR.get()))
+                .displayItems((features, output, hasPermissions) -> {
+                    output.accept(new ItemStack(ModItems.FLOUR.get()));
+                    output.accept(new ItemStack(ModItems.CARROT_SEEDS.get()));
+                    output.accept(new ItemStack(ModItems.FLAX_SEEDS.get()));
+                    output.accept(new ItemStack(ModItems.POTATO_SEEDS.get()));
+                    output.accept(new ItemStack(ModItems.RICE.get()));
+                }));
+
         // Blocks Tab
         event.registerCreativeModeTab(SCALAR_UTILS_BLOCKS_TAB, builder -> builder
                 .title(Component.translatable("itemGroup.scalar_utils_blocks"))
@@ -47,12 +60,9 @@ public class CreativeTab {
                 .displayItems((features, output, hasPermissions) -> {
                     output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));
                     output.accept(new ItemStack(ModItems.TINY_COAL.get()));
-                    output.accept(new ItemStack(ModItems.FLAX_SEEDS.get()));
-                    output.accept(new ItemStack(ModItems.FLOUR.get()));
                     output.accept(new ItemStack(ModItems.GELATIN.get()));
                     output.accept(new ItemStack(ModItems.RICE_SLIME_BALL.get()));
                     output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
-                    output.accept(new ItemStack(ModItems.RICE.get()));
                     output.accept(new ItemStack(ModItems.RING.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
                     output.accept(new ItemStack(ModItems.STONE_ROD.get()));

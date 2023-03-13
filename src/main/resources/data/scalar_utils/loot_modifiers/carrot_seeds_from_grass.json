@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:grass"
+    }
+  ],
+  "item": "scalar_utils:carrot_seeds",
+  "type": "scalar_utils:add_seed_item"
+}

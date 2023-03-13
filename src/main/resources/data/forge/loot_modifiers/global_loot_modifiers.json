@@ -45,7 +45,9 @@
     "scalar_utils:ice_from_ice",
     "scalar_utils:packed_ice_from_packed_ice",
 
+    "scalar_utils:carrot_seeds_from_grass",
     "scalar_utils:flax_seeds_from_grass",
+    "scalar_utils:potato_seeds_from_grass",
     "scalar_utils:rice_from_grass"
   ]
 }

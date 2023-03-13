@@ -45,7 +45,7 @@ public class RunicBoosterPlateItem extends Item implements ICurioItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if(!level.isClientSide() && (hand == InteractionHand.MAIN_HAND || hand == InteractionHand.OFF_HAND)){
-            player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 20));
+            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 20));
         }
 
         return super.use(level, player, hand);

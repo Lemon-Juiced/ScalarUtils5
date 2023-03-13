@@ -28,7 +28,7 @@ public class AddSeedItemModifier extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() <= 0.10f) { // 10% chance of dropping
+        if(context.getRandom().nextFloat() <= 0.05f) { // 10% chance of dropping
             generatedLoot.add(new ItemStack(item));
         }
 

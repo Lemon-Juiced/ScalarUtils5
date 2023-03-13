@@ -4,6 +4,7 @@ import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.creativetab.CreativeTab;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.loot.ModLootModifiers;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotTypeMessage;
 import top.theillusivec4.curios.api.SlotTypePreset;
 
@@ -37,17 +39,16 @@ public class ScalarUtils {
         modEventBus.addListener(this::enqueueIMC);
 
         MinecraftForge.EVENT_BUS.register(this);
-
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-
-    }
+    private void commonSetup(final FMLCommonSetupEvent event) {}
 
     //InterModQueue For Curios
     private void enqueueIMC(InterModEnqueueEvent event) {
+        // Adds A "RING" Slot
         InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.RING.getMessageBuilder().build());
-        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.CHARM.getMessageBuilder().build());
+        // Creates Two "rune" Slots
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("rune").size(2).icon(new ResourceLocation(ScalarUtils.MOD_ID, "slot/empty_rune_slot")).build());
     }
 
 
