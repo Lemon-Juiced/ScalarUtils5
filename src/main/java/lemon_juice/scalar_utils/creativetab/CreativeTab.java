@@ -22,7 +22,7 @@ public class CreativeTab {
         event.registerCreativeModeTab(SCALAR_UTILS_AGRICULTURE_TAB, builder -> builder
                 .title(Component.translatable("itemGroup.scalar_utils_agriculture"))
                 .icon(() -> new ItemStack(ModItems.FLOUR.get()))
-                .displayItems((features, output, hasPermissions) -> {
+                .displayItems((features, output) -> {
                     output.accept(new ItemStack(ModItems.FLOUR.get()));
                     output.accept(new ItemStack(ModItems.CARROT_SEEDS.get()));
                     output.accept(new ItemStack(ModItems.FLAX_SEEDS.get()));
@@ -34,7 +34,7 @@ public class CreativeTab {
         event.registerCreativeModeTab(SCALAR_UTILS_BLOCKS_TAB, builder -> builder
                 .title(Component.translatable("itemGroup.scalar_utils_blocks"))
                 .icon(() -> new ItemStack(ModBlocks.ULTIMATE_RUNEBOOSTER.get()))
-                .displayItems((features, output, hasPermissions) -> {
+                .displayItems((features, output) -> {
                     output.accept(new ItemStack(ModBlocks.CLEAR_GLASS.get()));
                     output.accept(new ItemStack(ModBlocks.CLEAR_GLASS_PANE.get()));
                     output.accept(new ItemStack(ModBlocks.REINFORCED_GLASS.get()));
@@ -57,7 +57,7 @@ public class CreativeTab {
         event.registerCreativeModeTab(SCALAR_UTILS_ITEMS_TAB, builder -> builder
                 .title(Component.translatable("itemGroup.scalar_utils_items"))
                 .icon(() -> new ItemStack(ModItems.TINY_COAL.get()))
-                .displayItems((features, output, hasPermissions) -> {
+                .displayItems((features, output) -> {
                     output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));
                     output.accept(new ItemStack(ModItems.TINY_COAL.get()));
                     output.accept(new ItemStack(ModItems.GELATIN.get()));
@@ -72,7 +72,7 @@ public class CreativeTab {
         event.registerCreativeModeTab(SCALAR_UTILS_LAMPS_TAB, builder -> builder
                 .title(Component.translatable("itemGroup.scalar_utils_lamps"))
                 .icon(() -> new ItemStack(ModBlocks.WHITE_LAMP.get()))
-                .displayItems((features, output, hasPermissions) -> {
+                .displayItems((features, output) -> {
                     output.accept(new ItemStack(ModBlocks.WHITE_LAMP.get()));
                     output.accept(new ItemStack(ModBlocks.LIGHT_GRAY_LAMP.get()));
                     output.accept(new ItemStack(ModBlocks.GRAY_LAMP.get()));
@@ -95,7 +95,7 @@ public class CreativeTab {
         event.registerCreativeModeTab(SCALAR_UTILS_TOOLS_TAB, builder -> builder
                 .title(Component.translatable("itemGroup.scalar_utils_tools"))
                 .icon(() -> new ItemStack(ModItems.RUNIC_ANGEL_RING.get()))
-                .displayItems((features, output, hasPermissions) -> {
+                .displayItems((features, output) -> {
                     output.accept(new ItemStack(ModItems.GLASS_CUTTER.get()));
                     output.accept(new ItemStack(ModItems.RUNECARVING_KNIFE.get()));
 
