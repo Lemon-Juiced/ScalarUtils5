@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
-    "scalar_utils:flax_seeds",
-    "scalar_utils:rice"
+    "#forge:seeds/carrot",
+    "#forge:seeds/flax",
+    "#forge:seeds/potato",
+    "#forge:seeds/wheat"
   ]
 }
