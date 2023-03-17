@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_basic_runebooster",
+  "criteria": {
+    "advanced_runebooster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:advanced_runebooster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_advanced_runebooster.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:advanced_runebooster"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_advanced_runebooster.title"
+    }
+  },
+  "requirements": [
+    [
+      "advanced_runebooster"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

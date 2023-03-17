@@ -22,7 +22,8 @@ public class AbstractRuneboosterBlockItem extends BlockItem {
         if (seconds == 5) components.add(Component.translatable("basic_runebooster.tooltip"));
         else if (seconds == 10) components.add(Component.translatable("advanced_runebooster.tooltip"));
         else if (seconds == 15) components.add(Component.translatable("elite_runebooster.tooltip"));
-        else components.add(Component.translatable("ultimate_runebooster.tooltip"));
+        else if (seconds == 20) components.add(Component.translatable("ultimate_runebooster.tooltip"));
+        else components.add(Component.translatable("transcendent_runebooster.tooltip"));
 
         super.appendHoverText(stack, level, components, flag);
     }

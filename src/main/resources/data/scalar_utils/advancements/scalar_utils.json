@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "scalar_utils:ring"
+    },
+    "title": {
+      "translate": "advancements.scalar_utils.scalar_utils.title"
+    },
+    "description": {
+      "translate": "advancements.scalar_utils.scalar_utils.description"
+    },
+    "background": "scalar_utils:textures/block/necronite_block.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location"
+    }
+  }
+}

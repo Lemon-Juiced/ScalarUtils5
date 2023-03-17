@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    " N ",
+    " / "
+  ],
+  "key": {
+    "i": {
+      "item": "scalar_utils:necronite_ingot"
+    },
+    "N": {
+      "item": "scalar_utils:netherite_tunneler"
+    },
+    "/": {
+      "item": "scalar_utils:blazing_end_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:necronite_tunneler",
+    "count": 1
+  }
+}

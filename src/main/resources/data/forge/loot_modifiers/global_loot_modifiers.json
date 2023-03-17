@@ -40,6 +40,7 @@
     "scalar_utils:clear_glass_from_clear_glass",
     "scalar_utils:clear_glass_pane_from_clear_glass_pane",
     "scalar_utils:reinforced_glass_from_reinforced_glass",
+    "scalar_utils:reinforced_glass_pane_from_reinforced_glass_pane",
 
     "scalar_utils:blue_ice_from_blue_ice",
     "scalar_utils:ice_from_ice",

@@ -8,12 +8,11 @@ import lemon_juice.scalar_utils.item.custom.curiositem.RunicBoosterPlateItem;
 import lemon_juice.scalar_utils.item.custom.curiositem.RunicDropperPlateItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom.diggeritem.TunnelerItem;
+import lemon_juice.scalar_utils.item.custom.necronite_item.*;
+import lemon_juice.scalar_utils.item.custom.tiers.Tiers;
 import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.StandingAndWallBlockItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,11 +26,29 @@ public class ModItems {
     public static final RegistryObject<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal", () -> new AbstractTinyCoalItem(new Item.Properties()));
     public static final RegistryObject<Item> TINY_COAL = ITEMS.register("tiny_coal", () -> new AbstractTinyCoalItem(new Item.Properties()));
 
+    // Blazing End Rod
+    public static final RegistryObject<Item> BLAZING_END_ROD = ITEMS.register("blazing_end_rod", () -> new Item(new Item.Properties()));
+
     // Flour
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new FlourItem(new Item.Properties()));
 
     // Glass Cutter
     public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));
+
+    // Necronite
+    public static final RegistryObject<Item> NECRONITE_INGOT = ITEMS.register("necronite_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_NUGGET = ITEMS.register("necronite_nugget", () -> new Item(new Item.Properties()));
+    /* Tools */
+    public static final RegistryObject<Item> NECRONITE_SWORD = ITEMS.register("necronite_sword", () -> new NecroniteSwordItem(new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_SHOVEL = ITEMS.register("necronite_shovel", () -> new NecroniteShovelItem(new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_PICKAXE = ITEMS.register("necronite_pickaxe", () -> new NecronitePickaxeItem(new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_AXE = ITEMS.register("necronite_axe", () -> new NecroniteAxeItem(new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_HOE = ITEMS.register("necronite_hoe", () -> new NecroniteHoeItem(new Item.Properties()));
+    /* Armor */
+    public static final RegistryObject<Item> NECRONITE_HELMET = ITEMS.register("necronite_helmet", () -> new NecroniteArmorItem(ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_CHESTPLATE = ITEMS.register("necronite_chestplate", () -> new NecroniteArmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_LEGGINGS = ITEMS.register("necronite_leggings", () -> new NecroniteArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_BOOTS = ITEMS.register("necronite_boots", () -> new NecroniteArmorItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 
     // Ring
     public static final RegistryObject<Item> RING = ITEMS.register("ring", () -> new Item(new Item.Properties()));
@@ -65,12 +82,13 @@ public class ModItems {
     public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     // Tunnelers
-    public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(Tiers.WOOD, new Item.Properties(), 1));
-    public static final RegistryObject<Item> STONE_TUNNELER = ITEMS.register("stone_tunneler", () -> new TunnelerItem(Tiers.STONE, new Item.Properties(), 1));
-    public static final RegistryObject<Item> IRON_TUNNELER = ITEMS.register("iron_tunneler", () -> new TunnelerItem(Tiers.IRON, new Item.Properties(), 1));
-    public static final RegistryObject<Item> GOLDEN_TUNNELER = ITEMS.register("golden_tunneler", () -> new TunnelerItem(Tiers.GOLD, new Item.Properties(), 1));
-    public static final RegistryObject<Item> DIAMOND_TUNNELER = ITEMS.register("diamond_tunneler", () -> new TunnelerItem(Tiers.DIAMOND, new Item.Properties(), 2));
-    public static final RegistryObject<Item> NETHERITE_TUNNELER = ITEMS.register("netherite_tunneler", () -> new TunnelerItem(Tiers.NETHERITE, new Item.Properties(), 3));
+    public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.WOOD, new Item.Properties(), 1));
+    public static final RegistryObject<Item> STONE_TUNNELER = ITEMS.register("stone_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.STONE, new Item.Properties(), 1));
+    public static final RegistryObject<Item> IRON_TUNNELER = ITEMS.register("iron_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.IRON, new Item.Properties(), 1));
+    public static final RegistryObject<Item> GOLDEN_TUNNELER = ITEMS.register("golden_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.GOLD, new Item.Properties(), 1));
+    public static final RegistryObject<Item> DIAMOND_TUNNELER = ITEMS.register("diamond_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.DIAMOND, new Item.Properties(), 2));
+    public static final RegistryObject<Item> NETHERITE_TUNNELER = ITEMS.register("netherite_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.NETHERITE, new Item.Properties(), 3));
+    public static final RegistryObject<Item> NECRONITE_TUNNELER = ITEMS.register("necronite_tunneler", () -> new TunnelerItem(Tiers.NECRONITE, new Item.Properties(), 4));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ii",
+    " N",
+    " /"
+  ],
+  "key": {
+    "i": {
+      "item": "scalar_utils:necronite_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_hoe"
+    },
+    "/": {
+      "item": "scalar_utils:blazing_end_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:necronite_hoe",
+    "count": 1
+  }
+}

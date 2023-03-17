@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:necronite_block"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:necronite_ingot",
+    "count": 9
+  }
+}

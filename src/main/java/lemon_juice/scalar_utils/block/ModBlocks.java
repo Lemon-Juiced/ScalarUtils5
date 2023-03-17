@@ -15,6 +15,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -51,8 +52,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAGENTA_LAMP = registerBlock("magenta_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> PINK_LAMP = registerBlock("pink_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
 
+    // Necronite Block
+    public static final RegistryObject<Block> NECRONITE_BLOCK = registerBlock("necronite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
+
     // Reinforced Blocks
     public static final RegistryObject<Block> REINFORCED_GLASS = registerBlock("reinforced_glass", () -> new GlassBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
+    public static final RegistryObject<Block> REINFORCED_GLASS_PANE = registerBlock("reinforced_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(50.0F, 3600000.0F)));
 
     // Runebooster
@@ -60,12 +65,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> ADVANCED_RUNEBOOSTER = registerRuneboosterBlock("advanced_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10), 10);
     public static final RegistryObject<Block> ELITE_RUNEBOOSTER = registerRuneboosterBlock("elite_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15), 15);
     public static final RegistryObject<Block> ULTIMATE_RUNEBOOSTER = registerRuneboosterBlock("ultimate_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
+    public static final RegistryObject<Block> TRANSCENDENT_RUNEBOOSTER = registerRuneboosterBlock("transcendent_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 1000), 1000);
 
     // Runedropper
-    public static final RegistryObject<Block> BASIC_RUNEDROPPER = registerRunedropperBlock("basic_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5f), 5);
+    public static final RegistryObject<Block> BASIC_RUNEDROPPER = registerRunedropperBlock("basic_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), -1f), 5);
     public static final RegistryObject<Block> ADVANCED_RUNEDROPPER = registerRunedropperBlock("advanced_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10f), 10);
     public static final RegistryObject<Block> ELITE_RUNEDROPPER= registerRunedropperBlock("elite_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15f), 15);
     public static final RegistryObject<Block> ULTIMATE_RUNEDROPPER = registerRunedropperBlock("ultimate_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
+    public static final RegistryObject<Block> TRANSCENDENT_RUNEDROPPER = registerRunedropperBlock("transcendent_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 1000), 1000);
 
     // Stone Torch
     public static final RegistryObject<Block> STONE_TORCH = registerBlockWithoutBlockItem("stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
@@ -86,9 +93,9 @@ public class ModBlocks {
         return ModItems.ITEMS.register(name, () -> new AbstractRuneboosterBlockItem(block.get(), new Item.Properties(), seconds));
     }
 
-    private static <T extends Block> RegistryObject<T> registerRunedropperBlock(String name, Supplier<T> block, int seconds) {
+    private static <T extends Block> RegistryObject<T> registerRunedropperBlock(String name, Supplier<T> block, int blocks) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerRunedropperBlockItem(name, toReturn, seconds);
+        registerRunedropperBlockItem(name, toReturn, blocks);
         return toReturn;
     }
 

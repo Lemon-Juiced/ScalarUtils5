@@ -1,0 +1,56 @@
+{
+  "parent": "scalar_utils:obtain_necronite_ingot",
+  "criteria": {
+    "necronite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:necronite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "scalar_utils:necronite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "scalar_utils:necronite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "scalar_utils:necronite_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.necronite_armor.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:necronite_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.necronite_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "necronite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

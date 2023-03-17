@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_stone_tunneler",
+  "criteria": {
+    "iron_tunneler": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:iron_tunneler"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_iron_tunneler.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:iron_tunneler"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_iron_tunneler.title"
+    }
+  },
+  "requirements": [
+    [
+      "iron_tunneler"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

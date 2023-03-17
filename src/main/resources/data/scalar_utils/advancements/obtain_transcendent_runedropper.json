@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_ultimate_runedropper",
+  "criteria": {
+    "transcendent_runedropper": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:transcendent_runedropper"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_transcendent_runedropper.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:transcendent_runedropper"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_transcendent_runedropper.title"
+    }
+  },
+  "requirements": [
+    [
+      "transcendent_runedropper"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

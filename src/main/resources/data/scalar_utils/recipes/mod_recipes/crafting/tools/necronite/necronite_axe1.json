@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ii",
+    "iN",
+    " /"
+  ],
+  "key": {
+    "i": {
+      "item": "scalar_utils:necronite_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_axe"
+    },
+    "/": {
+      "item": "scalar_utils:blazing_end_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:necronite_axe",
+    "count": 1
+  }
+}

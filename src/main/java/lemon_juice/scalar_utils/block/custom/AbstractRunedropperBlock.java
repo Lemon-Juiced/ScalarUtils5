@@ -27,7 +27,6 @@ public class AbstractRunedropperBlock extends Block {
         if(entity.isSuppressingBounce()){
             super.fallOn(level, state, pos, entity, fallDistance);
         } else {
-            // For all I know this could not work, but it seems to work to me (1.19.4 port)
             entity.causeFallDamage(fallDistance-blocks, 1.0F, entity.damageSources().fall());
         }
     }

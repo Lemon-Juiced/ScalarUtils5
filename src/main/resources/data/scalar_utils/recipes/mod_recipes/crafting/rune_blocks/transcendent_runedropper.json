@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "RBR",
+    "#A#"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:runic_plate"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "scalar_utils:ultimate_runedropper"
+    },
+    "R": {
+      "item": "scalar_utils:necronite_ingot"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:transcendent_runedropper",
+    "count": 1
+  }
+}

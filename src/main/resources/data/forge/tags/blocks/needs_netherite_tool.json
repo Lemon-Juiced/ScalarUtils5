@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "scalar_utils:necronite_block",
+    "scalar_utils:ultimate_runebooster",
+    "scalar_utils:transcendent_runebooster",
+    "scalar_utils:ultimate_runedropper",
+    "scalar_utils:transcendent_runedropper"
+  ]
+}

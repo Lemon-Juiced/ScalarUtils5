@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_runic_plate",
+  "criteria": {
+    "runic_angel_ring": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_angel_ring"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_runic_angel_ring.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:runic_angel_ring"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_runic_angel_ring.title"
+    }
+  },
+  "requirements": [
+    [
+      "runic_angel_ring"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

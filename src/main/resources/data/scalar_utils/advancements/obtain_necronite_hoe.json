@@ -1,0 +1,41 @@
+{
+  "parent": "scalar_utils:obtain_necronite_ingot",
+  "criteria": {
+    "necronite_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:necronite_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_necronite_hoe.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:necronite_hoe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_necronite_hoe.title"
+    }
+  },
+  "requirements": [
+    [
+      "necronite_hoe"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

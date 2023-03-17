@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "scalar_utils:necronite_ingot"
+    },
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_necronite_ingot.title"
+    },
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_necronite_ingot.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "scalar_utils:scalar_utils",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:necronite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

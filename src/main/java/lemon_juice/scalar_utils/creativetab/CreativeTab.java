@@ -37,18 +37,22 @@ public class CreativeTab {
                 .displayItems((features, output) -> {
                     output.accept(new ItemStack(ModBlocks.CLEAR_GLASS.get()));
                     output.accept(new ItemStack(ModBlocks.CLEAR_GLASS_PANE.get()));
+                    output.accept(new ItemStack(ModBlocks.NECRONITE_BLOCK.get()));
                     output.accept(new ItemStack(ModBlocks.REINFORCED_GLASS.get()));
+                    output.accept(new ItemStack(ModBlocks.REINFORCED_GLASS_PANE.get()));
                     output.accept(new ItemStack(ModBlocks.REINFORCED_OBSIDIAN.get()));
 
                     output.accept(new ItemStack(ModBlocks.BASIC_RUNEBOOSTER.get()));
                     output.accept(new ItemStack(ModBlocks.ADVANCED_RUNEBOOSTER.get()));
                     output.accept(new ItemStack(ModBlocks.ELITE_RUNEBOOSTER.get()));
                     output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEBOOSTER.get()));
+                    output.accept(new ItemStack(ModBlocks.TRANSCENDENT_RUNEBOOSTER.get()));
 
                     output.accept(new ItemStack(ModBlocks.BASIC_RUNEDROPPER.get()));
                     output.accept(new ItemStack(ModBlocks.ADVANCED_RUNEDROPPER.get()));
                     output.accept(new ItemStack(ModBlocks.ELITE_RUNEDROPPER.get()));
                     output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEDROPPER.get()));
+                    output.accept(new ItemStack(ModBlocks.TRANSCENDENT_RUNEDROPPER.get()));
 
                     output.accept(new ItemStack(ModItems.STONE_TORCH.get()));
                 }));
@@ -56,16 +60,19 @@ public class CreativeTab {
         // Items Tab
         event.registerCreativeModeTab(SCALAR_UTILS_ITEMS_TAB, builder -> builder
                 .title(Component.translatable("itemGroup.scalar_utils_items"))
-                .icon(() -> new ItemStack(ModItems.TINY_COAL.get()))
+                .icon(() -> new ItemStack(ModItems.NECRONITE_INGOT.get()))
                 .displayItems((features, output) -> {
-                    output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));
-                    output.accept(new ItemStack(ModItems.TINY_COAL.get()));
+                    output.accept(new ItemStack(ModItems.BLAZING_END_ROD.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_INGOT.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_NUGGET.get()));
                     output.accept(new ItemStack(ModItems.GELATIN.get()));
                     output.accept(new ItemStack(ModItems.RICE_SLIME_BALL.get()));
                     output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
                     output.accept(new ItemStack(ModItems.RING.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
                     output.accept(new ItemStack(ModItems.STONE_ROD.get()));
+                    output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));
+                    output.accept(new ItemStack(ModItems.TINY_COAL.get()));
                 }));
 
         // Lamps Tab
@@ -103,12 +110,24 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
 
+                    output.accept(new ItemStack(ModItems.NECRONITE_SWORD.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_SHOVEL.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_PICKAXE.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_AXE.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_HOE.get()));
+
+                    output.accept(new ItemStack(ModItems.NECRONITE_HELMET.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_CHESTPLATE.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_LEGGINGS.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_BOOTS.get()));
+
                     output.accept(new ItemStack(ModItems.WOODEN_TUNNELER.get()));
                     output.accept(new ItemStack(ModItems.STONE_TUNNELER.get()));
                     output.accept(new ItemStack(ModItems.IRON_TUNNELER.get()));
                     output.accept(new ItemStack(ModItems.GOLDEN_TUNNELER.get()));
                     output.accept(new ItemStack(ModItems.DIAMOND_TUNNELER.get()));
                     output.accept(new ItemStack(ModItems.NETHERITE_TUNNELER.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_TUNNELER.get()));
                 }));
     }
 }

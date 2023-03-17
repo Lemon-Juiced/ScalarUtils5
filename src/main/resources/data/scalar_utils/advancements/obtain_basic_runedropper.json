@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_runic_plate",
+  "criteria": {
+    "basic_runedropper": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:basic_runedropper"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_basic_runedropper.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:basic_runedropper"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_basic_runedropper.title"
+    }
+  },
+  "requirements": [
+    [
+      "basic_runedropper"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

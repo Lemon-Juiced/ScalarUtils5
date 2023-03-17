@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_basic_runedropper",
+  "criteria": {
+    "advanced_runedropper": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:advanced_runedropper"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_advanced_runedropper.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:advanced_runedropper"
+    },
+    "show_toast": true,
+  "title": {
+    "translate": "advancements.scalar_utils.obtain_advanced_runedropper.title"
+  }
+},
+  "requirements": [
+    [
+      "advanced_runedropper"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

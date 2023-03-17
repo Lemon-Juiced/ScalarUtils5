@@ -4,8 +4,6 @@
     "scalar_utils:reinforced_glass",
     "scalar_utils:reinforced_obsidian",
     "scalar_utils:elite_runebooster",
-    "scalar_utils:ultimate_runebooster",
-    "scalar_utils:elite_runedropper",
-    "scalar_utils:ultimate_runedropper"
+    "scalar_utils:elite_runedropper"
   ]
 }

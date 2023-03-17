@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_runic_plate",
+  "criteria": {
+    "basic_runebooster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:basic_runebooster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_basio_runebooster.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:basic_runebooster"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_basic_runebooster.title"
+    }
+  },
+  "requirements": [
+    [
+      "basic_runebooster"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

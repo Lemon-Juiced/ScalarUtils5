@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_wooden_tunneler",
+  "criteria": {
+    "stone_tunneler": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:stone_tunneler"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_stone_tunneler.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:stone_tunneler"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_stone_tunneler.title"
+    }
+  },
+  "requirements": [
+    [
+      "stone_tunneler"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

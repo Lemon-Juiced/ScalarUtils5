@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_netherite_tunneler",
+  "criteria": {
+    "necronite_tunneler": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:necronite_tunneler"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_necronite_tunneler.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:necronite_tunneler"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_necronite_tunneler.title"
+    }
+  },
+  "requirements": [
+    [
+      "necronite_tunneler"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

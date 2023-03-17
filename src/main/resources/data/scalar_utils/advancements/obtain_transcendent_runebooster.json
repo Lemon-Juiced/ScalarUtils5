@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_ultimate_runebooster",
+  "criteria": {
+    "transcendent_runebooster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:transcendent_runebooster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_transcendent_runebooster.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:transcendent_runebooster"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_transcendent_runebooster.title"
+    }
+  },
+  "requirements": [
+    [
+      "transcendent_runebooster"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

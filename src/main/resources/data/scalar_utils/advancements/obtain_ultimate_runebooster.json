@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_elite_runebooster",
+  "criteria": {
+    "ultimate_runebooster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:ultimate_runebooster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_ultimate_runebooster.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:ultimate_runebooster"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_ultimate_runebooster.title"
+    }
+  },
+  "requirements": [
+    [
+      "ultimate_runebooster"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

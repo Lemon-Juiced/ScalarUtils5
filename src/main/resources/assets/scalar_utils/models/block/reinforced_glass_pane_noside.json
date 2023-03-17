@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside",
+  "textures": {
+    "pane": "scalar_utils:block/reinforced_glass"
+  },
+  "render_type": "translucent"
+}

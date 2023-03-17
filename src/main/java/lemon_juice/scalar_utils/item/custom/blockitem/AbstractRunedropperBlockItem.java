@@ -22,7 +22,8 @@ public class AbstractRunedropperBlockItem extends BlockItem {
         if (blocks == 5) components.add(Component.translatable("basic_runedropper.tooltip"));
         else if (blocks == 10) components.add(Component.translatable("advanced_runedropper.tooltip"));
         else if (blocks == 15) components.add(Component.translatable("elite_runedropper.tooltip"));
-        else components.add(Component.translatable("ultimate_runedropper.tooltip"));
+        else if (blocks == 20) components.add(Component.translatable("ultimate_runedropper.tooltip"));
+        else components.add(Component.translatable("transcendent_runedropper.tooltip"));
 
         super.appendHoverText(stack, level, components, flag);
     }

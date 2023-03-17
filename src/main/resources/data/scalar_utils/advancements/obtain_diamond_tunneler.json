@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_iron_tunneler",
+  "criteria": {
+    "diamond_tunneler": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:diamond_tunneler"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_diamond_tunneler.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:diamond_tunneler"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_diamond_tunneler.title"
+    }
+  },
+  "requirements": [
+    [
+      "diamond_tunneler"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

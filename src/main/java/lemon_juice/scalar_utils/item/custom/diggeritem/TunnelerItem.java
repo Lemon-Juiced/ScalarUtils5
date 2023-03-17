@@ -2,13 +2,14 @@ package lemon_juice.scalar_utils.item.custom.diggeritem;
 
 import lemon_juice.scalar_utils.item.custom.diggeritem.util.DataTags;
 import lemon_juice.scalar_utils.item.custom.diggeritem.util.UtilShape;
+import lemon_juice.scalar_utils.item.custom.tiers.Tiers;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundBlockUpdatePacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.ClipContext;
@@ -41,20 +42,24 @@ public class TunnelerItem extends DiggerItem {
 
     @Override
     public int getMaxDamage(ItemStack stack) {
-        if(tier == Tiers.GOLD) return 128;
-        else if(tier == Tiers.WOOD) return 236;
-        else if(tier == Tiers.STONE) return 524;
-        else if(tier == Tiers.IRON) return 1_000;
-        else if(tier == Tiers.DIAMOND) return 6_244;
-        else if(tier == Tiers.NETHERITE) return 8_024;
+        if(tier == net.minecraft.world.item.Tiers.GOLD) return 128;
+        else if(tier == net.minecraft.world.item.Tiers.WOOD) return 236;
+        else if(tier == net.minecraft.world.item.Tiers.STONE) return 524;
+        else if(tier == net.minecraft.world.item.Tiers.IRON) return 1_000;
+        else if(tier == net.minecraft.world.item.Tiers.DIAMOND) return 6_244;
+        else if(tier == net.minecraft.world.item.Tiers.NETHERITE) return 8_024;
+        else if(tier == Tiers.NECRONITE) return -1;
         else return 128; //This case should never be reached
     }
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+        if(tier == Tiers.NECRONITE) components.add(Component.translatable("unbreakable.tooltip").withStyle(ChatFormatting.RED));
+
         if(radius == 1) components.add(Component.translatable("tunneler_r1.tooltip"));
         else if(radius == 2) components.add(Component.translatable("tunneler_r2.tooltip"));
-        else components.add(Component.translatable("tunneler_r3.tooltip"));
+        else if(radius == 3) components.add(Component.translatable("tunneler_r3.tooltip"));
+        else components.add(Component.translatable("tunneler_r4.tooltip"));
 
         super.appendHoverText(stack, level, components, flag);
     }
@@ -77,12 +82,8 @@ public class TunnelerItem extends DiggerItem {
 
             if (sideHit == Direction.UP || sideHit == Direction.DOWN) { //If UP/DOWN
                 shape = UtilShape.squareHorizontalHollow(pos, radius);
-                if (radius == 2) {
-                    shape.addAll(UtilShape.squareHorizontalHollow(pos, radius - 1));
-                }
-                if(radius == 3) {
-                    shape.addAll(UtilShape.squareHorizontalHollow(pos, radius - 1));
-                    shape.addAll(UtilShape.squareHorizontalHollow(pos, radius - 2));
+                for (int i = 1; i <= radius; i++) {
+                    shape.addAll(UtilShape.squareHorizontalHollow(pos, radius - i));
                 }
             } else if (sideHit == Direction.EAST || sideHit == Direction.WEST) { //If EAST/WEST
                 int y = 1 + radius + yOff;
@@ -133,11 +134,11 @@ public class TunnelerItem extends DiggerItem {
 
     @Override
     public float getDestroySpeed(ItemStack stack, BlockState state) {
-        if(tier == Tiers.WOOD) return Math.max(Items.WOODEN_PICKAXE.getDestroySpeed(stack, state), Items.WOODEN_SHOVEL.getDestroySpeed(stack, state));
-        else if(tier == Tiers.STONE) return Math.max(Items.STONE_PICKAXE.getDestroySpeed(stack, state), Items.STONE_SHOVEL.getDestroySpeed(stack, state));
-        else if(tier == Tiers.IRON) return Math.max(Items.IRON_PICKAXE.getDestroySpeed(stack, state), Items.IRON_SHOVEL.getDestroySpeed(stack, state));
-        else if(tier == Tiers.GOLD) return Math.max(Items.GOLDEN_PICKAXE.getDestroySpeed(stack, state), Items.GOLDEN_SHOVEL.getDestroySpeed(stack, state));
-        else if(tier == Tiers.DIAMOND) return Math.max(Items.DIAMOND_PICKAXE.getDestroySpeed(stack, state), Items.DIAMOND_SHOVEL.getDestroySpeed(stack, state));
+        if(tier == net.minecraft.world.item.Tiers.WOOD) return Math.max(Items.WOODEN_PICKAXE.getDestroySpeed(stack, state), Items.WOODEN_SHOVEL.getDestroySpeed(stack, state));
+        else if(tier == net.minecraft.world.item.Tiers.STONE) return Math.max(Items.STONE_PICKAXE.getDestroySpeed(stack, state), Items.STONE_SHOVEL.getDestroySpeed(stack, state));
+        else if(tier == net.minecraft.world.item.Tiers.IRON) return Math.max(Items.IRON_PICKAXE.getDestroySpeed(stack, state), Items.IRON_SHOVEL.getDestroySpeed(stack, state));
+        else if(tier == net.minecraft.world.item.Tiers.GOLD) return Math.max(Items.GOLDEN_PICKAXE.getDestroySpeed(stack, state), Items.GOLDEN_SHOVEL.getDestroySpeed(stack, state));
+        else if(tier == net.minecraft.world.item.Tiers.DIAMOND) return Math.max(Items.DIAMOND_PICKAXE.getDestroySpeed(stack, state), Items.DIAMOND_SHOVEL.getDestroySpeed(stack, state));
         else return Math.max(Items.NETHERITE_PICKAXE.getDestroySpeed(stack, state), Items.NETHERITE_SHOVEL.getDestroySpeed(stack, state));
     }
 }
