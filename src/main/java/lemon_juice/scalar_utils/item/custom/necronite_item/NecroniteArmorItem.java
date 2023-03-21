@@ -25,4 +25,9 @@ public class NecroniteArmorItem extends ArmorItem {
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
         components.add(Component.translatable("unbreakable.tooltip").withStyle(ChatFormatting.RED));
     }
+
+    @Override
+    public boolean isFireResistant() {
+        return true;
+    }
 }

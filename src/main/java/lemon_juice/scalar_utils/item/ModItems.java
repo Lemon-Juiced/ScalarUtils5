@@ -88,7 +88,7 @@ public class ModItems {
     public static final RegistryObject<Item> GOLDEN_TUNNELER = ITEMS.register("golden_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.GOLD, new Item.Properties(), 1));
     public static final RegistryObject<Item> DIAMOND_TUNNELER = ITEMS.register("diamond_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.DIAMOND, new Item.Properties(), 2));
     public static final RegistryObject<Item> NETHERITE_TUNNELER = ITEMS.register("netherite_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.NETHERITE, new Item.Properties(), 3));
-    public static final RegistryObject<Item> NECRONITE_TUNNELER = ITEMS.register("necronite_tunneler", () -> new TunnelerItem(Tiers.NECRONITE, new Item.Properties(), 4));
+    public static final RegistryObject<Item> NECRONITE_TUNNELER = ITEMS.register("necronite_tunneler", () -> new NecroniteTunnelerItem(Tiers.NECRONITE, new Item.Properties(), 4));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
