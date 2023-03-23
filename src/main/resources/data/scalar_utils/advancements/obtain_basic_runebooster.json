@@ -17,7 +17,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.scalar_utils.obtain_basio_runebooster.description"
+      "translate": "advancements.scalar_utils.obtain_basic_runebooster.description"
     },
     "frame": "task",
     "hidden": false,
