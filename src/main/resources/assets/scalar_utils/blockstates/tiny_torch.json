@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "scalar_utils:block/tiny_torch"
+    }
+  }
+}

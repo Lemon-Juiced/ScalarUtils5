@@ -55,6 +55,7 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModBlocks.TRANSCENDENT_RUNEDROPPER.get()));
 
                     output.accept(new ItemStack(ModItems.STONE_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.TINY_TORCH.get()));
                 }));
 
         // Items Tab

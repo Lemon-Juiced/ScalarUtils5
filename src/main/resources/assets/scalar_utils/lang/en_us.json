@@ -118,6 +118,8 @@
 
   "block.scalar_utils.stone_torch": "Stone Torch",
   "block.scalar_utils.stone_wall_torch": "Stone Torch",
+  "block.scalar_utils.tiny_torch": "Tiny Torch",
+  "block.scalar_utils.tiny_wall_torch": "Tiny Torch",
 
   "advancements.scalar_utils.necronite_armor.title": "Cover Me in Deaths",
   "advancements.scalar_utils.necronite_armor.description": "Get a full suit of Necronite armor",

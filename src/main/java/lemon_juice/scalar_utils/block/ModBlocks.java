@@ -3,9 +3,7 @@ package lemon_juice.scalar_utils.block;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.crop.FlaxCropBlock;
 import lemon_juice.scalar_utils.block.crop.RiceCropBlock;
-import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
-import lemon_juice.scalar_utils.block.custom.AbstractRuneboosterBlock;
-import lemon_juice.scalar_utils.block.custom.AbstractRunedropperBlock;
+import lemon_juice.scalar_utils.block.custom.*;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRuneboosterBlockItem;
 import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRunedropperBlockItem;
@@ -81,7 +79,15 @@ public class ModBlocks {
     }).sound(SoundType.WOOD), ParticleTypes.FLAME));
     public static final RegistryObject<Block> STONE_WALL_TORCH = registerBlockWithoutBlockItem("stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
         return 14;
-    }).sound(SoundType.WOOD), ParticleTypes.FLAME)); //Omits dropsLike method from Minecraft's WALL_TORCH (Fixed by Loot Table?)
+    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
+
+    // Tiny Torch
+    public static final RegistryObject<Block> TINY_TORCH = registerBlockWithoutBlockItem("tiny_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
+        return 12;
+    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> TINY_WALL_TORCH = registerBlockWithoutBlockItem("tiny_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
+        return 12;
+    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     /**************************** Specific Registry ****************************/
     private static <T extends Block> RegistryObject<T> registerRuneboosterBlock(String name, Supplier<T> block, int seconds) {

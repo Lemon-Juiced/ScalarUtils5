@@ -78,8 +78,9 @@ public class ModItems {
     // Stone Rod
     public static final RegistryObject<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
 
-    // Stone Torch BlockItem
+    // Torch BlockItems
     public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_TORCH.get(), ModBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     // Tunnelers
     public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.WOOD, new Item.Properties(), 1));
