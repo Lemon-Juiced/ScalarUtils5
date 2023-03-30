@@ -11,10 +11,10 @@ import net.minecraftforge.event.CreativeModeTabEvent;
 public class CreativeTab {
 
     public static ResourceLocation SCALAR_UTILS_AGRICULTURE_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_agriculture");
+    public static ResourceLocation SCALAR_UTILS_ARSENAL_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_arsenal");
     public static ResourceLocation SCALAR_UTILS_BLOCKS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_blocks");
     public static ResourceLocation SCALAR_UTILS_ITEMS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_items");
     public static ResourceLocation SCALAR_UTILS_LIGHTING_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_lighting");
-    public static ResourceLocation SCALAR_UTILS_TOOLS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_tools");
 
     public static void registerTabs(CreativeModeTabEvent.Register event){
         // Agriculture Tab
@@ -27,6 +27,38 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModItems.FLAX_SEEDS.get()));
                     output.accept(new ItemStack(ModItems.POTATO_SEEDS.get()));
                     output.accept(new ItemStack(ModItems.RICE.get()));
+                }));
+
+        // Arsenal Tab
+        event.registerCreativeModeTab(SCALAR_UTILS_ARSENAL_TAB, builder -> builder
+                .title(Component.translatable("itemGroup.scalar_utils_arsenal"))
+                .icon(() -> new ItemStack(ModItems.RUNIC_ANGEL_RING.get()))
+                .displayItems((features, output) -> {
+                    output.accept(new ItemStack(ModItems.GLASS_CUTTER.get()));
+                    output.accept(new ItemStack(ModItems.RUNECARVING_KNIFE.get()));
+
+                    output.accept(new ItemStack(ModItems.RUNIC_ANGEL_RING.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
+
+                    output.accept(new ItemStack(ModItems.NECRONITE_SWORD.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_SHOVEL.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_PICKAXE.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_AXE.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_HOE.get()));
+
+                    output.accept(new ItemStack(ModItems.NECRONITE_HELMET.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_CHESTPLATE.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_LEGGINGS.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_BOOTS.get()));
+
+                    output.accept(new ItemStack(ModItems.WOODEN_TUNNELER.get()));
+                    output.accept(new ItemStack(ModItems.STONE_TUNNELER.get()));
+                    output.accept(new ItemStack(ModItems.IRON_TUNNELER.get()));
+                    output.accept(new ItemStack(ModItems.GOLDEN_TUNNELER.get()));
+                    output.accept(new ItemStack(ModItems.DIAMOND_TUNNELER.get()));
+                    output.accept(new ItemStack(ModItems.NETHERITE_TUNNELER.get()));
+                    output.accept(new ItemStack(ModItems.NECRONITE_TUNNELER.get()));
                 }));
 
         // Blocks Tab
@@ -104,38 +136,6 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModItems.TINY_REDSTONE_STONE_TORCH.get()));
                     output.accept(new ItemStack(ModItems.TINY_SOUL_TORCH.get()));
                     output.accept(new ItemStack(ModItems.TINY_SOUL_STONE_TORCH.get()));
-                }));
-
-        // Tools Tab
-        event.registerCreativeModeTab(SCALAR_UTILS_TOOLS_TAB, builder -> builder
-                .title(Component.translatable("itemGroup.scalar_utils_tools"))
-                .icon(() -> new ItemStack(ModItems.RUNIC_ANGEL_RING.get()))
-                .displayItems((features, output) -> {
-                    output.accept(new ItemStack(ModItems.GLASS_CUTTER.get()));
-                    output.accept(new ItemStack(ModItems.RUNECARVING_KNIFE.get()));
-
-                    output.accept(new ItemStack(ModItems.RUNIC_ANGEL_RING.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
-
-                    output.accept(new ItemStack(ModItems.NECRONITE_SWORD.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_SHOVEL.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_PICKAXE.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_AXE.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_HOE.get()));
-
-                    output.accept(new ItemStack(ModItems.NECRONITE_HELMET.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_CHESTPLATE.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_LEGGINGS.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_BOOTS.get()));
-
-                    output.accept(new ItemStack(ModItems.WOODEN_TUNNELER.get()));
-                    output.accept(new ItemStack(ModItems.STONE_TUNNELER.get()));
-                    output.accept(new ItemStack(ModItems.IRON_TUNNELER.get()));
-                    output.accept(new ItemStack(ModItems.GOLDEN_TUNNELER.get()));
-                    output.accept(new ItemStack(ModItems.DIAMOND_TUNNELER.get()));
-                    output.accept(new ItemStack(ModItems.NETHERITE_TUNNELER.get()));
-                    output.accept(new ItemStack(ModItems.NECRONITE_TUNNELER.get()));
                 }));
     }
 }

@@ -184,8 +184,8 @@
   "curios.identifier.rune": "Rune",
 
   "itemGroup.scalar_utils_agriculture": "Scalar Utils 5: Agriculture",
+  "itemGroup.scalar_utils_arsenal": "Scalar Utils 5: Arsenal",
   "itemGroup.scalar_utils_blocks": "Scalar Utils 5: Blocks",
   "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
-  "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting",
-  "itemGroup.scalar_utils_tools": "Scalar Utils 5: Tools"
+  "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting"
 }
