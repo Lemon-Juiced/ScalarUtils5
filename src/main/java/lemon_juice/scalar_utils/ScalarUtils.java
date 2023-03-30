@@ -45,11 +45,13 @@ public class ScalarUtils {
 
     //InterModQueue For Curios
     private void enqueueIMC(InterModEnqueueEvent event) {
-        // Adds A "RING" Slot
-        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.RING.getMessageBuilder().build());
-        // Creates Two "rune" Slots
-        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("rune").size(2).icon(new ResourceLocation(ScalarUtils.MOD_ID, "slot/empty_rune_slot")).build());
-    }
+        // Adds 2 "RING" Slots
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.RING.getMessageBuilder().size(2).build());
+        // Creates 1 "gloves" Slots
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("gloves").icon(new ResourceLocation(ScalarUtils.MOD_ID, "slot/empty_gloves_slot")).build());
+        // Creates 1 "pendant" Slots
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("pendant").icon(new ResourceLocation(ScalarUtils.MOD_ID, "slot/empty_pendant_slot")).build());
+}
 
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

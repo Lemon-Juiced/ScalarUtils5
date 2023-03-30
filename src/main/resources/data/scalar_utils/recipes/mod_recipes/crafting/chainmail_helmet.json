@@ -1,17 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " g ",
-    "g g",
-    " g "
+    "###",
+    "# #"
   ],
   "key": {
-    "g": {
-      "item": "minecraft:gold_ingot"
+    "#": {
+      "item": "scalar_utils:chainmail"
     }
   },
   "result": {
-    "item": "scalar_utils:ring",
+    "item": "minecraft:chainmail_helmet",
     "count": 1
   }
 }

@@ -1,17 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " g ",
-    "g g",
-    " g "
+    " s ",
+    "s s",
+    "ggg"
   ],
   "key": {
     "g": {
       "item": "minecraft:gold_ingot"
+    },
+    "s": {
+      "item": "minecraft:string"
     }
   },
   "result": {
-    "item": "scalar_utils:ring",
+    "item": "scalar_utils:pendant",
     "count": 1
   }
 }

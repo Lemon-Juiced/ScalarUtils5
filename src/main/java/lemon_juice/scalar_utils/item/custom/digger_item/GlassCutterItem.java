@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.diggeritem;
+package lemon_juice.scalar_utils.item.custom.digger_item;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

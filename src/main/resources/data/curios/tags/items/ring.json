@@ -1,6 +1,10 @@
 {
   "replace": "false",
   "values": [
-    "scalar_utils:runic_angel_ring"
+    "scalar_utils:runic_angel_ring",
+    "scalar_utils:runic_ring_of_healing",
+    "scalar_utils:runic_ring_of_speed",
+    "scalar_utils:runic_ring_of_strength",
+    "scalar_utils:runic_ring_of_wisdom"
   ]
 }

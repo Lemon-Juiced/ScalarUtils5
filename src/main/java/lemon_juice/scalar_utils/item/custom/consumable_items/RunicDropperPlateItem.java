@@ -1,7 +1,6 @@
-package lemon_juice.scalar_utils.item.custom.curiositem;
+package lemon_juice.scalar_utils.item.custom.consumable_items;
 
 import lemon_juice.scalar_utils.item.ModItems;
-import net.minecraft.client.gui.screens.social.PlayerEntry;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -10,7 +9,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -29,11 +28,10 @@ import top.theillusivec4.curios.api.type.capability.ICurio;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import java.util.List;
-import java.util.Objects;
 
-public class RunicBoosterPlateItem extends Item implements ICurioItem {
+public class RunicDropperPlateItem extends Item {
 
-    public RunicBoosterPlateItem(Properties properties) {
+    public RunicDropperPlateItem(Properties properties) {
         super(properties);
     }
 
@@ -45,7 +43,8 @@ public class RunicBoosterPlateItem extends Item implements ICurioItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if(!level.isClientSide() && (hand == InteractionHand.MAIN_HAND || hand == InteractionHand.OFF_HAND)){
-            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 20));
+            player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100));
+            player.setItemInHand(hand, ItemStack.EMPTY);
         }
 
         return super.use(level, player, hand);
@@ -53,21 +52,7 @@ public class RunicBoosterPlateItem extends Item implements ICurioItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("runic_booster_plate.tooltip"));
+        components.add(Component.translatable("runic_dropper_plate.tooltip"));
     }
 
-    // Curios Integration
-    @Override
-    public void curioTick(SlotContext slotContext, ItemStack stack) {
-        if(slotContext.getWearer() instanceof Player player){
-            if(!player.level.isClientSide()){
-                boolean playerHasJumpBoost = player.hasEffect(MobEffect.byId(8));
-
-                if(!playerHasJumpBoost){
-                    player.addEffect(new MobEffectInstance(MobEffects.JUMP, 200));
-                }
-            }
-        }
-        ICurioItem.super.curioTick(slotContext, stack);
-    }
 }

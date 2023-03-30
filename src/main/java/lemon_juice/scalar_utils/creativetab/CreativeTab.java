@@ -41,6 +41,22 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
 
+                    output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_HEALING.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_HEALING.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_HEALING.get()));
+
+                    output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_SPEED.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_SPEED.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_SPEED.get()));
+
+                    output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_STRENGTH.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_STRENGTH.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_STRENGTH.get()));
+
+                    output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_WISDOM.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_WISDOM.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_WISDOM.get()));
+
                     output.accept(new ItemStack(ModItems.NECRONITE_SWORD.get()));
                     output.accept(new ItemStack(ModItems.NECRONITE_SHOVEL.get()));
                     output.accept(new ItemStack(ModItems.NECRONITE_PICKAXE.get()));
@@ -91,13 +107,16 @@ public class CreativeTab {
                 .title(Component.translatable("itemGroup.scalar_utils_items"))
                 .icon(() -> new ItemStack(ModItems.NECRONITE_INGOT.get()))
                 .displayItems((features, output) -> {
+                    output.accept(new ItemStack(ModItems.CHAINMAIL.get()));
                     output.accept(new ItemStack(ModItems.BLAZING_END_ROD.get()));
+                    output.accept(new ItemStack(ModItems.GLOVES.get()));
+                    output.accept(new ItemStack(ModItems.PENDANT.get()));
+                    output.accept(new ItemStack(ModItems.RING.get()));
                     output.accept(new ItemStack(ModItems.NECRONITE_INGOT.get()));
                     output.accept(new ItemStack(ModItems.NECRONITE_NUGGET.get()));
                     output.accept(new ItemStack(ModItems.GELATIN.get()));
                     output.accept(new ItemStack(ModItems.RICE_SLIME_BALL.get()));
                     output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
-                    output.accept(new ItemStack(ModItems.RING.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
                     output.accept(new ItemStack(ModItems.STONE_ROD.get()));
                     output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));

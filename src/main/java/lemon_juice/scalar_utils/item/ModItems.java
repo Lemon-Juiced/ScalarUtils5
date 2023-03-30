@@ -3,11 +3,11 @@ package lemon_juice.scalar_utils.item;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.custom.*;
-import lemon_juice.scalar_utils.item.custom.curiositem.RunicAngelRingItem;
-import lemon_juice.scalar_utils.item.custom.curiositem.RunicBoosterPlateItem;
-import lemon_juice.scalar_utils.item.custom.curiositem.RunicDropperPlateItem;
-import lemon_juice.scalar_utils.item.custom.diggeritem.GlassCutterItem;
-import lemon_juice.scalar_utils.item.custom.diggeritem.TunnelerItem;
+import lemon_juice.scalar_utils.item.custom.consumable_items.RunicBoosterPlateItem;
+import lemon_juice.scalar_utils.item.custom.consumable_items.RunicDropperPlateItem;
+import lemon_juice.scalar_utils.item.custom.curiositem.*;
+import lemon_juice.scalar_utils.item.custom.digger_item.GlassCutterItem;
+import lemon_juice.scalar_utils.item.custom.digger_item.TunnelerItem;
 import lemon_juice.scalar_utils.item.custom.necronite_item.*;
 import lemon_juice.scalar_utils.item.custom.tiers.Tiers;
 import net.minecraft.core.Direction;
@@ -22,18 +22,22 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ScalarUtils.MOD_ID);
 
-    // Abstract Tiny Coals
-    public static final RegistryObject<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal", () -> new AbstractTinyCoalItem(new Item.Properties()));
-    public static final RegistryObject<Item> TINY_COAL = ITEMS.register("tiny_coal", () -> new AbstractTinyCoalItem(new Item.Properties()));
-
     // Blazing End Rod
     public static final RegistryObject<Item> BLAZING_END_ROD = ITEMS.register("blazing_end_rod", () -> new Item(new Item.Properties()));
+
+    // Chainmail
+    public static final RegistryObject<Item> CHAINMAIL = ITEMS.register("chainmail", () -> new Item(new Item.Properties()));
 
     // Flour
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new FlourItem(new Item.Properties()));
 
     // Glass Cutter
     public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(new Item.Properties()));
+
+    // Jewelry
+    public static final RegistryObject<Item> GLOVES = ITEMS.register("gloves", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PENDANT = ITEMS.register("pendant", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RING = ITEMS.register("ring", () -> new Item(new Item.Properties()));
 
     // Necronite
     public static final RegistryObject<Item> NECRONITE_INGOT = ITEMS.register("necronite_ingot", () -> new Item(new Item.Properties()));
@@ -50,14 +54,25 @@ public class ModItems {
     public static final RegistryObject<Item> NECRONITE_LEGGINGS = ITEMS.register("necronite_leggings", () -> new NecroniteArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> NECRONITE_BOOTS = ITEMS.register("necronite_boots", () -> new NecroniteArmorItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    // Ring
-    public static final RegistryObject<Item> RING = ITEMS.register("ring", () -> new Item(new Item.Properties()));
-
     // Rune Carving Knife
     public static final RegistryObject<Item> RUNECARVING_KNIFE = ITEMS.register("runecarving_knife", () -> new RuneCarvingKnifeItem(new Item.Properties()));
 
-    // Runic Angel Ring
+    /* Runic Jewelries*/
+    // Special Items
     public static final RegistryObject<Item> RUNIC_ANGEL_RING = ITEMS.register("runic_angel_ring", () -> new RunicAngelRingItem(new Item.Properties()));
+    // Basic Items
+    public static final RegistryObject<Item> RUNIC_GLOVES_OF_HEALING = ITEMS.register("runic_gloves_of_healing", () -> new AbstractHealingCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_PENDANT_OF_HEALING = ITEMS.register("runic_pendant_of_healing", () -> new AbstractHealingCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_RING_OF_HEALING = ITEMS.register("runic_ring_of_healing", () -> new AbstractHealingCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_GLOVES_OF_SPEED = ITEMS.register("runic_gloves_of_speed", () -> new AbstractSpeedCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_PENDANT_OF_SPEED = ITEMS.register("runic_pendant_of_speed", () -> new AbstractSpeedCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_RING_OF_SPEED = ITEMS.register("runic_ring_of_speed", () -> new AbstractSpeedCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_GLOVES_OF_STRENGTH = ITEMS.register("runic_gloves_of_strength", () -> new AbstractStrengthCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_PENDANT_OF_STRENGTH = ITEMS.register("runic_pendant_of_strength", () -> new AbstractStrengthCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_RING_OF_STRENGTH = ITEMS.register("runic_ring_of_strength", () -> new AbstractStrengthCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_GLOVES_OF_WISDOM = ITEMS.register("runic_gloves_of_wisdom", () -> new AbstractWisdomCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_PENDANT_OF_WISDOM = ITEMS.register("runic_pendant_of_wisdom", () -> new AbstractWisdomCurioItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_RING_OF_WISDOM = ITEMS.register("runic_ring_of_wisdom", () -> new AbstractWisdomCurioItem(new Item.Properties()));
 
     // Runic Plates
     public static final RegistryObject<Item> RUNIC_PLATE = ITEMS.register("runic_plate", () -> new Item(new Item.Properties()));
@@ -77,6 +92,10 @@ public class ModItems {
 
     // Stone Rod
     public static final RegistryObject<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
+
+    // Tiny Coals
+    public static final RegistryObject<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal", () -> new AbstractTinyCoalItem(new Item.Properties()));
+    public static final RegistryObject<Item> TINY_COAL = ITEMS.register("tiny_coal", () -> new AbstractTinyCoalItem(new Item.Properties()));
 
     // Torch BlockItems
     public static final RegistryObject<Item> REDSTONE_STONE_TORCH = ITEMS.register("redstone_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.REDSTONE_STONE_TORCH.get(), ModBlocks.REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));

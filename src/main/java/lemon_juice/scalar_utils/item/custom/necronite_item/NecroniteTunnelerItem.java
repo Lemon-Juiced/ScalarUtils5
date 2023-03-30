@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.item.custom.necronite_item;
 
-import lemon_juice.scalar_utils.item.custom.diggeritem.TunnelerItem;
+import lemon_juice.scalar_utils.item.custom.digger_item.TunnelerItem;
 import net.minecraft.world.item.Tier;
 
 public class NecroniteTunnelerItem extends TunnelerItem {

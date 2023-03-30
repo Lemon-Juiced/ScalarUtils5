@@ -4,7 +4,13 @@
 
   "item.scalar_utils.blazing_end_rod": "Blazing End Rod",
 
+  "item.scalar_utils.chainmail": "Chainmail",
+
   "item.scalar_utils.flour": "Flour",
+
+  "item.scalar_utils.gloves": "Gloves",
+  "item.scalar_utils.pendant": "Pendant",
+  "item.scalar_utils.ring": "Ring",
 
   "item.scalar_utils.gelatin": "Gelatin",
   "item.scalar_utils.rice_slime_ball": "Rice Slimeball",
@@ -16,8 +22,6 @@
   "item.scalar_utils.flax_seeds": "Flax Seeds",
   "item.scalar_utils.potato_seeds": "Potato Seeds",
   "item.scalar_utils.rice": "Rice",
-
-  "item.scalar_utils.ring": "Ring",
 
   "item.scalar_utils.necronite_ingot": "Necronite Ingot",
   "item.scalar_utils.necronite_nugget": "Necronite Nugget",
@@ -34,6 +38,27 @@
   "item.scalar_utils.runecarving_knife": "Rune Carving Knife",
 
   "item.scalar_utils.runic_angel_ring": "Runic Angel Ring",
+
+  "item.scalar_utils.runic_gloves_of_healing": "Runic Gloves of Healing",
+  "item.scalar_utils.runic_pendant_of_healing": "Runic Pendant of Healing",
+  "item.scalar_utils.runic_ring_of_healing": "Runic Ring of Healing",
+
+  "item.scalar_utils.runic_gloves_of_speed": "Runic Gloves of Speed",
+  "item.scalar_utils.runic_pendant_of_speed": "Runic Pendant of Speed",
+  "item.scalar_utils.runic_ring_of_speed": "Runic Ring of Speed",
+
+  "item.scalar_utils.runic_gloves_of_strength": "Runic Gloves of Strength",
+  "item.scalar_utils.runic_pendant_of_strength": "Runic Pendant of Strength",
+  "item.scalar_utils.runic_ring_of_strength": "Runic Ring of Strength",
+
+  "item.scalar_utils.runic_gloves_of_wisdom": "Runic Gloves of Wisdom",
+  "item.scalar_utils.runic_pendant_of_wisdom": "Runic Pendant of Wisdom",
+  "item.scalar_utils.runic_ring_of_wisdom": "Runic Ring of Wisdom",
+
+  "abstract_healing_curio.tooltip": "Grants the wearer regeneration.",
+  "abstract_speed_curio.tooltip": "Grants the wearer a speed boost.",
+  "abstract_strength_curio.tooltip": "Grants the wearer a strength boost.",
+  "abstract_wisdom_curio.tooltip": "Grants the wearer good favor with villagers.",
 
   "item.scalar_utils.runic_plate": "Runic Plate",
   "item.scalar_utils.runic_booster_plate": "Runic Booster Plate",
@@ -180,6 +205,9 @@
   "advancements.scalar_utils.scalar_utils.description": "Play Scalar Utils 5!",
 
   "wip.tooltip": "WIP",
+
+  "curios.identifier.gloves": "Gloves",
+  "curios.identifier.pendant": "Pendant",
 
   "curios.identifier.rune": "Rune",
 

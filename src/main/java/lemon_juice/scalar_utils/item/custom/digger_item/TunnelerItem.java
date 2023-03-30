@@ -1,7 +1,7 @@
-package lemon_juice.scalar_utils.item.custom.diggeritem;
+package lemon_juice.scalar_utils.item.custom.digger_item;
 
-import lemon_juice.scalar_utils.item.custom.diggeritem.util.DataTags;
-import lemon_juice.scalar_utils.item.custom.diggeritem.util.UtilShape;
+import lemon_juice.scalar_utils.item.custom.digger_item.util.DataTags;
+import lemon_juice.scalar_utils.item.custom.digger_item.util.UtilShape;
 import lemon_juice.scalar_utils.item.custom.tiers.Tiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
