@@ -37,24 +37,23 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModItems.GLASS_CUTTER.get()));
                     output.accept(new ItemStack(ModItems.RUNECARVING_KNIFE.get()));
 
-                    output.accept(new ItemStack(ModItems.RUNIC_ANGEL_RING.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
 
                     output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_HEALING.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_HEALING.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_HEALING.get()));
-
                     output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_SPEED.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_SPEED.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_SPEED.get()));
-
                     output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_STRENGTH.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_STRENGTH.get()));
-                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_STRENGTH.get()));
-
                     output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_WISDOM.get()));
+
+                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_HEALING.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_SPEED.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_STRENGTH.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_PENDANT_OF_WISDOM.get()));
+
+                    output.accept(new ItemStack(ModItems.RUNIC_ANGEL_RING.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_HEALING.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_SPEED.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_RING_OF_STRENGTH.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_RING_OF_WISDOM.get()));
 
                     output.accept(new ItemStack(ModItems.NECRONITE_SWORD.get()));
