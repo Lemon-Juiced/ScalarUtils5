@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.curiositem;
+package lemon_juice.scalar_utils.item.custom.curios_item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffect;
@@ -15,8 +15,8 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import java.util.List;
 
-public class AbstractHealingCurioItem extends Item implements ICurioItem {
-    public AbstractHealingCurioItem(Properties properties) {
+public class AbstractStrengthCurioItem extends Item implements ICurioItem {
+    public AbstractStrengthCurioItem(Properties properties) {
         super(properties);
     }
 
@@ -27,17 +27,17 @@ public class AbstractHealingCurioItem extends Item implements ICurioItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("abstract_regeneration_curio.tooltip"));
+        components.add(Component.translatable("abstract_strength_curio.tooltip"));
     }
 
     // Curios Integration
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         if(slotContext.getWearer() instanceof Player player){
             if(!player.level.isClientSide()){
-                boolean playerHasRegeneration = player.hasEffect(MobEffect.byId(10));
+                boolean playerHasStrength = player.hasEffect(MobEffect.byId(5));
 
-                if(!playerHasRegeneration){
-                    player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 200));
+                if(!playerHasStrength){
+                    player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200));
                 }
             }
         }

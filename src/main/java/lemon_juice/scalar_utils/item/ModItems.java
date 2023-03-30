@@ -4,7 +4,7 @@ import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.custom.*;
 import lemon_juice.scalar_utils.item.custom.consumable_items.*;
-import lemon_juice.scalar_utils.item.custom.curiositem.*;
+import lemon_juice.scalar_utils.item.custom.curios_item.*;
 import lemon_juice.scalar_utils.item.custom.digger_item.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom.digger_item.TunnelerItem;
 import lemon_juice.scalar_utils.item.custom.necronite_item.*;

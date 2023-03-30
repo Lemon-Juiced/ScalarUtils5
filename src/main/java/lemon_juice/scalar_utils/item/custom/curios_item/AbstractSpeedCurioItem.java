@@ -1,7 +1,5 @@
-package lemon_juice.scalar_utils.item.custom.curiositem;
+package lemon_juice.scalar_utils.item.custom.curios_item;
 
-import net.minecraft.core.Direction;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;

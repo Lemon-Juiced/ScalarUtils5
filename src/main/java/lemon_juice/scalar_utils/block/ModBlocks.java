@@ -9,9 +9,9 @@ import lemon_juice.scalar_utils.block.torches.TinyRedstoneWallTorchBlock;
 import lemon_juice.scalar_utils.block.torches.TinyTorchBlock;
 import lemon_juice.scalar_utils.block.torches.TinyWallTorchBlock;
 import lemon_juice.scalar_utils.item.ModItems;
-import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRuneboosterBlockItem;
-import lemon_juice.scalar_utils.item.custom.blockitem.AbstractRunedropperBlockItem;
-import lemon_juice.scalar_utils.item.custom.blockitem.FireproofBlockItem;
+import lemon_juice.scalar_utils.item.custom.block_item.AbstractRuneboosterBlockItem;
+import lemon_juice.scalar_utils.item.custom.block_item.AbstractRunedropperBlockItem;
+import lemon_juice.scalar_utils.item.custom.block_item.FireproofBlockItem;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -78,76 +78,40 @@ public class ModBlocks {
 
     /* Torches */
     // Redstone Stone Torch
-    public static final RegistryObject<Block> REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("redstone_stone_torch", () -> new RedstoneTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 7;
-    }).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> REDSTONE_STONE_WALL_TORCH = registerBlockWithoutBlockItem("redstone_stone_wall_torch", () -> new RedstoneWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 7;
-    }).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("redstone_stone_torch", () -> new RedstoneTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> REDSTONE_STONE_WALL_TORCH = registerBlockWithoutBlockItem("redstone_stone_wall_torch", () -> new RedstoneWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
 
     // Soul Stone Torch
-    public static final RegistryObject<Block> SOUL_STONE_TORCH = registerBlockWithoutBlockItem("soul_stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 10;
-    }).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
-    public static final RegistryObject<Block> SOUL_STONE_WALL_TORCH = registerBlockWithoutBlockItem("soul_stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 10;
-    }).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> SOUL_STONE_TORCH = registerBlockWithoutBlockItem("soul_stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 10;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> SOUL_STONE_WALL_TORCH = registerBlockWithoutBlockItem("soul_stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 10;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
 
     // Stone Torch
-    public static final RegistryObject<Block> STONE_TORCH = registerBlockWithoutBlockItem("stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 14;
-    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
-    public static final RegistryObject<Block> STONE_WALL_TORCH = registerBlockWithoutBlockItem("stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 14;
-    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> STONE_TORCH = registerBlockWithoutBlockItem("stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 14;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> STONE_WALL_TORCH = registerBlockWithoutBlockItem("stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 14;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     // Tiny Redstone Stone Torch
-    public static final RegistryObject<Block> TINY_REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("tiny_redstone_stone_torch", () -> new TinyRedstoneTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 5;
-    }).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> TINY_REDSTONE_STONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_redstone_stone_wall_torch", () -> new TinyRedstoneWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 5;
-    }).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TINY_REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("tiny_redstone_stone_torch", () -> new TinyRedstoneTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 5;}).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TINY_REDSTONE_STONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_redstone_stone_wall_torch", () -> new TinyRedstoneWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 5;}).sound(SoundType.WOOD)));
 
     // Tiny Redstone Torch
-    public static final RegistryObject<Block> TINY_REDSTONE_TORCH = registerBlockWithoutBlockItem("tiny_redstone_torch", () -> new TinyRedstoneTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 5;
-    }).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> TINY_REDSTONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_redstone_wall_torch", () -> new TinyRedstoneWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 5;
-    }).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TINY_REDSTONE_TORCH = registerBlockWithoutBlockItem("tiny_redstone_torch", () -> new TinyRedstoneTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 5;}).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> TINY_REDSTONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_redstone_wall_torch", () -> new TinyRedstoneWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 5;}).sound(SoundType.WOOD)));
 
     // Tiny Soul Stone Torch
-    public static final RegistryObject<Block> TINY_SOUL_STONE_TORCH = registerBlockWithoutBlockItem("tiny_soul_stone_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 8;
-    }).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
-    public static final RegistryObject<Block> TINY_SOUL_STONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_soul_stone_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 8;
-    }).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> TINY_SOUL_STONE_TORCH = registerBlockWithoutBlockItem("tiny_soul_stone_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 8;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> TINY_SOUL_STONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_soul_stone_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 8;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
 
     // Tiny Stone Torch
-    public static final RegistryObject<Block> TINY_STONE_TORCH = registerBlockWithoutBlockItem("tiny_stone_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 12;
-    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
-    public static final RegistryObject<Block> TINY_STONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_stone_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 12;
-    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> TINY_STONE_TORCH = registerBlockWithoutBlockItem("tiny_stone_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 12;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> TINY_STONE_WALL_TORCH = registerBlockWithoutBlockItem("tiny_stone_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 12;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     // Tiny Soul Torch
-    public static final RegistryObject<Block> TINY_SOUL_TORCH = registerBlockWithoutBlockItem("tiny_soul_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 8;
-    }).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
-    public static final RegistryObject<Block> TINY_SOUL_WALL_TORCH = registerBlockWithoutBlockItem("tiny_soul_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 8;
-    }).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> TINY_SOUL_TORCH = registerBlockWithoutBlockItem("tiny_soul_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 8;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> TINY_SOUL_WALL_TORCH = registerBlockWithoutBlockItem("tiny_soul_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 8;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
 
     // Tiny Torch
-    public static final RegistryObject<Block> TINY_TORCH = registerBlockWithoutBlockItem("tiny_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 12;
-    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
-    public static final RegistryObject<Block> TINY_WALL_TORCH = registerBlockWithoutBlockItem("tiny_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {
-        return 12;
-    }).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> TINY_TORCH = registerBlockWithoutBlockItem("tiny_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 12;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> TINY_WALL_TORCH = registerBlockWithoutBlockItem("tiny_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 12;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     /**************************** Specific Registry ****************************/
     private static <T extends Block> RegistryObject<T> registerRuneboosterBlock(String name, Supplier<T> block, int seconds) {
