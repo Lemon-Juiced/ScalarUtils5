@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.block.custom;
+package lemon_juice.scalar_utils.block.torches;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

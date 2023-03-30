@@ -79,7 +79,11 @@ public class ModItems {
     public static final RegistryObject<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
 
     // Torch BlockItems
+    public static final RegistryObject<Item> SOUL_STONE_TORCH = ITEMS.register("soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.SOUL_STONE_TORCH.get(), ModBlocks.SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_SOUL_STONE_TORCH = ITEMS.register("tiny_soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_SOUL_STONE_TORCH.get(), ModBlocks.TINY_SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_SOUL_TORCH = ITEMS.register("tiny_soul_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_SOUL_TORCH.get(), ModBlocks.TINY_SOUL_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_STONE_TORCH = ITEMS.register("tiny_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_STONE_TORCH.get(), ModBlocks.TINY_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_TORCH.get(), ModBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     // Tunnelers

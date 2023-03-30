@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_torch",
+  "textures": {
+    "torch": "scalar_utils:block/tiny_stone_torch"
+  },
+  "render_type": "cutout"
+}

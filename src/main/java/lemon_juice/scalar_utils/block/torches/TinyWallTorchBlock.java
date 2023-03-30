@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.block.custom;
+package lemon_juice.scalar_utils.block.torches;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;

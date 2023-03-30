@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "scalar_utils:tiny_coal"
+      },
+      {
+        "item": "scalar_utils:tiny_charcoal"
+      }
+    ],
+    "/": {
+      "item": "scalar_utils:stone_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:tiny_stone_torch",
+    "count": 2
+  }
+}

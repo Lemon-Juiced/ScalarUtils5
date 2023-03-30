@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/",
+    "S"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "scalar_utils:tiny_coal"
+      },
+      {
+        "item": "scalar_utils:tiny_charcoal"
+      }
+    ],
+    "/": {
+      "item": "scalar_utils:stone_rod"
+    },
+    "S": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:tiny_soul_stone_torch",
+    "count": 2
+  }
+}

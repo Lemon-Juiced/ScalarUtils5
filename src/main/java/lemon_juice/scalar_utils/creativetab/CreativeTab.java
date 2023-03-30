@@ -5,7 +5,6 @@ import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.CreativeModeTabEvent;
 
@@ -14,7 +13,7 @@ public class CreativeTab {
     public static ResourceLocation SCALAR_UTILS_AGRICULTURE_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_agriculture");
     public static ResourceLocation SCALAR_UTILS_BLOCKS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_blocks");
     public static ResourceLocation SCALAR_UTILS_ITEMS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_items");
-    public static ResourceLocation SCALAR_UTILS_LAMPS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_lamps");
+    public static ResourceLocation SCALAR_UTILS_LIGHTING_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_lighting");
     public static ResourceLocation SCALAR_UTILS_TOOLS_TAB = new ResourceLocation(ScalarUtils.MOD_ID, "scalar_utils_tools");
 
     public static void registerTabs(CreativeModeTabEvent.Register event){
@@ -53,9 +52,6 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModBlocks.ELITE_RUNEDROPPER.get()));
                     output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEDROPPER.get()));
                     output.accept(new ItemStack(ModBlocks.TRANSCENDENT_RUNEDROPPER.get()));
-
-                    output.accept(new ItemStack(ModItems.STONE_TORCH.get()));
-                    output.accept(new ItemStack(ModItems.TINY_TORCH.get()));
                 }));
 
         // Items Tab
@@ -76,9 +72,9 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModItems.TINY_COAL.get()));
                 }));
 
-        // Lamps Tab
-        event.registerCreativeModeTab(SCALAR_UTILS_LAMPS_TAB, builder -> builder
-                .title(Component.translatable("itemGroup.scalar_utils_lamps"))
+        // Lighting Tab
+        event.registerCreativeModeTab(SCALAR_UTILS_LIGHTING_TAB, builder -> builder
+                .title(Component.translatable("itemGroup.scalar_utils_lighting"))
                 .icon(() -> new ItemStack(ModBlocks.WHITE_LAMP.get()))
                 .displayItems((features, output) -> {
                     output.accept(new ItemStack(ModBlocks.WHITE_LAMP.get()));
@@ -97,6 +93,14 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModBlocks.PURPLE_LAMP.get()));
                     output.accept(new ItemStack(ModBlocks.MAGENTA_LAMP.get()));
                     output.accept(new ItemStack(ModBlocks.PINK_LAMP.get()));
+
+                    output.accept(new ItemStack(ModItems.STONE_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.SOUL_STONE_TORCH.get()));
+
+                    output.accept(new ItemStack(ModItems.TINY_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.TINY_STONE_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.TINY_SOUL_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.TINY_SOUL_STONE_TORCH.get()));
                 }));
 
         // Tools Tab

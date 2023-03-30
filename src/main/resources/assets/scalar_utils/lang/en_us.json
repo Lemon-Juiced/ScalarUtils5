@@ -42,6 +42,8 @@
   "item.scalar_utils.stone_rod": "Stone Rod",
 
   "item.scalar_utils.stone_torch": "Stone Torch",
+  "item.scalar_utils.tiny_stone_torch": "Tiny Stone Torch",
+  "item.scalar_utils.tiny_torch": "Tiny Torch",
 
   "item.scalar_utils.wooden_tunneler": "Wooden Tunneler",
   "item.scalar_utils.stone_tunneler": "Stone Tunneler",
@@ -116,8 +118,17 @@
   "ultimate_runedropper.tooltip": "Absorbs Twenty Extra Blocks of Fall Damage",
   "transcendent_runedropper.tooltip": "Absorbs One Thousand Extra Blocks of Fall Damage",
 
+  "block.scalar_utils.soul_stone_torch": "Soul Stone Torch",
+  "block.scalar_utils.soul_stone_wall_torch": "Soul Stone Torch",
   "block.scalar_utils.stone_torch": "Stone Torch",
   "block.scalar_utils.stone_wall_torch": "Stone Torch",
+
+  "block.scalar_utils.tiny_soul_stone_torch": "Tiny Soul Stone Torch",
+  "block.scalar_utils.tiny_soul_stone_wall_torch": "Tiny Soul Stone Torch",
+  "block.scalar_utils.tiny_soul_torch": "Tiny Soul Torch",
+  "block.scalar_utils.tiny_soul_wall_torch": "Tiny Soul Torch",
+  "block.scalar_utils.tiny_stone_torch": "Tiny Stone Torch",
+  "block.scalar_utils.tiny_stone_wall_torch": "Tiny Stone Torch",
   "block.scalar_utils.tiny_torch": "Tiny Torch",
   "block.scalar_utils.tiny_wall_torch": "Tiny Torch",
 
@@ -173,6 +184,6 @@
   "itemGroup.scalar_utils_agriculture": "Scalar Utils 5: Agriculture",
   "itemGroup.scalar_utils_blocks": "Scalar Utils 5: Blocks",
   "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
-  "itemGroup.scalar_utils_lamps": "Scalar Utils 5: Lamps",
+  "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting",
   "itemGroup.scalar_utils_tools": "Scalar Utils 5: Tools"
 }
