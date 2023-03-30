@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:ring"
+    },
+    {
+      "item": "scalar_utils:runic_strength_plate"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:runic_ring_of_strength",
+    "count": 1
+  }
+}

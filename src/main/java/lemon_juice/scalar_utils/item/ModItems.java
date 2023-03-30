@@ -3,8 +3,7 @@ package lemon_juice.scalar_utils.item;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.custom.*;
-import lemon_juice.scalar_utils.item.custom.consumable_items.RunicBoosterPlateItem;
-import lemon_juice.scalar_utils.item.custom.consumable_items.RunicDropperPlateItem;
+import lemon_juice.scalar_utils.item.custom.consumable_items.*;
 import lemon_juice.scalar_utils.item.custom.curiositem.*;
 import lemon_juice.scalar_utils.item.custom.digger_item.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom.digger_item.TunnelerItem;
@@ -78,6 +77,10 @@ public class ModItems {
     public static final RegistryObject<Item> RUNIC_PLATE = ITEMS.register("runic_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUNIC_BOOSTER_PLATE = ITEMS.register("runic_booster_plate", () -> new RunicBoosterPlateItem(new Item.Properties()));
     public static final RegistryObject<Item> RUNIC_DROPPER_PLATE = ITEMS.register("runic_dropper_plate", () -> new RunicDropperPlateItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_HEALING_PLATE = ITEMS.register("runic_healing_plate", () -> new RunicHealingPlateItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_SPEED_PLATE = ITEMS.register("runic_speed_plate", () -> new RunicSpeedPlateItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_STRENGTH_PLATE = ITEMS.register("runic_strength_plate", () -> new RunicStrengthPlateItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUNIC_WISDOM_PLATE = ITEMS.register("runic_wisdom_plate", () -> new RunicWisdomPlateItem(new Item.Properties()));
 
     // Seeds
     public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new ItemNameBlockItem(ModBlocks.FLAX_CROP.get(), new Item.Properties()));

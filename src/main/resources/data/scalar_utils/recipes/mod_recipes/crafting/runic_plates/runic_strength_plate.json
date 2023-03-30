@@ -8,11 +8,11 @@
       "item": "scalar_utils:runecarving_knife"
     },
     {
-      "item": "scalar_utils:ultimate_runebooster"
+      "item": "minecraft:lapis_lazuli"
     }
   ],
   "result": {
-    "item": "scalar_utils:runic_booster_plate",
+    "item": "scalar_utils:runic_strength_plate",
     "count": 1
   }
 }

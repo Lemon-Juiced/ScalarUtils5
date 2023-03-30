@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:pendant"
+    },
+    {
+      "item": "scalar_utils:runic_wisdom_plate"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:runic_pendant_of_wisdom",
+    "count": 1
+  }
+}

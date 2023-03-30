@@ -39,6 +39,10 @@ public class CreativeTab {
 
                     output.accept(new ItemStack(ModItems.RUNIC_BOOSTER_PLATE.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_DROPPER_PLATE.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_HEALING_PLATE.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_SPEED_PLATE.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_STRENGTH_PLATE.get()));
+                    output.accept(new ItemStack(ModItems.RUNIC_WISDOM_PLATE.get()));
 
                     output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_HEALING.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_GLOVES_OF_SPEED.get()));
