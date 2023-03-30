@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "scalar_utils:block/tiny_redstone_wall_torch_off"
+    },
+    "facing=north": {
+      "model": "scalar_utils:block/tiny_redstone_wall_torch_off",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "scalar_utils:block/tiny_redstone_wall_torch_off",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "scalar_utils:block/tiny_redstone_wall_torch_off",
+      "y": 180
+    }
+  }
+}

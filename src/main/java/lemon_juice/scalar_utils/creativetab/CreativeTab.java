@@ -95,10 +95,13 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModBlocks.PINK_LAMP.get()));
 
                     output.accept(new ItemStack(ModItems.STONE_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.REDSTONE_STONE_TORCH.get()));
                     output.accept(new ItemStack(ModItems.SOUL_STONE_TORCH.get()));
 
                     output.accept(new ItemStack(ModItems.TINY_TORCH.get()));
                     output.accept(new ItemStack(ModItems.TINY_STONE_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.TINY_REDSTONE_TORCH.get()));
+                    output.accept(new ItemStack(ModItems.TINY_REDSTONE_STONE_TORCH.get()));
                     output.accept(new ItemStack(ModItems.TINY_SOUL_TORCH.get()));
                     output.accept(new ItemStack(ModItems.TINY_SOUL_STONE_TORCH.get()));
                 }));

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "scalar_utils:block/redstone_stone_torch_off"
+    }
+  }
+}

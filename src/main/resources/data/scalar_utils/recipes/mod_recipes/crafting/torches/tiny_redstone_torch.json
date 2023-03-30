@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "///"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:tiny_redstone_torch",
+    "count": 6
+  }
+}

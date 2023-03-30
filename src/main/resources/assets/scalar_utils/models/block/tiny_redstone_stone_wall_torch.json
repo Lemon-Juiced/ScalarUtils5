@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_torch_wall",
+  "textures": {
+    "torch": "scalar_utils:block/tiny_redstone_stone_torch"
+  },
+  "render_type": "cutout"
+}
