@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.consumable_items;
+package lemon_juice.scalar_utils.item.custom.consumable_item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;

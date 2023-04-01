@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.consumable_items;
+package lemon_juice.scalar_utils.item.custom.consumable_item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -14,9 +14,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class RunicStrengthPlateItem extends Item  {
+public class RunicBoosterPlateItem extends Item  {
 
-    public RunicStrengthPlateItem(Properties properties) {
+    public RunicBoosterPlateItem(Properties properties) {
         super(properties);
     }
 
@@ -28,7 +28,7 @@ public class RunicStrengthPlateItem extends Item  {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if(!level.isClientSide() && (hand == InteractionHand.MAIN_HAND || hand == InteractionHand.OFF_HAND)){
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100));
+            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 100));
             player.setItemInHand(hand, ItemStack.EMPTY);
         }
 
@@ -37,6 +37,6 @@ public class RunicStrengthPlateItem extends Item  {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("runic_strength_plate.tooltip"));
+        components.add(Component.translatable("runic_booster_plate.tooltip"));
     }
 }
