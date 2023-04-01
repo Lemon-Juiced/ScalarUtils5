@@ -96,10 +96,6 @@ public class ModItems {
     // Stone Rod
     public static final RegistryObject<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
 
-    // Tiny Coals
-    public static final RegistryObject<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal", () -> new AbstractTinyCoalItem(new Item.Properties()));
-    public static final RegistryObject<Item> TINY_COAL = ITEMS.register("tiny_coal", () -> new AbstractTinyCoalItem(new Item.Properties()));
-
     // Torch BlockItems
     public static final RegistryObject<Item> REDSTONE_STONE_TORCH = ITEMS.register("redstone_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.REDSTONE_STONE_TORCH.get(), ModBlocks.REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> SOUL_STONE_TORCH = ITEMS.register("soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.SOUL_STONE_TORCH.get(), ModBlocks.SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));

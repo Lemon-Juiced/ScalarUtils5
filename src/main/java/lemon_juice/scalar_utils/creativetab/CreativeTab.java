@@ -122,8 +122,6 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModItems.WHEAT_SLIME_BALL.get()));
                     output.accept(new ItemStack(ModItems.RUNIC_PLATE.get()));
                     output.accept(new ItemStack(ModItems.STONE_ROD.get()));
-                    output.accept(new ItemStack(ModItems.TINY_CHARCOAL.get()));
-                    output.accept(new ItemStack(ModItems.TINY_COAL.get()));
                 }));
 
         // Lighting Tab

@@ -5,14 +5,9 @@
     "/"
   ],
   "key": {
-    "#": [
-      {
-        "item": "scalar_utils:tiny_coal"
-      },
-      {
-        "item": "scalar_utils:tiny_charcoal"
-      }
-    ],
+    "#": {
+      "tag": "forge:tiny_coal"
+    },
     "/": {
       "item": "scalar_utils:stone_rod"
     }

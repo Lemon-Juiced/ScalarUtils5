@@ -1,7 +1,4 @@
 {
-  "item.scalar_utils.tiny_charcoal": "Tiny Charcoal",
-  "item.scalar_utils.tiny_coal": "Tiny Coal",
-
   "item.scalar_utils.blazing_end_rod": "Blazing End Rod",
 
   "item.scalar_utils.chainmail": "Chainmail",
@@ -77,7 +74,6 @@
   "abstract_speed_curio.tooltip": "Grants the wearer a speed boost.",
   "abstract_strength_curio.tooltip": "Grants the wearer a strength boost.",
   "abstract_wisdom_curio.tooltip": "Grants the wearer good favor with villagers.",
-  "abstract_tiny_coal.tooltip": "Smelts One Item",
   "flour.tooltip": "Smelts Into Bread",
   "slime_ball_alternative.tooltip": "Slimeball Alternative",
   "glass_cutter.tooltip": "Breaks Glass and Ice",

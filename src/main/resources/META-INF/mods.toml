@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="scalar_utils"
-version="1.19.4-5.3.0"
+version="1.19.4-5.3.1"
 displayName="Scalar Utils 5: Definitive Edition"
 logoFile="scalarutils5.png"
 credits="Scalar Team"
@@ -30,5 +30,11 @@ Another Evolution For Scalar Utils.
     modId="curios"
     mandatory=true
     versionRange="[1.19.4-5.1.4.2,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.scalar_utils]]
+    modId="lemon_core"
+    mandatory=true
+    versionRange="[1.19.4-1.0.2,)"
     ordering="NONE"
     side="BOTH"
