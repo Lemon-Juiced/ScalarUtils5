@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="scalar_utils"
-version="1.19.4-5.3.1"
+version="1.19.4-5.3.2"
 displayName="Scalar Utils 5: Definitive Edition"
 logoFile="scalarutils5.png"
 credits="Scalar Team"

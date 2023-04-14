@@ -5,6 +5,11 @@ import net.minecraft.core.BlockPos;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * I didn't originally figure this out all on my own.
+ * Credit: <a href="https://www.curseforge.com/minecraft/mc-mods/cyclic">Cyclic</a>
+ * It has been modified slightly since.
+ */
 public class UtilShape {
 
     public static List<BlockPos> squareHorizontalFull(final BlockPos pos, int radius){

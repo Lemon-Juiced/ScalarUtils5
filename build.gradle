@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.4-5.3.1'
+version = '1.19.4-5.3.2'
 group = 'lemon_juice.scalar_utils' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'scalar_utils'
 
@@ -130,7 +130,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.0.40'
+    minecraft 'net.minecraftforge:forge:1.19.4-45.0.43'
 
     // Curios Dependency
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.4-5.1.4.2")
