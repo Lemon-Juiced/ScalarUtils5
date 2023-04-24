@@ -1,0 +1,66 @@
+{
+  "parent": "scalar_utils:obtain_runic_strength_plate",
+  "criteria": {
+    "runic_gloves_of_strength": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_gloves_of_strength"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "runic_pendant_of_strength": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_pendant_of_strength"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "runic_ring_of_strength": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_ring_of_strength"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_runic_strength_curio.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:runic_ring_of_strength"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_runic_strength_curio.title"
+    }
+  },
+  "requirements": [
+    [
+      "runic_gloves_of_strength",
+      "runic_pendant_of_strength",
+      "runic_ring_of_strength"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

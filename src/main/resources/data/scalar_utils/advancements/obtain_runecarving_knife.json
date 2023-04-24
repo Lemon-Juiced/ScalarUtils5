@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_runic_plate",
+  "criteria": {
+    "runecarving_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runecarving_knife"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_runecarving_knife.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:runecarving_knife"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_runecarving_knife.title"
+    }
+  },
+  "requirements": [
+    [
+      "runecarving_knife"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

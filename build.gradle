@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.4-5.3.2'
+version = '1.19.4-5.3.3'
 group = 'lemon_juice.scalar_utils' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'scalar_utils'
 
@@ -124,13 +124,14 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    maven { url = "https://maven.theillusivec4.top/"}
+    maven { url = "https://dvs1.progwml6.com/files/maven/"}
+    maven { url = "https://modmaven.dev"}
     maven { url = "https://minecraft.curseforge.com/api/maven/"}
     maven { url = "https://www.cursemaven.com"}
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.0.43'
+    minecraft 'net.minecraftforge:forge:1.19.4-45.0.47'
 
     // Curios Dependency
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.4-5.1.4.2")
@@ -138,6 +139,12 @@ dependencies {
 
     // Lemon Core Dependency
     runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4469499")
+
+    // JEI
+    compileOnly fg.deobf("mezz.jei:jei-1.19.4-common-api:13.1.0.6")
+    compileOnly fg.deobf("mezz.jei:jei-1.19.4-forge-api:13.1.0.6")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.19.4-common:13.1.0.6")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.19.4-forge:13.1.0.6")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

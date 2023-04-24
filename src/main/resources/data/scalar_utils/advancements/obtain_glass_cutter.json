@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:scalar_utils",
+  "criteria": {
+    "glass_cutter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:glass_cutter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_glass_cutter.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:glass_cutter"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_glass_cutter.title"
+    }
+  },
+  "requirements": [
+    [
+      "glass_cutter"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

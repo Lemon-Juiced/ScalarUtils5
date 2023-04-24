@@ -1,0 +1,66 @@
+{
+  "parent": "scalar_utils:obtain_runic_healing_plate",
+  "criteria": {
+    "runic_gloves_of_healing": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_gloves_of_healing"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "runic_pendant_of_healing": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_pendant_of_healing"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "runic_ring_of_healing": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_ring_of_healing"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_runic_healing_curio.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:runic_ring_of_healing"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_runic_healing_curio.title"
+    }
+  },
+  "requirements": [
+    [
+      "runic_gloves_of_healing",
+      "runic_pendant_of_healing",
+      "runic_ring_of_healing"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

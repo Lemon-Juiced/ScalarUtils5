@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_runecarving_knife",
+  "criteria": {
+    "runic_healing_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_healing_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_runic_healing_plate.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:runic_healing_plate"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_runic_healing_plate.title"
+    }
+  },
+  "requirements": [
+    [
+      "runic_healing_plate"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

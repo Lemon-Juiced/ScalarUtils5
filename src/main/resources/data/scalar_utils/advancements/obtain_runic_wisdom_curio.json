@@ -1,0 +1,66 @@
+{
+  "parent": "scalar_utils:obtain_runic_wisdom_plate",
+  "criteria": {
+    "runic_gloves_of_wisdom": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_gloves_of_wisdom"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "runic_pendant_of_wisdom": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_pendant_of_wisdom"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "runic_ring_of_wisdom": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_ring_of_wisdom"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_runic_wisdom_curio.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:runic_ring_of_wisdom"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_runic_wisdom_curio.title"
+    }
+  },
+  "requirements": [
+    [
+      "runic_gloves_of_wisdom",
+      "runic_pendant_of_wisdom",
+      "runic_ring_of_wisdom"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

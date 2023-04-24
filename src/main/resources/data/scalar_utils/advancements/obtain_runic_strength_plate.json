@@ -1,0 +1,40 @@
+{
+  "parent": "scalar_utils:obtain_runecarving_knife",
+  "criteria": {
+    "runic_strength_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:runic_strength_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_runic_strength_plate.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:runic_strength_plate"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_runic_strength_plate.title"
+    }
+  },
+  "requirements": [
+    [
+      "runic_strength_plate"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}
