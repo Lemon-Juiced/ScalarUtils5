@@ -130,6 +130,8 @@
   "block.scalar_utils.elite_runedropper": "Elite Runedropper",
   "block.scalar_utils.ultimate_runedropper": "Ultimate Runedropper",
   "block.scalar_utils.transcendent_runedropper": "Transcendent Runedropper",
+  
+  "block.scalar_utils.runic_void": "Runic Void",
 
   "basic_runebooster.tooltip": "Step on to Float for Five Seconds",
   "advanced_runebooster.tooltip": "Step on to Float for Ten Seconds",
@@ -230,6 +232,8 @@
   "advancements.scalar_utils.obtain_wooden_tunneler.description": "Obtain a Wooden Tunneler",
   "advancements.scalar_utils.scalar_utils.title": "Scalar Utils 5: Definitive Edition",
   "advancements.scalar_utils.scalar_utils.description": "Play Scalar Utils 5!",
+
+  "runic_void.title": "Runic Void",
 
   "wip.tooltip": "WIP",
 

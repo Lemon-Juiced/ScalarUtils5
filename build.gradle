@@ -131,7 +131,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.0.47'
+    minecraft 'net.minecraftforge:forge:1.19.4-45.0.63'
 
     // Curios Dependency
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.4-5.1.4.2")
