@@ -103,8 +103,6 @@ public class CreativeTab {
                     output.accept(new ItemStack(ModBlocks.ELITE_RUNEDROPPER.get()));
                     output.accept(new ItemStack(ModBlocks.ULTIMATE_RUNEDROPPER.get()));
                     output.accept(new ItemStack(ModBlocks.TRANSCENDENT_RUNEDROPPER.get()));
-
-                    output.accept(new ItemStack(ModBlocks.RUNIC_VOID.get()));
                 }));
 
         // Items Tab

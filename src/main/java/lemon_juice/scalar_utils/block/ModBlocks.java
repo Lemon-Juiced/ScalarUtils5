@@ -76,9 +76,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> ULTIMATE_RUNEDROPPER = registerRunedropperBlock("ultimate_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
     public static final RegistryObject<Block> TRANSCENDENT_RUNEDROPPER = registerRunedropperBlock("transcendent_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 1000), 1000);
 
-    // Runic Void
-    public static final RegistryObject<Block> RUNIC_VOID = registerBlock("runic_void", () -> new AbstractRunicVoidBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
-
     /* Torches */
     // Redstone Stone Torch
     public static final RegistryObject<Block> REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("redstone_stone_torch", () -> new RedstoneTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
