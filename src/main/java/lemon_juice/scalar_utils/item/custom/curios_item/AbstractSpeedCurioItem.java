@@ -33,7 +33,7 @@ public class AbstractSpeedCurioItem extends Item implements ICurioItem {
     // Curios Integration
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         if(slotContext.getWearer() instanceof Player player){
-            if(!player.level.isClientSide()){
+            if(!player.level().isClientSide()){
                 boolean playerHasSpeedBoost = player.hasEffect(MobEffect.byId(1));
 
                 if(!playerHasSpeedBoost){

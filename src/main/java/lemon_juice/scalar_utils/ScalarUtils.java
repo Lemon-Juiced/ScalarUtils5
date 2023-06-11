@@ -1,7 +1,7 @@
 package lemon_juice.scalar_utils;
 
 import lemon_juice.scalar_utils.block.ModBlocks;
-import lemon_juice.scalar_utils.creativetab.CreativeTab;
+import lemon_juice.scalar_utils.creativetab.ModCreativeTab;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.loot.ModLootModifiers;
 import net.minecraft.resources.ResourceLocation;
@@ -15,7 +15,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotTypeMessage;
 import top.theillusivec4.curios.api.SlotTypePreset;
 
@@ -30,7 +29,8 @@ public class ScalarUtils {
         ModBlocks.register(modEventBus);
 
         // Register Creative Tab
-        modEventBus.addListener(CreativeTab::registerTabs);
+        ModCreativeTab.register(modEventBus);
+        modEventBus.addListener(ModCreativeTab::registerTabs);
 
         // Register Global Loot Modifiers
         ModLootModifiers.register(modEventBus);
@@ -57,7 +57,6 @@ public class ScalarUtils {
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-        }
+        public static void onClientSetup(FMLClientSetupEvent event) {}
     }
 }

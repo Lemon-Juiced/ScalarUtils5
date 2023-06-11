@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.4-5.3.4'
+version = '1.20-5.4.0'
 group = 'lemon_juice.scalar_utils' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'scalar_utils'
 
@@ -26,7 +26,7 @@ minecraft {
     //
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.19.4'
+    mappings channel: 'official', version: '1.20'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
 
@@ -124,6 +124,7 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven { url = "https://maven.theillusivec4.top/"}
     maven { url = "https://dvs1.progwml6.com/files/maven/"}
     maven { url = "https://modmaven.dev"}
     maven { url = "https://minecraft.curseforge.com/api/maven/"}
@@ -131,20 +132,20 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.1.0'
+    minecraft 'net.minecraftforge:forge:1.20-46.0.14'
 
     // Curios Dependency
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.4-5.1.4.2")
-    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.4-5.1.4.2:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.2.0-beta.1+1.20")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.2.0-beta.1+1.20:api")
 
     // Lemon Core Dependency
-    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4569661")
+    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4581130")
 
     // JEI
-    compileOnly fg.deobf("mezz.jei:jei-1.19.4-common-api:13.1.0.6")
-    compileOnly fg.deobf("mezz.jei:jei-1.19.4-forge-api:13.1.0.6")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19.4-common:13.1.0.6")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19.4-forge:13.1.0.6")
+    compileOnly fg.deobf("mezz.jei:jei-1.20-common-api:14.0.0.5")
+    compileOnly fg.deobf("mezz.jei:jei-1.20-forge-api:14.0.0.5")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20-common:14.0.0.5")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20-forge:14.0.0.5")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

@@ -66,7 +66,7 @@ public class TunnelerItem extends DiggerItem {
 
     @Override
     public boolean onBlockStartBreak(ItemStack stack, BlockPos pos, Player player) {
-        Level world = player.level;
+        Level world = player.level();
         HitResult ray = getPlayerPOVHitResult(world, player, ClipContext.Fluid.NONE);
 
         //Get Y-Offset

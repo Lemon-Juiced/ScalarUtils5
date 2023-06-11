@@ -33,7 +33,7 @@ public class AbstractStrengthCurioItem extends Item implements ICurioItem {
     // Curios Integration
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         if(slotContext.getWearer() instanceof Player player){
-            if(!player.level.isClientSide()){
+            if(!player.level().isClientSide()){
                 boolean playerHasStrength = player.hasEffect(MobEffect.byId(5));
 
                 if(!playerHasStrength){

@@ -1,11 +1,6 @@
 package lemon_juice.scalar_utils.block.custom;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Holder;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageSources;
-import net.minecraft.world.damagesource.DamageType;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;

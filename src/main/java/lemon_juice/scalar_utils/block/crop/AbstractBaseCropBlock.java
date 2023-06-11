@@ -1,6 +1,5 @@
 package lemon_juice.scalar_utils.block.crop;
 
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
