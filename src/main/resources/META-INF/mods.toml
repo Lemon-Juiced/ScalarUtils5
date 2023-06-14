@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[46,)"
+loaderVersion="[47,)"
 license="GNU General Purpose License v3 (GPLv3)"
 
 [[mods]]
 modId="scalar_utils"
-version="1.20-5.4.0"
+version="1.20.1-5.4.1"
 displayName="Scalar Utils 5: Definitive Edition"
 logoFile="scalarutils5.png"
 credits="Scalar Team"
@@ -17,24 +17,24 @@ Another Evolution For Scalar Utils.
 [[dependencies.scalar_utils]]
     modId="forge"
     mandatory=true
-    versionRange="[46,)"
+    versionRange="[47,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.scalar_utils]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.20,1.21)"
+    versionRange="[1.20.1,1.21)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.scalar_utils]]
     modId="curios"
     mandatory=true
-    versionRange="[5.2.0-beta.1+1.20,)"
+    versionRange="[5.2.0-beta.3+1.20.1,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.scalar_utils]]
     modId="lemon_core"
     mandatory=true
-    versionRange="[1.20-1.0.10,)"
+    versionRange="[1.20.1-1.0.11,)"
     ordering="NONE"
     side="BOTH"
