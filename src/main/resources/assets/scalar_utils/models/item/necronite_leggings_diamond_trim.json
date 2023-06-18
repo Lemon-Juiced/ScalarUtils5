@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "scalar_utils:item/necronite_leggings",
+    "layer1": "minecraft:trims/items/leggings_trim_diamond"
+  }
+}

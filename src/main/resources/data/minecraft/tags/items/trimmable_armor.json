@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "scalar_utils:necronite_helmet",
+    "scalar_utils:necronite_chestplate",
+    "scalar_utils:necronite_leggings",
+    "scalar_utils:necronite_boots"
+  ]
+}
