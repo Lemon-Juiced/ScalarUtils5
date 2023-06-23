@@ -8,6 +8,7 @@
   "item.scalar_utils.gloves": "Gloves",
   "item.scalar_utils.pendant": "Pendant",
   "item.scalar_utils.ring": "Ring",
+  "item.scalar_utils.decanter": "Decanter",
 
   "item.scalar_utils.gelatin": "Gelatin",
   "item.scalar_utils.rice_slime_ball": "Rice Slimeball",
@@ -52,6 +53,11 @@
   "item.scalar_utils.runic_pendant_of_wisdom": "Runic Pendant of Wisdom",
   "item.scalar_utils.runic_ring_of_wisdom": "Runic Ring of Wisdom",
 
+  "item.scalar_utils.runic_decanter_of_endless_fire": "Runic Decanter of Endless Fire",
+  "item.scalar_utils.runic_decanter_of_endless_water": "Runic Decanter of Endless Water",
+
+  "item.scalar_utils.rune_of_the_template": "Rune of the Template",
+
   "item.scalar_utils.runic_plate": "Runic Plate",
   "item.scalar_utils.runic_booster_plate": "Runic Booster Plate",
   "item.scalar_utils.runic_dropper_plate": "Runic Dropper Plate",
@@ -59,6 +65,11 @@
   "item.scalar_utils.runic_speed_plate": "Runic Speed Plate",
   "item.scalar_utils.runic_strength_plate": "Runic Strength Plate",
   "item.scalar_utils.runic_wisdom_plate": "Runic Wisdom Plate",
+
+  "item.scalar_utils.runic_fire_plate": "Runic Fire Plate",
+  "item.scalar_utils.runic_water_plate": "Runic Water Plate",
+
+  "item.scalar_utils.runic_diamond": "Runic Diamond",
 
   "item.scalar_utils.stone_rod": "Stone Rod",
 

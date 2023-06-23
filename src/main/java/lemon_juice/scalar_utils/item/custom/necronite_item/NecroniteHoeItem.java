@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.item.custom.necronite_item;
 
-import lemon_juice.scalar_utils.item.custom.tiers.Tiers;
+import lemon_juice.scalar_utils.item.custom.tiers.ModTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.HoeItem;
@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecroniteHoeItem extends HoeItem {
     public NecroniteHoeItem(Properties properties) {
-        super(Tiers.NECRONITE, -5, 0.0f, properties);
+        super(ModTiers.NECRONITE, -5, 0.0f, properties);
     }
 
     @Override

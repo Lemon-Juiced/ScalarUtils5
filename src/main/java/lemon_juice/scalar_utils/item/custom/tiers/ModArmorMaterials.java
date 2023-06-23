@@ -14,7 +14,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.EnumMap;
 import java.util.function.Supplier;
 
-public enum ArmorMaterials implements ArmorMaterial {
+public enum ModArmorMaterials implements ArmorMaterial {
     /*
     LEATHER("leather", 5, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
@@ -100,7 +100,7 @@ public enum ArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    private ArmorMaterials(String name, int durabilityMultiplier, EnumMap<ArmorItem.Type, Integer> protectionFunctionForType, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    private ModArmorMaterials(String name, int durabilityMultiplier, EnumMap<ArmorItem.Type, Integer> protectionFunctionForType, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionFunctionForType = protectionFunctionForType;

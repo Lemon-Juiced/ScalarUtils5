@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    "nng",
+    " p "
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:ring"
+    },
+    "n": {
+      "item": "minecraft:gold_nugget"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "p": {
+      "item": "minecraft:light_weighted_pressure_plate"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:decanter",
+    "count": 1
+  }
+}

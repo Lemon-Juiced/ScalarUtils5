@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:runic_plate"
+    },
+    {
+      "item": "scalar_utils:runecarving_knife"
+    },
+    {
+      "item": "scalar_utils:runic_diamond"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:rune_of_the_template",
+    "count": 1
+  }
+}

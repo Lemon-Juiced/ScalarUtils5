@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "d",
+    "r"
+  ],
+  "key": {
+    "d": {
+      "item": "scalar_utils:decanter"
+    },
+    "r": {
+      "item": "scalar_utils:runic_fire_plate"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:runic_decanter_of_endless_fire",
+    "count": 1
+  }
+}

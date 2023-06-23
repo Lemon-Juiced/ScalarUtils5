@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.20.1-5.4.2'
+version = '1.20.1-5.4.3'
 group = 'lemon_juice.scalar_utils' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'scalar_utils'
 
@@ -142,10 +142,10 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4585702")
 
     // JEI
-    //compileOnly fg.deobf("mezz.jei:jei-1.20-common-api:14.0.0.5")
-    //compileOnly fg.deobf("mezz.jei:jei-1.20-forge-api:14.0.0.5")
-    //runtimeOnly fg.deobf("mezz.jei:jei-1.20-common:14.0.0.5")
-    //runtimeOnly fg.deobf("mezz.jei:jei-1.20-forge:14.0.0.5")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.0.0.15")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.0.0.15")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-common:15.0.0.15")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.0.0.15")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

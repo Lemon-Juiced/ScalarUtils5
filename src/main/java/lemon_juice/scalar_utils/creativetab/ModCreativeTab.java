@@ -60,6 +60,9 @@ public class ModCreativeTab {
             event.accept(ModItems.RUNIC_STRENGTH_PLATE.get());
             event.accept(ModItems.RUNIC_WISDOM_PLATE.get());
 
+            event.accept(ModItems.RUNIC_FIRE_PLATE.get());
+            event.accept(ModItems.RUNIC_WATER_PLATE.get());
+
             event.accept(ModItems.RUNIC_GLOVES_OF_HEALING.get());
             event.accept(ModItems.RUNIC_GLOVES_OF_SPEED.get());
             event.accept(ModItems.RUNIC_GLOVES_OF_STRENGTH.get());
@@ -75,6 +78,9 @@ public class ModCreativeTab {
             event.accept(ModItems.RUNIC_RING_OF_SPEED.get());
             event.accept(ModItems.RUNIC_RING_OF_STRENGTH.get());
             event.accept(ModItems.RUNIC_RING_OF_WISDOM.get());
+
+            event.accept(ModItems.RUNIC_DECANTER_OF_ENDLESS_FIRE.get());
+            event.accept(ModItems.RUNIC_DECANTER_OF_ENDLESS_WATER.get());
 
             event.accept(ModItems.NECRONITE_SWORD.get());
             event.accept(ModItems.NECRONITE_SHOVEL.get());
@@ -123,12 +129,15 @@ public class ModCreativeTab {
             event.accept(ModItems.GLOVES.get());
             event.accept(ModItems.PENDANT.get());
             event.accept(ModItems.RING.get());
+            event.accept(ModItems.DECANTER.get());
             event.accept(ModItems.NECRONITE_INGOT.get());
             event.accept(ModItems.NECRONITE_NUGGET.get());
             event.accept(ModItems.GELATIN.get());
             event.accept(ModItems.RICE_SLIME_BALL.get());
             event.accept(ModItems.WHEAT_SLIME_BALL.get());
             event.accept(ModItems.RUNIC_PLATE.get());
+            event.accept(ModItems.RUNIC_DIAMOND.get());
+            event.accept(ModItems.RUNE_OF_THE_TEMPLATE.get());
             event.accept(ModItems.STONE_ROD.get());
         }
 

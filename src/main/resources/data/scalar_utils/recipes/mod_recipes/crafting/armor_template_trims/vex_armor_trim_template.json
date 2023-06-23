@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:rune_of_the_template"
+    },
+    {
+      "item": "minecraft:vex_armor_trim_smithing_template"
+    }
+  ],
+  "result": {
+    "item": "minecraft:vex_armor_trim_smithing_template",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.item.custom.necronite_item;
 
-import lemon_juice.scalar_utils.item.custom.tiers.ArmorMaterials;
+import lemon_juice.scalar_utils.item.custom.tiers.ModArmorMaterials;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ArmorItem;
@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecroniteArmorItem extends ArmorItem {
     public NecroniteArmorItem(Type type, Properties properties) {
-        super(ArmorMaterials.NECRONITE, type, properties);
+        super(ModArmorMaterials.NECRONITE, type, properties);
     }
 
     @Override
