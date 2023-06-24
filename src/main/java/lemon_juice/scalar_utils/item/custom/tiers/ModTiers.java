@@ -2,6 +2,7 @@ package lemon_juice.scalar_utils.item.custom.tiers;
 
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 

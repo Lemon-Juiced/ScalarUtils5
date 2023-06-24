@@ -1,7 +1,7 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
   "base": {
-    "item": "scalar_utils:diamond_tunneler"
+    "item": "scalar_utils:diamond_cleaver"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"
@@ -10,6 +10,6 @@
     "item": "minecraft:netherite_upgrade_smithing_template"
   },
   "result": {
-    "item": "scalar_utils:netherite_tunneler"
+    "item": "scalar_utils:netherite_cleaver"
   }
 }

@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "tag": "forge:items/tiny_coal"
+      "tag": "forge:tiny_coal"
     },
     "/": {
       "item": "scalar_utils:stone_rod"

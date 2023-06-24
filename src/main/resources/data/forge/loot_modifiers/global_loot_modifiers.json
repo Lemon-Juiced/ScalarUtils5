@@ -49,6 +49,12 @@
     "scalar_utils:carrot_seeds_from_grass",
     "scalar_utils:flax_seeds_from_grass",
     "scalar_utils:potato_seeds_from_grass",
-    "scalar_utils:rice_from_grass"
+    "scalar_utils:rice_from_grass",
+
+    "scalar_utils:mob_head_from_creeper",
+    "scalar_utils:mob_head_from_piglin",
+    "scalar_utils:mob_head_from_skeleton",
+    "scalar_utils:mob_head_from_wither_skeleton",
+    "scalar_utils:mob_head_from_zombie"
   ]
 }

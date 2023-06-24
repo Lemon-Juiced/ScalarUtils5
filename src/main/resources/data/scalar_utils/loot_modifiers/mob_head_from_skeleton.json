@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/skeleton"
+    }
+  ],
+  "item": "minecraft:skeleton_skull",
+  "type": "scalar_utils:add_mob_head_item"
+}

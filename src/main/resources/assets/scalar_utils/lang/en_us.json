@@ -73,6 +73,15 @@
 
   "item.scalar_utils.stone_rod": "Stone Rod",
 
+  "item.scalar_utils.wooden_cleaver": "Wooden Cleaver",
+  "item.scalar_utils.stone_cleaver": "Stone Cleaver",
+  "item.scalar_utils.iron_cleaver": "Iron Cleaver",
+  "item.scalar_utils.golden_cleaver": "Golden Cleaver",
+  "item.scalar_utils.diamond_cleaver": "Diamond Sword",
+  "item.scalar_utils.netherite_cleaver": "Netherite Cleaver",
+  "item.scalar_utils.necronite_cleaver": "Necronite Cleaver",
+  "cleaver.tooltip": "Beheading Weapon - Slow And Heavy",
+
   "item.scalar_utils.wooden_tunneler": "Wooden Tunneler",
   "item.scalar_utils.stone_tunneler": "Stone Tunneler",
   "item.scalar_utils.iron_tunneler": "Iron Tunneler",

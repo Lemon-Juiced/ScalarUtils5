@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#a#",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:necronite_ingot"
+    },
+    "a": {
+      "item": "minecraft:netherite_leggings"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:necronite_leggings",
+    "count": 1
+  }
+}

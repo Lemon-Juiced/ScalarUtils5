@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " N ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:necronite_block"
+    },
+    "N": {
+      "item": "scalar_utils:netherite_cleaver"
+    },
+    "/": {
+      "item": "scalar_utils:blazing_end_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:necronite_cleaver",
+    "count": 1
+  }
+}

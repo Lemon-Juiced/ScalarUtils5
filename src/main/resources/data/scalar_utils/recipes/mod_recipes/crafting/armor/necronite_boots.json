@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#a#",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:necronite_ingot"
+    },
+    "a": {
+      "item": "minecraft:netherite_boots"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:necronite_boots",
+    "count": 1
+  }
+}

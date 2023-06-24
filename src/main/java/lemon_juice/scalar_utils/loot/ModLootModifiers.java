@@ -12,6 +12,7 @@ public class ModLootModifiers {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZERS = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, ScalarUtils.MOD_ID);
 
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_GLASS_ITEM = LOOT_MODIFIER_SERIALIZERS.register("add_glass_item", AddGlassItemModifier.CODEC);
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_MOB_HEAD_ITEM = LOOT_MODIFIER_SERIALIZERS.register("add_mob_head_item", AddMobHeadItemModifier.CODEC);
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_SEED_ITEM = LOOT_MODIFIER_SERIALIZERS.register("add_seed_item", AddSeedItemModifier.CODEC);
 
     public static void register(IEventBus eventBus){

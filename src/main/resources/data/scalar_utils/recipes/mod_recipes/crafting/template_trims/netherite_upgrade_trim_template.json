@@ -5,11 +5,11 @@
       "item": "scalar_utils:rune_of_the_template"
     },
     {
-      "item": "minecraft:eye_armor_trim_smithing_template"
+      "item": "minecraft:netherite_upgrade_trim_smithing_template"
     }
   ],
   "result": {
-    "item": "minecraft:eye_armor_trim_smithing_template",
-    "count": 1
+    "item": "minecraft:netherite_upgrade_smithing_template",
+    "count": 2
   }
 }

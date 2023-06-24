@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "scalar_utils:wooden_cleaver",
+    "scalar_utils:stone_cleaver",
+    "scalar_utils:iron_cleaver",
+    "scalar_utils:golden_cleaver",
+    "scalar_utils:diamond_cleaver",
+    "scalar_utils:netherite_cleaver",
+    "scalar_utils:necronite_cleaver"
+  ]
+}

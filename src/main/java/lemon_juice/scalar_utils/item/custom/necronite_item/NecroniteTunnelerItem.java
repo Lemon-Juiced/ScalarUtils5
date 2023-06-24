@@ -1,11 +1,12 @@
 package lemon_juice.scalar_utils.item.custom.necronite_item;
 
 import lemon_juice.scalar_utils.item.custom.digger_item.TunnelerItem;
+import lemon_juice.scalar_utils.item.custom.tiers.ModTiers;
 import net.minecraft.world.item.Tier;
 
 public class NecroniteTunnelerItem extends TunnelerItem {
-    public NecroniteTunnelerItem(Tier tier, Properties properties, int radius) {
-        super(tier, properties, radius);
+    public NecroniteTunnelerItem(Properties properties, int radius) {
+        super(ModTiers.NECRONITE, properties, radius);
     }
 
     @Override

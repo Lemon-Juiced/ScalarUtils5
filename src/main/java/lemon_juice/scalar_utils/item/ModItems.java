@@ -2,7 +2,10 @@ package lemon_juice.scalar_utils.item;
 
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
-import lemon_juice.scalar_utils.item.custom.*;
+import lemon_juice.scalar_utils.item.custom.AbstractSlimeballAlternativeItem;
+import lemon_juice.scalar_utils.item.custom.CleaverItem;
+import lemon_juice.scalar_utils.item.custom.FlourItem;
+import lemon_juice.scalar_utils.item.custom.RuneCarvingKnifeItem;
 import lemon_juice.scalar_utils.item.custom.consumable_item.*;
 import lemon_juice.scalar_utils.item.custom.curios_item.*;
 import lemon_juice.scalar_utils.item.custom.decanter_item.DecanterOfEndlessFireItem;
@@ -10,7 +13,6 @@ import lemon_juice.scalar_utils.item.custom.decanter_item.DecanterOfEndlessWater
 import lemon_juice.scalar_utils.item.custom.digger_item.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom.digger_item.TunnelerItem;
 import lemon_juice.scalar_utils.item.custom.necronite_item.*;
-import lemon_juice.scalar_utils.item.custom.tiers.ModTiers;
 import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -115,14 +117,24 @@ public class ModItems {
     public static final RegistryObject<Item> TINY_STONE_TORCH = ITEMS.register("tiny_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_STONE_TORCH.get(), ModBlocks.TINY_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_TORCH.get(), ModBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
+    // Cleavers
+    public static final RegistryObject<Item> WOODEN_CLEAVER = ITEMS.register("wooden_cleaver", () -> new CleaverItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> STONE_CLEAVER = ITEMS.register("stone_cleaver", () -> new CleaverItem(Tiers.STONE, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_CLEAVER = ITEMS.register("iron_cleaver", () -> new CleaverItem(Tiers.IRON, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_CLEAVER = ITEMS.register("golden_cleaver", () -> new CleaverItem(Tiers.GOLD, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_CLEAVER = ITEMS.register("diamond_cleaver", () -> new CleaverItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITE_CLEAVER = ITEMS.register("netherite_cleaver", () -> new CleaverItem(Tiers.NETHERITE, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_CLEAVER = ITEMS.register("necronite_cleaver", () -> new NecroniteCleaverItem(new Item.Properties()));
+
+
     // Tunnelers
-    public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.WOOD, new Item.Properties(), 1));
-    public static final RegistryObject<Item> STONE_TUNNELER = ITEMS.register("stone_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.STONE, new Item.Properties(), 1));
-    public static final RegistryObject<Item> IRON_TUNNELER = ITEMS.register("iron_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.IRON, new Item.Properties(), 1));
-    public static final RegistryObject<Item> GOLDEN_TUNNELER = ITEMS.register("golden_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.GOLD, new Item.Properties(), 1));
+    public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(Tiers.WOOD, new Item.Properties(), 1));
+    public static final RegistryObject<Item> STONE_TUNNELER = ITEMS.register("stone_tunneler", () -> new TunnelerItem(Tiers.STONE, new Item.Properties(), 1));
+    public static final RegistryObject<Item> IRON_TUNNELER = ITEMS.register("iron_tunneler", () -> new TunnelerItem(Tiers.IRON, new Item.Properties(), 1));
+    public static final RegistryObject<Item> GOLDEN_TUNNELER = ITEMS.register("golden_tunneler", () -> new TunnelerItem(Tiers.GOLD, new Item.Properties(), 1));
     public static final RegistryObject<Item> DIAMOND_TUNNELER = ITEMS.register("diamond_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.DIAMOND, new Item.Properties(), 2));
-    public static final RegistryObject<Item> NETHERITE_TUNNELER = ITEMS.register("netherite_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.NETHERITE, new Item.Properties(), 3));
-    public static final RegistryObject<Item> NECRONITE_TUNNELER = ITEMS.register("necronite_tunneler", () -> new NecroniteTunnelerItem(ModTiers.NECRONITE, new Item.Properties(), 4));
+    public static final RegistryObject<Item> NETHERITE_TUNNELER = ITEMS.register("netherite_tunneler", () -> new TunnelerItem(Tiers.NETHERITE, new Item.Properties(), 3));
+    public static final RegistryObject<Item> NECRONITE_TUNNELER = ITEMS.register("necronite_tunneler", () -> new NecroniteTunnelerItem(new Item.Properties(), 4));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

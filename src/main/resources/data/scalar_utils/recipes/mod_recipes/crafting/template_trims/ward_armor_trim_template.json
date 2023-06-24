@@ -5,11 +5,11 @@
       "item": "scalar_utils:rune_of_the_template"
     },
     {
-      "item": "minecraft:wayfinder_armor_trim_smithing_template"
+      "item": "minecraft:ward_armor_trim_smithing_template"
     }
   ],
   "result": {
-    "item": "minecraft:wayfinder_armor_trim_smithing_template",
-    "count": 1
+    "item": "minecraft:ward_armor_trim_smithing_template",
+    "count": 2
   }
 }
