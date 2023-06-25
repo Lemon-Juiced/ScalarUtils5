@@ -37,7 +37,7 @@ public class ModCreativeTab {
 
     public static final RegistryObject<CreativeModeTab> SCALAR_UTILS_LIGHTING_TAB = CREATIVE_MODE_TABS.register("scalar_utils_lighting", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.scalar_utils_lighting"))
-            .icon(() -> new ItemStack(ModBlocks.WHITE_LAMP.get()))
+            .icon(() -> new ItemStack(ModBlocks.RAINBOW_LAMP.get()))
             .build());
 
     public static void registerTabs(BuildCreativeModeTabContentsEvent event){
@@ -166,6 +166,7 @@ public class ModCreativeTab {
             event.accept(ModBlocks.PURPLE_LAMP.get());
             event.accept(ModBlocks.MAGENTA_LAMP.get());
             event.accept(ModBlocks.PINK_LAMP.get());
+            event.accept(ModBlocks.RAINBOW_LAMP.get());
 
             event.accept(ModItems.STONE_TORCH.get());
             event.accept(ModItems.REDSTONE_STONE_TORCH.get());

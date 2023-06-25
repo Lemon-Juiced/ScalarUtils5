@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "scalar_utils:block/rainbow_lamp" },
+    "lit=true": { "model": "scalar_utils:block/rainbow_lamp_on" }
+  }
+}
