@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDN",
+    "E#N",
+    "EWW"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dragon_breath"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "W": {
+      "item": "minecraft:wet_sponge"
+    }
+  },
+  "result": {
+    "item": "lemon_core:necronite_ingot",
+    "count": 1
+  }
+}
