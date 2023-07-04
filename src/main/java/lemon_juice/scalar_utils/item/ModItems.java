@@ -44,8 +44,6 @@ public class ModItems {
     public static final RegistryObject<Item> DECANTER = ITEMS.register("decanter", () -> new Item(new Item.Properties()));
 
     // Necronite
-    public static final RegistryObject<Item> NECRONITE_INGOT = ITEMS.register("necronite_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> NECRONITE_NUGGET = ITEMS.register("necronite_nugget", () -> new Item(new Item.Properties()));
     /* Tools */
     public static final RegistryObject<Item> NECRONITE_SWORD = ITEMS.register("necronite_sword", () -> new NecroniteSwordItem(new Item.Properties()));
     public static final RegistryObject<Item> NECRONITE_SHOVEL = ITEMS.register("necronite_shovel", () -> new NecroniteShovelItem(new Item.Properties()));

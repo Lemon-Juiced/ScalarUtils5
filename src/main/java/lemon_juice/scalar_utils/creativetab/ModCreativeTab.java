@@ -32,7 +32,7 @@ public class ModCreativeTab {
 
     public static final RegistryObject<CreativeModeTab> SCALAR_UTILS_ITEMS_TAB = CREATIVE_MODE_TABS.register("scalar_utils_items", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.scalar_utils_items"))
-            .icon(() -> new ItemStack(ModItems.NECRONITE_INGOT.get()))
+            .icon(() -> new ItemStack(ModItems.RUNIC_PLATE.get()))
             .build());
 
     public static final RegistryObject<CreativeModeTab> SCALAR_UTILS_LIGHTING_TAB = CREATIVE_MODE_TABS.register("scalar_utils_lighting", () -> CreativeModeTab.builder()
@@ -113,7 +113,6 @@ public class ModCreativeTab {
         if(event.getTab() == SCALAR_UTILS_BLOCKS_TAB.get()){
             event.accept(ModBlocks.CLEAR_GLASS.get());
             event.accept(ModBlocks.CLEAR_GLASS_PANE.get());
-            event.accept(ModBlocks.NECRONITE_BLOCK.get());
             event.accept(ModBlocks.REINFORCED_GLASS.get());
             event.accept(ModBlocks.REINFORCED_GLASS_PANE.get());
             event.accept(ModBlocks.REINFORCED_OBSIDIAN.get());
@@ -138,8 +137,6 @@ public class ModCreativeTab {
             event.accept(ModItems.PENDANT.get());
             event.accept(ModItems.RING.get());
             event.accept(ModItems.DECANTER.get());
-            event.accept(ModItems.NECRONITE_INGOT.get());
-            event.accept(ModItems.NECRONITE_NUGGET.get());
             event.accept(ModItems.GELATIN.get());
             event.accept(ModItems.RICE_SLIME_BALL.get());
             event.accept(ModItems.WHEAT_SLIME_BALL.get());

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "scalar_utils:necronite_ingot"
+      "item": "lemon_core:necronite_ingot"
     },
     "title": {
       "translate": "advancements.scalar_utils.obtain_necronite_ingot.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "scalar_utils:necronite_ingot"
+              "lemon_core:necronite_ingot"
             ]
           }
         ]

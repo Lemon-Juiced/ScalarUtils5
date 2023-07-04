@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "scalar_utils:necronite_ingot"
+      "tag": "forge:ingots/necronite"
     },
     "a": {
       "item": "minecraft:netherite_leggings"

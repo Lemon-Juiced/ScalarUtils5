@@ -11,7 +11,6 @@ import lemon_juice.scalar_utils.block.torches.TinyWallTorchBlock;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.item.custom.block_item.AbstractRuneboosterBlockItem;
 import lemon_juice.scalar_utils.item.custom.block_item.AbstractRunedropperBlockItem;
-import lemon_juice.scalar_utils.item.custom.block_item.FireproofBlockItem;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -53,9 +52,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAGENTA_LAMP = registerBlock("magenta_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> PINK_LAMP = registerBlock("pink_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> RAINBOW_LAMP = registerBlock("rainbow_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-
-    // Necronite Block
-    public static final RegistryObject<Block> NECRONITE_BLOCK = registerFireproofBlock("necronite_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
 
     // Reinforced Blocks
     public static final RegistryObject<Block> REINFORCED_GLASS = registerBlock("reinforced_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
@@ -132,16 +128,6 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<Item> registerRunedropperBlockItem(String name, RegistryObject<T> block, int blocks) {
         return ModItems.ITEMS.register(name, () -> new AbstractRunedropperBlockItem(block.get(), new Item.Properties(), blocks));
-    }
-
-    private static <T extends Block> RegistryObject<T> registerFireproofBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerFireproofBlockItem(name, toReturn);
-        return toReturn;
-    }
-
-    private static <T extends Block> RegistryObject<Item> registerFireproofBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new FireproofBlockItem(block.get(), new Item.Properties()));
     }
 
     /******************************** Registry ********************************/

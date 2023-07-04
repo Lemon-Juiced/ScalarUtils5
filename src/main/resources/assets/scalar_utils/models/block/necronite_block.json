@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "scalar_utils:block/necronite_block"
-  }
-}

@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "scalar_utils:necronite_block"
+      "tag": "forge:storage_blocks/necronite"
     },
     "N": {
       "item": "scalar_utils:netherite_cleaver"

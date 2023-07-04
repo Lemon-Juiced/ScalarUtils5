@@ -4,6 +4,7 @@ import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.creativetab.ModCreativeTab;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.loot.ModLootModifiers;
+import lemon_juice.scalar_utils.tags.ModTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -34,6 +35,9 @@ public class ScalarUtils {
 
         // Register Global Loot Modifiers
         ModLootModifiers.register(modEventBus);
+
+        // Register Tags
+        ModTags.init();
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::enqueueIMC);

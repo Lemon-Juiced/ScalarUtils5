@@ -16,7 +16,7 @@
       "item": "scalar_utils:ultimate_runebooster"
     },
     "R": {
-      "item": "scalar_utils:necronite_ingot"
+      "tag": "forge:ingots/necronite"
     }
   },
   "result": {

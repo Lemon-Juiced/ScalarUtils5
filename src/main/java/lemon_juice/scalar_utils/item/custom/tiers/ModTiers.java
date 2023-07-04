@@ -1,6 +1,7 @@
 package lemon_juice.scalar_utils.item.custom.tiers;
 
 import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.tags.ModTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -15,5 +16,5 @@ public class ModTiers {
      * NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {return Ingredient.of(Items.NETHERITE_INGOT);});
      */
 
-    public static final ForgeTier NECRONITE = new ForgeTier(5, -1, 12.0F, 5.0F, 22, BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(ModItems.NECRONITE_INGOT.get()));
+    public static final ForgeTier NECRONITE = new ForgeTier(5, -1, 12.0F, 5.0F, 22, BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(ModTags.Items.INGOTS_NECRONITE));
 }

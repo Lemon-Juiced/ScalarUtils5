@@ -21,8 +21,6 @@
   "item.scalar_utils.potato_seeds": "Potato Seeds",
   "item.scalar_utils.rice": "Rice",
 
-  "item.scalar_utils.necronite_ingot": "Necronite Ingot",
-  "item.scalar_utils.necronite_nugget": "Necronite Nugget",
   "item.scalar_utils.necronite_axe": "Necronite Axe",
   "item.scalar_utils.necronite_hoe": "Necronite Hoe",
   "item.scalar_utils.necronite_pickaxe": "Necronite Pickaxe",
@@ -133,8 +131,6 @@
   "block.scalar_utils.magenta_lamp": "Magenta Lamp",
   "block.scalar_utils.pink_lamp": "Pink Lamp",
   "block.scalar_utils.rainbow_lamp": "Rainbow Lamp",
-
-  "block.scalar_utils.necronite_block": "Block of Necronite",
 
   "block.scalar_utils.reinforced_glass": "Reinforced Glass",
   "block.scalar_utils.reinforced_glass_pane": "Reinforced Glass Pane",
