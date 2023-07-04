@@ -16,5 +16,6 @@
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "scalar_utils:blocks/tiny_redstone_torch"
 }

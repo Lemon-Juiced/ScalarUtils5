@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "scalar_utils:purple_lamp"
+          "name": "scalar_utils:rainbow_lamp"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "scalar_utils:blocks/purple_lamp"
+  "random_sequence": "scalar_utils:blocks/rainbow_lamp"
 }

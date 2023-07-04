@@ -87,5 +87,6 @@
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "scalar_utils:blocks/flax_crop"
 }
