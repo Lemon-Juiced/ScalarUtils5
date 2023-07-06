@@ -12,7 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.MissingMappingsEvent;
 
-import javax.annotation.concurrent.Immutable;
 import java.util.Map;
 import java.util.function.Supplier;
 

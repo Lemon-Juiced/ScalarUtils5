@@ -150,7 +150,6 @@
   "block.scalar_utils.tiny_wall_torch": "Маленький Настінний Факел",
   "advancements.scalar_utils.necronite_armor.title": "Cover Me in Deaths",
   "advancements.scalar_utils.necronite_armor.description": "Отримай повний комплект Некронітової броні",
-
   "advancements.scalar_utils.obtain_advanced_runebooster.title": "Просунутий Підсилювач Рун",
   "advancements.scalar_utils.obtain_advanced_runebooster.description": "Отримайте Просунутий Підсилювач Рун",
   "advancements.scalar_utils.obtain_advanced_runedropper.title": "Просунутий Рунний Скидач",
@@ -169,7 +168,6 @@
   "advancements.scalar_utils.obtain_glass_cutter.description": "Отримайте Склоріз",
   "advancements.scalar_utils.obtain_iron_tunneler.title": "Видобування 3x3 для Багатеньких",
   "advancements.scalar_utils.obtain_iron_tunneler.description": "Отримайте Залізний Тунелер",
-
   "advancements.scalar_utils.obtain_necronite_hoe.title": "Ще більш серйозна залежність!",
   "advancements.scalar_utils.obtain_necronite_hoe.description": "Використайте два Некронітових Злитки щоб покращити Мотику, після цього зробіть переоцінку ваших життєвих виборів",
   "advancements.scalar_utils.obtain_necronite_ingot.title": "Схований в Смертях",
@@ -227,5 +225,7 @@
   "itemGroup.scalar_utils_arsenal": "Scalar Utils 5: Arsenal",
   "itemGroup.scalar_utils_blocks": "Scalar Utils 5: Blocks",
   "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
-  "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting"
+  "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting",
+
+  "scalar_utils.this_lang.authors": "Moonvvell"
 }
