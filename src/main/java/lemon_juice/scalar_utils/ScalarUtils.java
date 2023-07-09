@@ -2,6 +2,7 @@ package lemon_juice.scalar_utils;
 
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.creativetab.ModCreativeTab;
+import lemon_juice.scalar_utils.handler.MobDropHandler;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.loot.ModLootModifiers;
 import lemon_juice.scalar_utils.tags.ModTags;
@@ -39,13 +40,19 @@ public class ScalarUtils {
         // Register Tags
         ModTags.init();
 
+        // Register commonSetup (Mob Drops from Cleavers)
         modEventBus.addListener(this::commonSetup);
+
+        // Registers enqueueIMC (Curios)
         modEventBus.addListener(this::enqueueIMC);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {}
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        // Registers Mob Drops from Cleavers
+        MinecraftForge.EVENT_BUS.register(new MobDropHandler());
+    }
 
     //InterModQueue For Curios
     private void enqueueIMC(InterModEnqueueEvent event) {
