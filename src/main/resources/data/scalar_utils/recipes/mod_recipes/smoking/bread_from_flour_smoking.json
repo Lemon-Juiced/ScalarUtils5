@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smoking",
   "ingredient": {
-    "item": "scalar_utils_core:flour"
+    "item": "scalar_utils:flour"
   },
   "result": "minecraft:bread",
   "experience": 0.1,
