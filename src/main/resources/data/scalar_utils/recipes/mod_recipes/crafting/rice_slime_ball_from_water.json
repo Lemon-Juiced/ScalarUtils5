@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "scalar_utils:flour"
+      "item": "scalar_utils:rice"
     },
     {
-      "item": "minecraft:potion"
+      "tag": "forge:water"
     }
   ],
   "result": {
-    "item": "scalar_utils:wheat_slime_ball",
+    "item": "scalar_utils:rice_slime_ball",
     "count": 1
   }
 }

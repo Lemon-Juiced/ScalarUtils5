@@ -5,7 +5,7 @@
       "item": "scalar_utils:flour"
     },
     {
-      "item": "minecraft:water_bucket"
+      "tag": "forge:water"
     }
   ],
   "result": {
