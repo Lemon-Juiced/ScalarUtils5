@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "tag": "minecraft:logs"
+      "item": "minecraft:diamond_block"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "scalar_utils:wooden_cleaver",
+    "item": "scalar_utils:diamond_claymore",
     "count": 1
   }
 }

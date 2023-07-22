@@ -3,7 +3,7 @@ package lemon_juice.scalar_utils.item;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.custom.AbstractSlimeballAlternativeItem;
-import lemon_juice.scalar_utils.item.custom.CleaverItem;
+import lemon_juice.scalar_utils.item.custom.ClaymoreItem;
 import lemon_juice.scalar_utils.item.custom.FlourItem;
 import lemon_juice.scalar_utils.item.custom.RuneCarvingKnifeItem;
 import lemon_juice.scalar_utils.item.custom.consumable_item.*;
@@ -116,13 +116,13 @@ public class ModItems {
     public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_TORCH.get(), ModBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     // Cleavers
-    public static final RegistryObject<Item> WOODEN_CLEAVER = ITEMS.register("wooden_cleaver", () -> new CleaverItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> STONE_CLEAVER = ITEMS.register("stone_cleaver", () -> new CleaverItem(Tiers.STONE, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> IRON_CLEAVER = ITEMS.register("iron_cleaver", () -> new CleaverItem(Tiers.IRON, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> GOLDEN_CLEAVER = ITEMS.register("golden_cleaver", () -> new CleaverItem(Tiers.GOLD, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> DIAMOND_CLEAVER = ITEMS.register("diamond_cleaver", () -> new CleaverItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> NETHERITE_CLEAVER = ITEMS.register("netherite_cleaver", () -> new CleaverItem(Tiers.NETHERITE, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> NECRONITE_CLEAVER = ITEMS.register("necronite_cleaver", () -> new NecroniteCleaverItem(new Item.Properties()));
+    public static final RegistryObject<Item> WOODEN_CLAYMORE = ITEMS.register("wooden_claymore", () -> new ClaymoreItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> STONE_CLAYMORE = ITEMS.register("stone_claymore", () -> new ClaymoreItem(Tiers.STONE, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_CLAYMORE = ITEMS.register("iron_claymore", () -> new ClaymoreItem(Tiers.IRON, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_CLAYMORE = ITEMS.register("golden_claymore", () -> new ClaymoreItem(Tiers.GOLD, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_CLAYMORE = ITEMS.register("diamond_claymore", () -> new ClaymoreItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITE_CLAYMORE = ITEMS.register("netherite_claymore", () -> new ClaymoreItem(Tiers.NETHERITE, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> NECRONITE_CLAYMORE = ITEMS.register("necronite_claymore", () -> new NecroniteClaymoreItem(new Item.Properties()));
 
 
     // Tunnelers

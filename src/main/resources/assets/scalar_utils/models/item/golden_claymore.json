@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "scalar_utils:item/iron_cleaver"
+    "layer0": "scalar_utils:item/golden_claymore"
   }
 }

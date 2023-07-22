@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:diamond_block"
+      "item": "minecraft:iron_block"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "scalar_utils:diamond_cleaver",
+    "item": "scalar_utils:iron_claymore",
     "count": 1
   }
 }

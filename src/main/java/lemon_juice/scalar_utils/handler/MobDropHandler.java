@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.handler;
 
-import lemon_juice.scalar_utils.item.custom.CleaverItem;
+import lemon_juice.scalar_utils.item.custom.ClaymoreItem;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.*;
@@ -26,12 +26,12 @@ public class MobDropHandler {
 
         var drops = event.getDrops();
         var attacker = event.getSource().getEntity();
-        int mobHeadDropChance = 4; // Out of 100
+        int mobHeadDropChance = 10; // Out of 100
         Random random = new Random();
 
         if(attacker instanceof Player playerEntity){
             Item itemInHand = playerEntity.getItemInHand(InteractionHand.MAIN_HAND).getItem();
-            if (itemInHand instanceof CleaverItem){
+            if (itemInHand instanceof ClaymoreItem){
                 if(entity instanceof Creeper && random.nextInt(0, 100) < mobHeadDropChance)
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.CREEPER_HEAD)));
 

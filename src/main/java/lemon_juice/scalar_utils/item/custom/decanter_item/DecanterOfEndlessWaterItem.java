@@ -4,6 +4,7 @@ import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -12,6 +13,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BucketPickup;
@@ -21,6 +23,9 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class DecanterOfEndlessWaterItem extends BucketItem {
     private final Fluid content;
@@ -31,57 +36,34 @@ public class DecanterOfEndlessWaterItem extends BucketItem {
     }
 
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
-        ItemStack itemstack = player.getItemInHand(interactionHand);
-        BlockHitResult blockhitresult = getPlayerPOVHitResult(level, player, this.content == Fluids.EMPTY ? ClipContext.Fluid.SOURCE_ONLY : ClipContext.Fluid.NONE);
-        InteractionResultHolder<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onBucketUse(player, level, itemstack, blockhitresult);
+        ItemStack itemStack = player.getItemInHand(interactionHand);
+        BlockHitResult blockHitResult = getPlayerPOVHitResult(level, player, this.content == Fluids.EMPTY ? ClipContext.Fluid.SOURCE_ONLY : ClipContext.Fluid.NONE);
+        InteractionResultHolder<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onBucketUse(player, level, itemStack, blockHitResult);
         if (ret != null) return ret;
-        if (blockhitresult.getType() == HitResult.Type.MISS) {
-            return InteractionResultHolder.pass(itemstack);
-        } else if (blockhitresult.getType() != HitResult.Type.BLOCK) {
-            return InteractionResultHolder.pass(itemstack);
+        if (blockHitResult.getType() == HitResult.Type.MISS) {
+            return InteractionResultHolder.pass(itemStack);
+        } else if (blockHitResult.getType() != HitResult.Type.BLOCK) {
+            return InteractionResultHolder.pass(itemStack);
         } else {
-            BlockPos blockpos = blockhitresult.getBlockPos();
-            Direction direction = blockhitresult.getDirection();
-            BlockPos blockpos1 = blockpos.relative(direction);
-            if (level.mayInteract(player, blockpos) && player.mayUseItemAt(blockpos1, direction, itemstack)) {
-                if (this.content == Fluids.EMPTY) {
-                    BlockState blockstate1 = level.getBlockState(blockpos);
-                    if (blockstate1.getBlock() instanceof BucketPickup) {
-                        BucketPickup bucketpickup = (BucketPickup)blockstate1.getBlock();
-                        ItemStack itemstack1 = bucketpickup.pickupBlock(level, blockpos, blockstate1);
-                        if (!itemstack1.isEmpty()) {
-                            player.awardStat(Stats.ITEM_USED.get(this));
-                            bucketpickup.getPickupSound(blockstate1).ifPresent((p_150709_) -> {
-                                player.playSound(p_150709_, 1.0F, 1.0F);
-                            });
-                            level.gameEvent(player, GameEvent.FLUID_PICKUP, blockpos);
-                            ItemStack itemstack2 = ItemUtils.createFilledResult(itemstack, player, itemstack1);
-                            if (!level.isClientSide) {
-                                CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayer)player, itemstack1);
-                            }
-
-                            return InteractionResultHolder.sidedSuccess(itemstack2, level.isClientSide());
-                        }
+            BlockPos blockPos = blockHitResult.getBlockPos();
+            Direction direction = blockHitResult.getDirection();
+            BlockPos blockPos1 = blockPos.relative(direction);
+            if (level.mayInteract(player, blockPos) && player.mayUseItemAt(blockPos1, direction, itemStack)) {
+                BlockState blockState = level.getBlockState(blockPos);
+                BlockPos blockPos2 = canBlockContainFluid(level, blockPos, blockState) ? blockPos : blockPos1;
+                if (this.emptyContents(player, level, blockPos2, blockHitResult, itemStack)) {
+                    this.checkExtraContent(player, level, itemStack, blockPos2);
+                    if (player instanceof ServerPlayer) {
+                        CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)player, blockPos2, itemStack);
                     }
 
-                    return InteractionResultHolder.fail(itemstack);
+                    player.awardStat(Stats.ITEM_USED.get(this));
+                    return InteractionResultHolder.sidedSuccess(getEmptySuccessItem(itemStack, player), level.isClientSide());
                 } else {
-                    BlockState blockstate = level.getBlockState(blockpos);
-                    BlockPos blockpos2 = canBlockContainFluid(level, blockpos, blockstate) ? blockpos : blockpos1;
-                    if (this.emptyContents(player, level, blockpos2, blockhitresult, itemstack)) {
-                        this.checkExtraContent(player, level, itemstack, blockpos2);
-                        if (player instanceof ServerPlayer) {
-                            CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)player, blockpos2, itemstack);
-                        }
-
-                        player.awardStat(Stats.ITEM_USED.get(this));
-                        return InteractionResultHolder.sidedSuccess(getEmptySuccessItem(itemstack, player), level.isClientSide());
-                    } else {
-                        return InteractionResultHolder.fail(itemstack);
-                    }
+                    return InteractionResultHolder.fail(itemStack);
                 }
             } else {
-                return InteractionResultHolder.fail(itemstack);
+                return InteractionResultHolder.fail(itemStack);
             }
         }
     }
@@ -93,6 +75,11 @@ public class DecanterOfEndlessWaterItem extends BucketItem {
     @Override
     public int getMaxStackSize(ItemStack stack) {
         return 1;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+        components.add(Component.translatable("runic_water_plate.tooltip"));
     }
 
     @Override

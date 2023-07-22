@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "scalar_utils:diamond_cleaver"
+    "item": "scalar_utils:diamond_claymore"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"
@@ -10,6 +10,6 @@
     "item": "minecraft:netherite_upgrade_smithing_template"
   },
   "result": {
-    "item": "scalar_utils:netherite_cleaver"
+    "item": "scalar_utils:netherite_claymore"
   }
 }

@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.scalar_utils.scalar_utils.description"
     },
-    "background": "scalar_utils:textures/block/necronite_block.png",
+    "background": "scalar_utils:textures/block/reinforced_obsidian.png",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

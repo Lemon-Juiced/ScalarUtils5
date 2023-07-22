@@ -93,13 +93,13 @@ public class ModCreativeTab {
             event.accept(ModItems.NECRONITE_LEGGINGS.get());
             event.accept(ModItems.NECRONITE_BOOTS.get());
 
-            event.accept(ModItems.WOODEN_CLEAVER.get());
-            event.accept(ModItems.STONE_CLEAVER.get());
-            event.accept(ModItems.IRON_CLEAVER.get());
-            event.accept(ModItems.GOLDEN_CLEAVER.get());
-            event.accept(ModItems.DIAMOND_CLEAVER.get());
-            event.accept(ModItems.NETHERITE_CLEAVER.get());
-            event.accept(ModItems.NECRONITE_CLEAVER.get());
+            event.accept(ModItems.WOODEN_CLAYMORE.get());
+            event.accept(ModItems.STONE_CLAYMORE.get());
+            event.accept(ModItems.IRON_CLAYMORE.get());
+            event.accept(ModItems.GOLDEN_CLAYMORE.get());
+            event.accept(ModItems.DIAMOND_CLAYMORE.get());
+            event.accept(ModItems.NETHERITE_CLAYMORE.get());
+            event.accept(ModItems.NECRONITE_CLAYMORE.get());
 
             event.accept(ModItems.WOODEN_TUNNELER.get());
             event.accept(ModItems.STONE_TUNNELER.get());

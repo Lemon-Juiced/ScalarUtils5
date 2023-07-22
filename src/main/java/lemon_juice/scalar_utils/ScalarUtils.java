@@ -64,7 +64,6 @@ public class ScalarUtils {
         InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("pendant").icon(new ResourceLocation(ScalarUtils.MOD_ID, "slot/empty_pendant_slot")).build());
 }
 
-
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent

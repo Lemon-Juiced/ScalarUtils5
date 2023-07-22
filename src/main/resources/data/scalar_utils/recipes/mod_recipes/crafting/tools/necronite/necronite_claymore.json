@@ -10,14 +10,14 @@
       "tag": "forge:storage_blocks/necronite"
     },
     "N": {
-      "item": "scalar_utils:netherite_cleaver"
+      "item": "scalar_utils:netherite_claymore"
     },
     "/": {
       "item": "scalar_utils:blazing_end_rod"
     }
   },
   "result": {
-    "item": "scalar_utils:necronite_cleaver",
+    "item": "scalar_utils:necronite_claymore",
     "count": 1
   }
 }
