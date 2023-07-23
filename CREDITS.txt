@@ -1,5 +1,0 @@
-Authors: Lemon_Juiced
-Textures: Lemon_Juiced, TechDahTurtle, and _ForgeUser8592662 (mandarins)
-Translators: Lemon_Juiced (en_us.json), Moonvvell (uk_ua.json)
-
-Special Thanks: The Scalar Team (Past, Present, and Future)
