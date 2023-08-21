@@ -1,22 +1,17 @@
 package lemon_juice.scalar_utils.item.custom.consumable_item;
 
-import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.BucketPickup;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
@@ -56,11 +51,6 @@ public class RunicWaterPlateItem extends BucketItem {
                         CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer) player, blockPos2, itemStack);
                     }
 
-                    boolean plateInMainHand = player.getItemInHand(InteractionHand.MAIN_HAND).equals(new ItemStack(ModItems.RUNIC_WATER_PLATE.get()));
-                    if (plateInMainHand) player.getItemInHand(InteractionHand.MAIN_HAND).shrink(1);
-                    else player.getItemInHand(InteractionHand.OFF_HAND).shrink(1);
-
-                    player.awardStat(Stats.ITEM_USED.get(this));
                     return InteractionResultHolder.sidedSuccess(getEmptySuccessItem(itemStack, player), level.isClientSide());
                 } else {
                     return InteractionResultHolder.fail(itemStack);
@@ -72,7 +62,13 @@ public class RunicWaterPlateItem extends BucketItem {
     }
 
     public static ItemStack getEmptySuccessItem(ItemStack itemStack, Player player) {
-        return !player.getAbilities().instabuild ? new ItemStack(Items.AIR) : itemStack;
+        // Shrink the itemStack by 1
+        itemStack.shrink(1);
+
+        // If the size of the stack is 0 return AIR
+        if(itemStack.isEmpty()) return new ItemStack(Items.AIR);
+        // Else return the stack
+        else return itemStack;
     }
 
     @Override
