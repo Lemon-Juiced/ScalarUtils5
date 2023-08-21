@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecroniteShovelItem extends ShovelItem {
     public NecroniteShovelItem(Properties properties) {
-        super(ModTiers.NECRONITE, 1.5f, -3.0f, properties);
+        super(ModTiers.NECRONITE_TIER, 1.5f, -3.0f, properties);
     }
 
     @Override

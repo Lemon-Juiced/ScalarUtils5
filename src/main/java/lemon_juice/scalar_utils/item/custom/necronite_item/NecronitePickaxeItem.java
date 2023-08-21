@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecronitePickaxeItem extends PickaxeItem {
     public NecronitePickaxeItem(Properties properties) {
-        super(ModTiers.NECRONITE, 1, -2.8f, properties);
+        super(ModTiers.NECRONITE_TIER, 1, -2.8f, properties);
     }
 
     @Override

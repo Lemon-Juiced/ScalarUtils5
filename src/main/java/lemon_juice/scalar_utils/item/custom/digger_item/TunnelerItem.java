@@ -48,13 +48,13 @@ public class TunnelerItem extends DiggerItem {
         else if(tier == net.minecraft.world.item.Tiers.IRON) return 1_000;
         else if(tier == net.minecraft.world.item.Tiers.DIAMOND) return 6_244;
         else if(tier == net.minecraft.world.item.Tiers.NETHERITE) return 8_024;
-        else if(tier == ModTiers.NECRONITE) return -1;
+        else if(tier == ModTiers.NECRONITE_TIER) return -1;
         else return 128; //This case should never be reached
     }
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        if(tier == ModTiers.NECRONITE) components.add(Component.translatable("unbreakable.tooltip").withStyle(ChatFormatting.RED));
+        if(tier == ModTiers.NECRONITE_TIER) components.add(Component.translatable("unbreakable.tooltip").withStyle(ChatFormatting.RED));
 
         if(radius == 1) components.add(Component.translatable("tunneler_r1.tooltip"));
         else if(radius == 2) components.add(Component.translatable("tunneler_r2.tooltip"));

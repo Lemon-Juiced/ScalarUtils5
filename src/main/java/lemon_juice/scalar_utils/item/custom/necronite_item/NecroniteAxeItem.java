@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecroniteAxeItem extends AxeItem {
     public NecroniteAxeItem(Properties properties) {
-        super(ModTiers.NECRONITE, 5.0f, -3.0f, properties);
+        super(ModTiers.NECRONITE_TIER, 5.0f, -3.0f, properties);
     }
 
     @Override

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecroniteHoeItem extends HoeItem {
     public NecroniteHoeItem(Properties properties) {
-        super(ModTiers.NECRONITE, -5, 0.0f, properties);
+        super(ModTiers.NECRONITE_TIER, -5, 0.0f, properties);
     }
 
     @Override

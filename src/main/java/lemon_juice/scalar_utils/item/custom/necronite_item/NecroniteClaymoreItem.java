@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecroniteClaymoreItem extends ClaymoreItem {
     public NecroniteClaymoreItem(Properties properties) {
-        super(ModTiers.NECRONITE, 4, -2.4f,  properties);
+        super(ModTiers.NECRONITE_TIER, 4, -2.4f,  properties);
     }
 
     @Override
