@@ -22,5 +22,5 @@ public class ModTiers {
      * NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {return Ingredient.of(Items.NETHERITE_INGOT);});
      */
 
-    public static final Tier NECRONITE_TIER = TierSortingRegistry.registerTier(new ForgeTier(5, -1, 12.0F, 5.0F, 22, BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(ModTags.Items.INGOTS_NECRONITE)), new ResourceLocation(ScalarUtils.MOD_ID, "necronite"), List.of(Tiers.NETHERITE), List.of());
+    public static final Tier NECRONITE_TIER = TierSortingRegistry.registerTier(new ForgeTier(5, -1, 12.0F, 5.0F, 22, ModTags.Blocks.NEEDS_NECRONITE_TOOL, () -> Ingredient.of(ModTags.Items.INGOTS_NECRONITE)), new ResourceLocation(ScalarUtils.MOD_ID, "necronite"), List.of(Tiers.NETHERITE), List.of());
 }
