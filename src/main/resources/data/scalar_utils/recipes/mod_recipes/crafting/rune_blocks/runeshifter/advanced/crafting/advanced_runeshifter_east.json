@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "RBA",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:runic_plate"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "scalar_utils:basic_runeshifter_east"
+    },
+    "R": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:advanced_runeshifter_east",
+    "count": 32
+  }
+}

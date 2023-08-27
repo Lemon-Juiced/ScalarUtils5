@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "ABR",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:runic_plate"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "scalar_utils:elite_runeshifter_west"
+    },
+    "R": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:ultimate_runeshifter_west",
+    "count": 8
+  }
+}

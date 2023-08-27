@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#S#",
-    "SBS",
+    "#B#",
+    "BSB",
     "#A#"
   ],
   "key": {
@@ -13,7 +13,7 @@
       "item": "minecraft:amethyst_shard"
     },
     "B": {
-      "item": "minecraft:glass_bottle"
+      "item": "minecraft:iron_block"
     },
     "S": {
       "tag": "forge:slimeballs"
@@ -21,6 +21,6 @@
   },
   "result": {
     "item": "scalar_utils:basic_runeshifter_south",
-    "count": 8
+    "count": 64
   }
 }

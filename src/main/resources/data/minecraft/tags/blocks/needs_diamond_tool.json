@@ -4,6 +4,10 @@
     "scalar_utils:reinforced_glass",
     "scalar_utils:reinforced_obsidian",
     "scalar_utils:elite_runebooster",
-    "scalar_utils:elite_runedropper"
+    "scalar_utils:elite_runedropper",
+    "scalar_utils:elite_runeshifter_north",
+    "scalar_utils:elite_runeshifter_south",
+    "scalar_utils:elite_runeshifter_west",
+    "scalar_utils:elite_runeshifter_east"
   ]
 }

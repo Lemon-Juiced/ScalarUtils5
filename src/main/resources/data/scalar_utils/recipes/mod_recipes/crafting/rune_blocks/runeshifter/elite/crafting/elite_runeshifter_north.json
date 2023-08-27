@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#A#",
+    "RBR",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:runic_plate"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "scalar_utils:advanced_runeshifter_north"
+    },
+    "R": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:elite_runeshifter_north",
+    "count": 16
+  }
+}

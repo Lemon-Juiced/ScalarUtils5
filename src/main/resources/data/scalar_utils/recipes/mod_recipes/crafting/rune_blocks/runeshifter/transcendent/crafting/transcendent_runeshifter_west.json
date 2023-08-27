@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#S#",
-    "SBA",
-    "#S#"
+    "#R#",
+    "ABR",
+    "#R#"
   ],
   "key": {
     "#": {
@@ -13,14 +13,14 @@
       "item": "minecraft:amethyst_shard"
     },
     "B": {
-      "item": "minecraft:glass_bottle"
+      "item": "scalar_utils:ultimate_runeshifter_west"
     },
-    "S": {
-      "tag": "forge:slimeballs"
+    "R": {
+      "tag": "forge:ingots/necronite"
     }
   },
   "result": {
-    "item": "scalar_utils:basic_runeshifter_east",
-    "count": 8
+    "item": "scalar_utils:transcendent_runeshifter_west",
+    "count": 4
   }
 }

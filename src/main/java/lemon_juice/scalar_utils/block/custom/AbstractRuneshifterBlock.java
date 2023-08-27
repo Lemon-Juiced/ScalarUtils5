@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -24,12 +25,15 @@ public class AbstractRuneshifterBlock extends Block {
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-        switch (direction) {
-            case "north" -> entity.addDeltaMovement(new Vec3(0, 0, 0 - velocity)); // Negative Z
-            case "south" -> entity.addDeltaMovement(new Vec3(0, 0, velocity)); // Positive Z
-            case "west" -> entity.addDeltaMovement(new Vec3(0 - velocity, 0, 0)); // Negative X
-            case "east" -> entity.addDeltaMovement(new Vec3(velocity, 0, 0)); // Positive X
-            default -> {}
+        if(entity instanceof LivingEntity livingEntity && livingEntity.isShiftKeyDown())/*Do nothing*/;
+        else {
+            switch (direction) {
+                case "north" -> entity.addDeltaMovement(new Vec3(0, 0, 0 - velocity)); // Negative Z
+                case "south" -> entity.addDeltaMovement(new Vec3(0, 0, velocity)); // Positive Z
+                case "west" -> entity.addDeltaMovement(new Vec3(0 - velocity, 0, 0)); // Negative X
+                case "east" -> entity.addDeltaMovement(new Vec3(velocity, 0, 0)); // Positive X
+                default -> {}
+            }
         }
 
         super.stepOn(level, pos, state, entity);

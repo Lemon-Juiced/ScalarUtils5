@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#B#",
+    "BSB",
+    "#A#"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:runic_plate"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "minecraft:iron_block"
+    },
+    "S": {
+      "tag": "forge:slimeballs"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:basic_runeshifter_east",
+    "count": 64
+  }
+}

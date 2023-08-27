@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scalar_utils:block/advanced_runeshifter_arrow_orientation_1",
+    "east": "scalar_utils:block/advanced_runeshifter_arrow_orientation_4",
+    "north": "scalar_utils:block/advanced_runeshifter_bottom",
+    "particle": "scalar_utils:block/advanced_runeshifter_arrow",
+    "south": "scalar_utils:block/advanced_runeshifter_top",
+    "up": "scalar_utils:block/advanced_runeshifter_arrow_orientation_3",
+    "west": "scalar_utils:block/advanced_runeshifter_arrow_orientation_2"
+  }
+}
