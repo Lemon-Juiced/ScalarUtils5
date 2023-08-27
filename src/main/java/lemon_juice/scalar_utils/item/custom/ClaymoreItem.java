@@ -17,6 +17,6 @@ public class ClaymoreItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        components.add(Component.translatable("cleaver.tooltip"));
+        components.add(Component.translatable("tooltip.scalar_utils.cleaver"));
     }
 }

@@ -4,27 +4,22 @@
   "curios.identifier.rune": "Rune",
 
   "item.scalar_utils.blazing_end_rod": "Blazing End Rod",
-
+  "item.scalar_utils.stone_rod": "Stone Rod",
   "item.scalar_utils.chainmail": "Chainmail",
-
   "item.scalar_utils.flour": "Flour",
-
+  "item.scalar_utils.runic_diamond": "Runic Diamond",
   "item.scalar_utils.gloves": "Gloves",
   "item.scalar_utils.pendant": "Pendant",
   "item.scalar_utils.ring": "Ring",
   "item.scalar_utils.decanter": "Decanter",
-
   "item.scalar_utils.gelatin": "Gelatin",
   "item.scalar_utils.rice_slime_ball": "Rice Slimeball",
   "item.scalar_utils.wheat_slime_ball": "Wheat Slimeball",
-
   "item.scalar_utils.glass_cutter": "Glass Cutter",
-
   "item.scalar_utils.carrot_seeds": "Carrot Seeds",
   "item.scalar_utils.flax_seeds": "Flax Seeds",
   "item.scalar_utils.potato_seeds": "Potato Seeds",
   "item.scalar_utils.rice": "Rice",
-
   "item.scalar_utils.necronite_axe": "Necronite Axe",
   "item.scalar_utils.necronite_hoe": "Necronite Hoe",
   "item.scalar_utils.necronite_pickaxe": "Necronite Pickaxe",
@@ -34,32 +29,23 @@
   "item.scalar_utils.necronite_chestplate": "Necronite Chestplate",
   "item.scalar_utils.necronite_leggings": "Necronite Leggings",
   "item.scalar_utils.necronite_boots": "Necronite Boots",
-
   "item.scalar_utils.runecarving_knife": "Rune Carving Knife",
-
   "item.scalar_utils.runic_angel_ring": "Runic Angel Ring",
-
   "item.scalar_utils.runic_gloves_of_healing": "Runic Gloves of Healing",
   "item.scalar_utils.runic_pendant_of_healing": "Runic Pendant of Healing",
   "item.scalar_utils.runic_ring_of_healing": "Runic Ring of Healing",
-
   "item.scalar_utils.runic_gloves_of_speed": "Runic Gloves of Speed",
   "item.scalar_utils.runic_pendant_of_speed": "Runic Pendant of Speed",
   "item.scalar_utils.runic_ring_of_speed": "Runic Ring of Speed",
-
   "item.scalar_utils.runic_gloves_of_strength": "Runic Gloves of Strength",
   "item.scalar_utils.runic_pendant_of_strength": "Runic Pendant of Strength",
   "item.scalar_utils.runic_ring_of_strength": "Runic Ring of Strength",
-
   "item.scalar_utils.runic_gloves_of_wisdom": "Runic Gloves of Wisdom",
   "item.scalar_utils.runic_pendant_of_wisdom": "Runic Pendant of Wisdom",
   "item.scalar_utils.runic_ring_of_wisdom": "Runic Ring of Wisdom",
-
   "item.scalar_utils.runic_decanter_of_endless_fire": "Runic Decanter of Endless Fire",
   "item.scalar_utils.runic_decanter_of_endless_water": "Runic Decanter of Endless Water",
-
   "item.scalar_utils.rune_of_the_template": "Rune of the Template",
-
   "item.scalar_utils.runic_plate": "Runic Plate",
   "item.scalar_utils.runic_booster_plate": "Runic Booster Plate",
   "item.scalar_utils.runic_dropper_plate": "Runic Dropper Plate",
@@ -67,14 +53,8 @@
   "item.scalar_utils.runic_speed_plate": "Runic Speed Plate",
   "item.scalar_utils.runic_strength_plate": "Runic Strength Plate",
   "item.scalar_utils.runic_wisdom_plate": "Runic Wisdom Plate",
-
   "item.scalar_utils.runic_fire_plate": "Runic Fire Plate",
   "item.scalar_utils.runic_water_plate": "Runic Water Plate",
-
-  "item.scalar_utils.runic_diamond": "Runic Diamond",
-
-  "item.scalar_utils.stone_rod": "Stone Rod",
-
   "item.scalar_utils.wooden_claymore": "Wooden Claymore",
   "item.scalar_utils.stone_claymore": "Stone Claymore",
   "item.scalar_utils.iron_claymore": "Iron Claymore",
@@ -82,8 +62,6 @@
   "item.scalar_utils.diamond_claymore": "Diamond Claymore",
   "item.scalar_utils.netherite_claymore": "Netherite Claymore",
   "item.scalar_utils.necronite_claymore": "Necronite Claymore",
-  "cleaver.tooltip": "Beheading Weapon - Slow And Heavy",
-
   "item.scalar_utils.wooden_tunneler": "Wooden Tunneler",
   "item.scalar_utils.stone_tunneler": "Stone Tunneler",
   "item.scalar_utils.iron_tunneler": "Iron Tunneler",
@@ -91,6 +69,12 @@
   "item.scalar_utils.diamond_tunneler": "Diamond Tunneler",
   "item.scalar_utils.netherite_tunneler": "Netherite Tunneler",
   "item.scalar_utils.necronite_tunneler": "Necronite Tunneler",
+
+  "itemGroup.scalar_utils_agriculture": "Scalar Utils 5: Agriculture",
+  "itemGroup.scalar_utils_arsenal": "Scalar Utils 5: Arsenal",
+  "itemGroup.scalar_utils_blocks": "Scalar Utils 5: Blocks",
+  "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
+  "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting",
 
   "block.scalar_utils.clear_glass": "Clear Glass",
   "block.scalar_utils.clear_glass_pane": "Clear Glass Pane",
@@ -156,6 +140,7 @@
   "tooltip.scalar_utils.abstract_speed_curio": "Grants the wearer a speed boost.",
   "tooltip.scalar_utils.abstract_strength_curio": "Grants the wearer a strength boost.",
   "tooltip.scalar_utils.abstract_wisdom_curio": "Grants the wearer good favor with villagers.",
+  "tooltip.scalar_utils.cleaver": "Beheading Weapon - Slow And Heavy",
   "tooltip.scalar_utils.flour": "Smelts Into Bread",
   "tooltip.scalar_utils.slime_ball_alternative": "Slimeball Alternative",
   "tooltip.scalar_utils.glass_cutter": "Breaks Glass and Ice",
@@ -260,11 +245,5 @@
   "advancements.scalar_utils.scalar_utils.title": "Scalar Utils 5: Definitive Edition",
   "advancements.scalar_utils.scalar_utils.description": "Play Scalar Utils 5!",
 
-  "itemGroup.scalar_utils_agriculture": "Scalar Utils 5: Agriculture",
-  "itemGroup.scalar_utils_arsenal": "Scalar Utils 5: Arsenal",
-  "itemGroup.scalar_utils_blocks": "Scalar Utils 5: Blocks",
-  "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
-  "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting",
-
-  "scalar_utils.this_lang.authors": "Lemon_Juiced"
+  "authors.scalar_utils.this_lang_file": "Lemon_Juiced"
 }

@@ -58,7 +58,7 @@
   "item.scalar_utils.diamond_cleaver": "Діамантовий Тесак",
   "item.scalar_utils.netherite_cleaver": "Незеритовий Тесак",
   "item.scalar_utils.necronite_cleaver": "Некронітовий Тесак",
-  "cleaver.tooltip": "Зброя для обезголовлення - повільна та важка",
+  "tooltip.scalar_utils.cleaver": "Зброя для обезголовлення - повільна та важка",
   "item.scalar_utils.wooden_tunneler": "Дерев'яний Тунелер",
   "item.scalar_utils.stone_tunneler": "Кам'яний Тунелер",
   "item.scalar_utils.iron_tunneler": "Залізний Тунелер",
@@ -227,5 +227,5 @@
   "itemGroup.scalar_utils_items": "Scalar Utils 5: Items",
   "itemGroup.scalar_utils_lighting": "Scalar Utils 5: Lighting",
 
-  "scalar_utils.this_lang.authors": "Moonvvell"
+  "authors.scalar_utils.this_lang_file": "Moonvvell"
 }
