@@ -27,7 +27,7 @@ public class AbstractWisdomCurioItem extends Item implements ICurioItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("abstract_wisdom_curio.tooltip"));
+        components.add(Component.translatable("tooltip.scalar_utils.abstract_wisdom_curio"));
     }
 
     // Curios Integration

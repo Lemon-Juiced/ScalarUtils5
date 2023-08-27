@@ -10,15 +10,24 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class AbstractRunedropperBlockItem extends BlockItem {
-    private final int blocks;
-    public AbstractRunedropperBlockItem(Block block, Properties properties, int blocks) {
+public class AbstractRuneshifterBlockItem extends BlockItem {
+    private final String direction;
+    public AbstractRuneshifterBlockItem(Block block, Properties properties, String direction) {
         super(block, properties);
-        this.blocks = blocks;
+        this.direction = direction;
     }
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+        switch (direction) {
+            case "north" -> components.add(Component.translatable("tooltip.scalar_utils.runeshifter").append(Component.translatable("tooltip.scalar_utils.north")));
+            case "south" -> components.add(Component.translatable("tooltip.scalar_utils.runeshifter").append(Component.translatable("tooltip.scalar_utils.south")));
+            case "west" -> components.add(Component.translatable("tooltip.scalar_utils.runeshifter").append(Component.translatable("tooltip.scalar_utils.west")));
+            case "east" -> components.add(Component.translatable("tooltip.scalar_utils.runeshifter").append(Component.translatable("tooltip.scalar_utils.east")));
+            default -> {}
+        }
+
+
         if (blocks == 5) components.add(Component.translatable("tooltip.scalar_utils.basic_runedropper"));
         else if (blocks == 10) components.add(Component.translatable("tooltip.scalar_utils.advanced_runedropper"));
         else if (blocks == 15) components.add(Component.translatable("tooltip.scalar_utils.elite_runedropper"));

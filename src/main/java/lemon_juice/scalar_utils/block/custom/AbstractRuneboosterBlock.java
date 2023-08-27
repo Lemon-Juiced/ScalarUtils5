@@ -19,11 +19,7 @@ public class AbstractRuneboosterBlock extends Block {
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-
-
-        if(entity instanceof LivingEntity livingEntity){
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, seconds * 20));
-        }
+        if(entity instanceof LivingEntity livingEntity) livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, seconds * 20));
 
         super.stepOn(level, pos, state, entity);
     }

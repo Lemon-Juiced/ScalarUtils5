@@ -27,7 +27,7 @@ public class AbstractStrengthCurioItem extends Item implements ICurioItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("abstract_strength_curio.tooltip"));
+        components.add(Component.translatable("tooltip.scalar_utils.abstract_strength_curio"));
     }
 
     // Curios Integration

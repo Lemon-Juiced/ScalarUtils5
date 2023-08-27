@@ -18,7 +18,7 @@ public class AbstractSlimeballAlternativeItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("slime_ball_alternative.tooltip").withStyle(ChatFormatting.GREEN));
+        components.add(Component.translatable("tooltip.scalar_utils.slime_ball_alternative").withStyle(ChatFormatting.GREEN));
         super.appendHoverText(stack, level, components, flag);
     }
 }

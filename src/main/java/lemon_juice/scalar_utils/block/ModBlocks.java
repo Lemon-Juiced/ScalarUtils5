@@ -23,6 +23,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+import static lemon_juice.scalar_utils.block.registry.ModBlockRegistry.registerRuneboosterBlock;
+import static lemon_juice.scalar_utils.block.registry.ModBlockRegistry.registerRunedropperBlock;
+
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ScalarUtils.MOD_ID);
 
@@ -72,6 +75,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> ULTIMATE_RUNEDROPPER = registerRunedropperBlock("ultimate_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
     public static final RegistryObject<Block> TRANSCENDENT_RUNEDROPPER = registerRunedropperBlock("transcendent_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 1000), 1000);
 
+    // Runeshifter
+    public static final RegistryObject<Block> RUNESHIFTER_NORTH = registerBlock("runeshifter_north", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "north"));
+    public static final RegistryObject<Block> RUNESHIFTER_SOUTH = registerBlock("runeshifter_south", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "south"));
+    public static final RegistryObject<Block> RUNESHIFTER_WEST = registerBlock("runeshifter_west", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "west"));
+    public static final RegistryObject<Block> RUNESHIFTER_EAST = registerBlock("runeshifter_east", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "east"));
+
     /* Torches */
     // Redstone Stone Torch
     public static final RegistryObject<Block> REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("redstone_stone_torch", () -> new RedstoneTorchBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
@@ -108,27 +117,6 @@ public class ModBlocks {
     // Tiny Torch
     public static final RegistryObject<Block> TINY_TORCH = registerBlockWithoutBlockItem("tiny_torch", () -> new TinyTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 12;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
     public static final RegistryObject<Block> TINY_WALL_TORCH = registerBlockWithoutBlockItem("tiny_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 12;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
-
-    /**************************** Specific Registry ****************************/
-    private static <T extends Block> RegistryObject<T> registerRuneboosterBlock(String name, Supplier<T> block, int seconds) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerRuneboosterBlockItem(name, toReturn, seconds);
-        return toReturn;
-    }
-
-    private static <T extends Block> RegistryObject<Item> registerRuneboosterBlockItem(String name, RegistryObject<T> block, int seconds) {
-        return ModItems.ITEMS.register(name, () -> new AbstractRuneboosterBlockItem(block.get(), new Item.Properties(), seconds));
-    }
-
-    private static <T extends Block> RegistryObject<T> registerRunedropperBlock(String name, Supplier<T> block, int blocks) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerRunedropperBlockItem(name, toReturn, blocks);
-        return toReturn;
-    }
-
-    private static <T extends Block> RegistryObject<Item> registerRunedropperBlockItem(String name, RegistryObject<T> block, int blocks) {
-        return ModItems.ITEMS.register(name, () -> new AbstractRunedropperBlockItem(block.get(), new Item.Properties(), blocks));
-    }
 
     /******************************** Registry ********************************/
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

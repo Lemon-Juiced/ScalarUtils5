@@ -54,12 +54,12 @@ public class TunnelerItem extends DiggerItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        if(tier == ModTiers.NECRONITE_TIER) components.add(Component.translatable("unbreakable.tooltip").withStyle(ChatFormatting.RED));
+        if(tier == ModTiers.NECRONITE_TIER) components.add(Component.translatable("tooltip.scalar_utils.unbreakable").withStyle(ChatFormatting.RED));
 
-        if(radius == 1) components.add(Component.translatable("tunneler_r1.tooltip"));
-        else if(radius == 2) components.add(Component.translatable("tunneler_r2.tooltip"));
-        else if(radius == 3) components.add(Component.translatable("tunneler_r3.tooltip"));
-        else components.add(Component.translatable("tunneler_r4.tooltip"));
+        if(radius == 1) components.add(Component.translatable("tooltip.scalar_utils.tunneler_r1"));
+        else if(radius == 2) components.add(Component.translatable("tooltip.scalar_utils.tunneler_r2"));
+        else if(radius == 3) components.add(Component.translatable("tooltip.scalar_utils.tunneler_r3"));
+        else components.add(Component.translatable("tooltip.scalar_utils.tunneler_r4"));
 
         super.appendHoverText(stack, level, components, flag);
     }

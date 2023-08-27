@@ -21,10 +21,7 @@ public class AbstractLampBlock extends RedstoneLampBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
-        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND){
-            level.setBlock(pos, state.cycle(LIT), 3);
-        }
-
+        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) level.setBlock(pos, state.cycle(LIT), 3);
         return super.use(state, level, pos, player, hand, result);
     }
 

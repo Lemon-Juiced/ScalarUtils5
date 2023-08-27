@@ -37,7 +37,7 @@ public class RunicDropperPlateItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("runic_dropper_plate.tooltip"));
+        components.add(Component.translatable("tooltip.scalar_utils.runic_dropper_plate"));
     }
 
 }

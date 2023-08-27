@@ -73,7 +73,7 @@ public class RunicWaterPlateItem extends BucketItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("runic_water_plate.tooltip"));
+        components.add(Component.translatable("tooltip.scalar_utils.runic_water_plate"));
     }
 
     @Override

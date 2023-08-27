@@ -23,6 +23,6 @@ public class NecroniteShovelItem extends ShovelItem {
 
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("unbreakable.tooltip").withStyle(ChatFormatting.RED));
+        components.add(Component.translatable("tooltip.scalar_utils.unbreakable").withStyle(ChatFormatting.RED));
     }
 }
