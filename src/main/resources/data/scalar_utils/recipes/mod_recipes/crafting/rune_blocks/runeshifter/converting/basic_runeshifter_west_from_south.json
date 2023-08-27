@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "scalar_utils:runeshifter_south"
+      "item": "scalar_utils:basic_runeshifter_south"
     }
   ],
   "result": {
-    "item": "scalar_utils:runeshifter_west",
+    "item": "scalar_utils:basic_runeshifter_west",
     "count": 1
   }
 }

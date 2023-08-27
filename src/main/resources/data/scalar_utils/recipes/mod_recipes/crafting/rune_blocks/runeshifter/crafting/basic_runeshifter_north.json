@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#S#",
-    "ABS",
+    "#A#",
+    "SBS",
     "#S#"
   ],
   "key": {
@@ -20,7 +20,7 @@
     }
   },
   "result": {
-    "item": "scalar_utils:runeshifter_west",
+    "item": "scalar_utils:basic_runeshifter_north",
     "count": 8
   }
 }

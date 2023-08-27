@@ -14,19 +14,21 @@ import net.minecraft.world.phys.Vec3;
 
 public class AbstractRuneshifterBlock extends Block {
     private final String direction;
+    private final double velocity;
 
-    public AbstractRuneshifterBlock(Properties properties, String direction) {
+    public AbstractRuneshifterBlock(Properties properties, String direction, double velocity) {
         super(properties);
         this.direction = direction;
+        this.velocity = velocity; //This should be between 0.0 (exclusive) and 1.0 (inclusive)
     }
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         switch (direction) {
-            case "north" -> entity.addDeltaMovement(new Vec3(0, 0, -.2)); // Negative Z
-            case "south" -> entity.addDeltaMovement(new Vec3(0, 0, .2)); // Positive Z
-            case "west" -> entity.addDeltaMovement(new Vec3(-.2, 0, 0)); // Negative X
-            case "east" -> entity.addDeltaMovement(new Vec3(.2, 0, 0)); // Positive X
+            case "north" -> entity.addDeltaMovement(new Vec3(0, 0, 0 - velocity)); // Negative Z
+            case "south" -> entity.addDeltaMovement(new Vec3(0, 0, velocity)); // Positive Z
+            case "west" -> entity.addDeltaMovement(new Vec3(0 - velocity, 0, 0)); // Negative X
+            case "east" -> entity.addDeltaMovement(new Vec3(velocity, 0, 0)); // Positive X
             default -> {}
         }
 

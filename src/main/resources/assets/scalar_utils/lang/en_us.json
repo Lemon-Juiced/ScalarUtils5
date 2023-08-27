@@ -116,10 +116,30 @@
   "block.scalar_utils.ultimate_runedropper": "Ultimate Runedropper",
   "block.scalar_utils.transcendent_runedropper": "Transcendent Runedropper",
 
-  "block.scalar_utils.runeshifter_north": "Runeshifter (North)",
-  "block.scalar_utils.runeshifter_south": "Runeshifter (South)",
-  "block.scalar_utils.runeshifter_west": "Runeshifter (West)",
-  "block.scalar_utils.runeshifter_east": "Runeshifter (East)",
+  "block.scalar_utils.basic_runeshifter_north": "Basic Runeshifter (North)",
+  "block.scalar_utils.basic_runeshifter_south": "Basic Runeshifter (South)",
+  "block.scalar_utils.basic_runeshifter_west": "Basic Runeshifter (West)",
+  "block.scalar_utils.basic_runeshifter_east": "Basic Runeshifter (East)",
+
+  "block.scalar_utils.advanced_runeshifter_north": "Advanced Runeshifter (North)",
+  "block.scalar_utils.advanced_runeshifter_south": "Advanced Runeshifter (South)",
+  "block.scalar_utils.advancedruneshifter_west": "Advanced Runeshifter (West)",
+  "block.scalar_utils.advanced_runeshifter_east": "Advanced Runeshifter (East)",
+
+  "block.scalar_utils.elite_runeshifter_north": "Elite Runeshifter (North)",
+  "block.scalar_utils.elite_runeshifter_south": "Elite Runeshifter (South)",
+  "block.scalar_utils.elite_runeshifter_west": "Elite Runeshifter (West)",
+  "block.scalar_utils.elite_runeshifter_east": "Elite Runeshifter (East)",
+
+  "block.scalar_utils.ultimate_runeshifter_north": "Ultimate Runeshifter (North)",
+  "block.scalar_utils.ultimate_runeshifter_south": "Ultimate Runeshifter (South)",
+  "block.scalar_utils.ultimate_runeshifter_west": "Ultimate Runeshifter (West)",
+  "block.scalar_utils.ultimate_runeshifter_east": "Ultimate Runeshifter (East)",
+
+  "block.scalar_utils.transcendent_runeshifter_north": "Transcendent Runeshifter (North)",
+  "block.scalar_utils.transcendent_runeshifter_south": "Transcendent Runeshifter (South)",
+  "block.scalar_utils.transcendent_runeshifter_west": "Transcendent Runeshifter (West)",
+  "block.scalar_utils.transcendent_runeshifter_east": "Transcendent Runeshifter (East)",
 
   "block.scalar_utils.redstone_stone_torch": "Redstone Soul Stone Torch",
   "block.scalar_utils.redstone_stone_wall_torch": "Redstone Soul Stone Wall Torch",

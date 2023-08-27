@@ -23,6 +23,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+import static lemon_juice.scalar_utils.block.registry.AbstractRuneBlockBuilder.registerAllRuneBlocks;
+import static lemon_juice.scalar_utils.block.registry.LampBlockBuilder.lampBlockBuilder;
 import static lemon_juice.scalar_utils.block.registry.ModBlockRegistry.*;
 
 public class ModBlocks {
@@ -36,49 +38,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> FLAX_CROP = registerBlockWithoutBlockItem("flax_crop", () -> new FlaxCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
     public static final RegistryObject<Block> RICE_CROP = registerBlockWithoutBlockItem("rice_crop", () -> new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
-    // Lamps
-    public static final RegistryObject<Block> WHITE_LAMP = registerBlock("white_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LIGHT_GRAY_LAMP = registerBlock("light_gray_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> GRAY_LAMP = registerBlock("gray_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> BLACK_LAMP = registerBlock("black_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> BROWN_LAMP = registerBlock("brown_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> RED_LAMP = registerBlock("red_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> ORANGE_LAMP = registerBlock("orange_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> YELLOW_LAMP = registerBlock("yellow_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LIME_LAMP = registerBlock("lime_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> GREEN_LAMP = registerBlock("green_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> CYAN_LAMP = registerBlock("cyan_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> LIGHT_BLUE_LAMP = registerBlock("light_blue_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> BLUE_LAMP = registerBlock("blue_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> MAGENTA_LAMP = registerBlock("magenta_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> PINK_LAMP = registerBlock("pink_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> RAINBOW_LAMP = registerBlock("rainbow_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
-
     // Reinforced Blocks
     public static final RegistryObject<Block> REINFORCED_GLASS = registerBlock("reinforced_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
     public static final RegistryObject<Block> REINFORCED_GLASS_PANE = registerBlock("reinforced_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops().strength(50.0F, 3600000.0F)));
-
-    // Runebooster
-    public static final RegistryObject<Block> BASIC_RUNEBOOSTER = registerRuneboosterBlock("basic_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 5), 5);
-    public static final RegistryObject<Block> ADVANCED_RUNEBOOSTER = registerRuneboosterBlock("advanced_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10), 10);
-    public static final RegistryObject<Block> ELITE_RUNEBOOSTER = registerRuneboosterBlock("elite_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15), 15);
-    public static final RegistryObject<Block> ULTIMATE_RUNEBOOSTER = registerRuneboosterBlock("ultimate_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
-    public static final RegistryObject<Block> TRANSCENDENT_RUNEBOOSTER = registerRuneboosterBlock("transcendent_runebooster", () -> new AbstractRuneboosterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 1000), 1000);
-
-    // Runedropper
-    public static final RegistryObject<Block> BASIC_RUNEDROPPER = registerRunedropperBlock("basic_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), -1f), 5);
-    public static final RegistryObject<Block> ADVANCED_RUNEDROPPER = registerRunedropperBlock("advanced_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 10f), 10);
-    public static final RegistryObject<Block> ELITE_RUNEDROPPER= registerRunedropperBlock("elite_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 15f), 15);
-    public static final RegistryObject<Block> ULTIMATE_RUNEDROPPER = registerRunedropperBlock("ultimate_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 20), 20);
-    public static final RegistryObject<Block> TRANSCENDENT_RUNEDROPPER = registerRunedropperBlock("transcendent_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 1000), 1000);
-
-    // Runeshifter
-    public static final RegistryObject<Block> RUNESHIFTER_NORTH = registerRuneshifterBlock("runeshifter_north", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "north"), "north");
-    public static final RegistryObject<Block> RUNESHIFTER_SOUTH = registerRuneshifterBlock("runeshifter_south", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "south"), "south");
-    public static final RegistryObject<Block> RUNESHIFTER_WEST = registerRuneshifterBlock("runeshifter_west", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "west"), "west");
-    public static final RegistryObject<Block> RUNESHIFTER_EAST = registerRuneshifterBlock("runeshifter_east", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "east"), "east");
 
     /* Torches */
     // Redstone Stone Torch
@@ -118,7 +81,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TINY_WALL_TORCH = registerBlockWithoutBlockItem("tiny_wall_torch", () -> new TinyWallTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 12;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     /******************************** Registry ********************************/
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+    public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
@@ -133,6 +96,11 @@ public class ModBlocks {
     }
 
     public static void register(IEventBus eventBus) {
+        // Register from outside ModBlocks
+        registerAllRuneBlocks();
+        lampBlockBuilder();
+
+        // Register from ModBlocks
         BLOCKS.register(eventBus);
     }
 }

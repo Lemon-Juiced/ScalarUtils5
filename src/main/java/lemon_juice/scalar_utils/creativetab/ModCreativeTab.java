@@ -2,11 +2,18 @@ package lemon_juice.scalar_utils.creativetab;
 
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
+import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
+import lemon_juice.scalar_utils.block.custom.AbstractRuneboosterBlock;
+import lemon_juice.scalar_utils.block.custom.AbstractRunedropperBlock;
+import lemon_juice.scalar_utils.block.custom.AbstractRuneshifterBlock;
+import lemon_juice.scalar_utils.creativetab.util.CreativeTabUtils;
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,7 +34,7 @@ public class ModCreativeTab {
 
     public static final RegistryObject<CreativeModeTab> SCALAR_UTILS_BLOCKS_TAB = CREATIVE_MODE_TABS.register("scalar_utils_blocks", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.scalar_utils_blocks"))
-            .icon(() -> new ItemStack(ModBlocks.ULTIMATE_RUNEBOOSTER.get()))
+            .icon(() -> new ItemStack(ModBlocks.REINFORCED_OBSIDIAN.get()))
             .build());
 
     public static final RegistryObject<CreativeModeTab> SCALAR_UTILS_ITEMS_TAB = CREATIVE_MODE_TABS.register("scalar_utils_items", () -> CreativeModeTab.builder()
@@ -37,7 +44,7 @@ public class ModCreativeTab {
 
     public static final RegistryObject<CreativeModeTab> SCALAR_UTILS_LIGHTING_TAB = CREATIVE_MODE_TABS.register("scalar_utils_lighting", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.scalar_utils_lighting"))
-            .icon(() -> new ItemStack(ModBlocks.RAINBOW_LAMP.get()))
+            .icon(() -> new ItemStack(CreativeTabUtils.getRainbowLampItem()))
             .build());
 
     public static void registerTabs(BuildCreativeModeTabContentsEvent event){
@@ -117,22 +124,17 @@ public class ModCreativeTab {
             event.accept(ModBlocks.REINFORCED_GLASS_PANE.get());
             event.accept(ModBlocks.REINFORCED_OBSIDIAN.get());
 
-            event.accept(ModBlocks.BASIC_RUNEBOOSTER.get());
-            event.accept(ModBlocks.ADVANCED_RUNEBOOSTER.get());
-            event.accept(ModBlocks.ELITE_RUNEBOOSTER.get());
-            event.accept(ModBlocks.ULTIMATE_RUNEBOOSTER.get());
-            event.accept(ModBlocks.TRANSCENDENT_RUNEBOOSTER.get());
+            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if(block.get() instanceof AbstractRuneboosterBlock)
+                    event.accept(block.get());
 
-            event.accept(ModBlocks.BASIC_RUNEDROPPER.get());
-            event.accept(ModBlocks.ADVANCED_RUNEDROPPER.get());
-            event.accept(ModBlocks.ELITE_RUNEDROPPER.get());
-            event.accept(ModBlocks.ULTIMATE_RUNEDROPPER.get());
-            event.accept(ModBlocks.TRANSCENDENT_RUNEDROPPER.get());
+            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if(block.get() instanceof AbstractRunedropperBlock)
+                    event.accept(block.get());
 
-            event.accept(ModBlocks.RUNESHIFTER_NORTH);
-            event.accept(ModBlocks.RUNESHIFTER_SOUTH);
-            event.accept(ModBlocks.RUNESHIFTER_WEST);
-            event.accept(ModBlocks.RUNESHIFTER_EAST);
+            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if(block.get() instanceof AbstractRuneshifterBlock)
+                    event.accept(block.get());
         }
 
         if(event.getTab() == SCALAR_UTILS_ITEMS_TAB.get()){
@@ -152,23 +154,9 @@ public class ModCreativeTab {
         }
 
         if(event.getTab() == SCALAR_UTILS_LIGHTING_TAB.get()){
-            event.accept(ModBlocks.WHITE_LAMP.get());
-            event.accept(ModBlocks.LIGHT_GRAY_LAMP.get());
-            event.accept(ModBlocks.GRAY_LAMP.get());
-            event.accept(ModBlocks.BLACK_LAMP.get());
-            event.accept(ModBlocks.BROWN_LAMP.get());
-            event.accept(ModBlocks.RED_LAMP.get());
-            event.accept(ModBlocks.ORANGE_LAMP.get());
-            event.accept(ModBlocks.YELLOW_LAMP.get());
-            event.accept(ModBlocks.LIME_LAMP.get());
-            event.accept(ModBlocks.GREEN_LAMP.get());
-            event.accept(ModBlocks.CYAN_LAMP.get());
-            event.accept(ModBlocks.LIGHT_BLUE_LAMP.get());
-            event.accept(ModBlocks.BLUE_LAMP.get());
-            event.accept(ModBlocks.PURPLE_LAMP.get());
-            event.accept(ModBlocks.MAGENTA_LAMP.get());
-            event.accept(ModBlocks.PINK_LAMP.get());
-            event.accept(ModBlocks.RAINBOW_LAMP.get());
+            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if(block.get() instanceof AbstractLampBlock)
+                    event.accept(block.get());
 
             event.accept(ModItems.STONE_TORCH.get());
             event.accept(ModItems.REDSTONE_STONE_TORCH.get());

@@ -2,10 +2,6 @@
   "replace": false,
   "values": [
     "scalar_utils:basic_runebooster",
-    "scalar_utils:basic_runedropper",
-    "scalar_utils:runeshifter_north",
-    "scalar_utils:runeshifter_south",
-    "scalar_utils:runeshifter_west",
-    "scalar_utils:runeshifter_east"
+    "scalar_utils:basic_runedropper"
   ]
 }
