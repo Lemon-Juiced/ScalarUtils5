@@ -1,7 +1,7 @@
 package lemon_juice.scalar_utils.creativetab.util;
 
 import lemon_juice.scalar_utils.block.ModBlocks;
-import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.AbstractLampBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.RegistryObject;

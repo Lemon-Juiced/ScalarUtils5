@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.block.crop;
+package lemon_juice.scalar_utils.block.custom.crop;
 
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.world.level.ItemLike;

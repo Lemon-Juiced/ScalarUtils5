@@ -1,16 +1,17 @@
 package lemon_juice.scalar_utils.block;
 
 import lemon_juice.scalar_utils.ScalarUtils;
-import lemon_juice.scalar_utils.block.crop.FlaxCropBlock;
-import lemon_juice.scalar_utils.block.crop.RiceCropBlock;
-import lemon_juice.scalar_utils.block.custom.*;
-import lemon_juice.scalar_utils.block.torches.TinyRedstoneTorchBlock;
-import lemon_juice.scalar_utils.block.torches.TinyRedstoneWallTorchBlock;
-import lemon_juice.scalar_utils.block.torches.TinyTorchBlock;
-import lemon_juice.scalar_utils.block.torches.TinyWallTorchBlock;
+import lemon_juice.scalar_utils.block.custom.crop.FlaxCropBlock;
+import lemon_juice.scalar_utils.block.custom.crop.RiceCropBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.AbstractRedstoneTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.AbstractTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.TinyRedstoneTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.AbstractRedstoneWallTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.AbstractWallTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.TinyRedstoneWallTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.TinyTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.TinyWallTorchBlock;
 import lemon_juice.scalar_utils.item.ModItems;
-import lemon_juice.scalar_utils.item.custom.block_item.AbstractRuneboosterBlockItem;
-import lemon_juice.scalar_utils.item.custom.block_item.AbstractRunedropperBlockItem;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,9 +24,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static lemon_juice.scalar_utils.block.registry.AbstractRuneBlockBuilder.registerAllRuneBlocks;
-import static lemon_juice.scalar_utils.block.registry.LampBlockBuilder.lampBlockBuilder;
-import static lemon_juice.scalar_utils.block.registry.ModBlockRegistry.*;
+import static lemon_juice.scalar_utils.block.registry.builder.AbstractRuneBlockBuilder.registerAllRuneBlocks;
+import static lemon_juice.scalar_utils.block.registry.builder.LampBlockBuilder.lampBlockBuilder;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ScalarUtils.MOD_ID);
@@ -45,16 +45,16 @@ public class ModBlocks {
 
     /* Torches */
     // Redstone Stone Torch
-    public static final RegistryObject<Block> REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("redstone_stone_torch", () -> new RedstoneTorchBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> REDSTONE_STONE_WALL_TORCH = registerBlockWithoutBlockItem("redstone_stone_wall_torch", () -> new RedstoneWallTorchBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("redstone_stone_torch", () -> new AbstractRedstoneTorchBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> REDSTONE_STONE_WALL_TORCH = registerBlockWithoutBlockItem("redstone_stone_wall_torch", () -> new AbstractRedstoneWallTorchBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 7;}).sound(SoundType.WOOD)));
 
     // Soul Stone Torch
-    public static final RegistryObject<Block> SOUL_STONE_TORCH = registerBlockWithoutBlockItem("soul_stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 10;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
-    public static final RegistryObject<Block> SOUL_STONE_WALL_TORCH = registerBlockWithoutBlockItem("soul_stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 10;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> SOUL_STONE_TORCH = registerBlockWithoutBlockItem("soul_stone_torch", () -> new AbstractTorchBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 10;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
+    public static final RegistryObject<Block> SOUL_STONE_WALL_TORCH = registerBlockWithoutBlockItem("soul_stone_wall_torch", () -> new AbstractWallTorchBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 10;}).sound(SoundType.WOOD), ParticleTypes.SOUL_FIRE_FLAME));
 
     // Stone Torch
-    public static final RegistryObject<Block> STONE_TORCH = registerBlockWithoutBlockItem("stone_torch", () -> new TorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 14;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
-    public static final RegistryObject<Block> STONE_WALL_TORCH = registerBlockWithoutBlockItem("stone_wall_torch", () -> new WallTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 14;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> STONE_TORCH = registerBlockWithoutBlockItem("stone_torch", () -> new AbstractTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 14;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
+    public static final RegistryObject<Block> STONE_WALL_TORCH = registerBlockWithoutBlockItem("stone_wall_torch", () -> new AbstractWallTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 14;}).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     // Tiny Redstone Stone Torch
     public static final RegistryObject<Block> TINY_REDSTONE_STONE_TORCH = registerBlockWithoutBlockItem("tiny_redstone_stone_torch", () -> new TinyRedstoneTorchBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_TORCH).noCollission().instabreak().lightLevel((p_50886_) -> {return 5;}).sound(SoundType.WOOD)));
@@ -87,7 +87,7 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+    public static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
     }
 

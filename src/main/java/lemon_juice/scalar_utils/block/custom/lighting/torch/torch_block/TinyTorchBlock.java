@@ -1,7 +1,8 @@
-package lemon_juice.scalar_utils.block.torches;
+package lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
@@ -9,16 +10,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RedstoneTorchBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class TinyRedstoneTorchBlock extends RedstoneTorchBlock {
+public class TinyTorchBlock extends AbstractTorchBlock {
     protected static final VoxelShape AABB = Block.box(6.0D, 0.0D, 6.0D, 10.0D, 6.0D, 10.0D);
 
-    public TinyRedstoneTorchBlock(Properties properties) {
-        super(properties);
+    public TinyTorchBlock(Properties properties, ParticleOptions particleOptions) {
+        super(properties, particleOptions);
     }
 
     @Override
@@ -28,11 +28,6 @@ public class TinyRedstoneTorchBlock extends RedstoneTorchBlock {
 
     public BlockState updateShape(BlockState state, Direction direction, BlockState blockState, LevelAccessor accessor, BlockPos blockPos, BlockPos blockPos1) {
         return direction == Direction.DOWN && !this.canSurvive(state, accessor, blockPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, direction, blockState, accessor, blockPos, blockPos1);
-    }
-
-    @Override
-    public int getSignal(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, Direction direction) {
-        return blockState.getValue(LIT) && Direction.UP != direction ? 5 : 0;
     }
 
     @Override

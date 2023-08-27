@@ -1,6 +1,5 @@
 package lemon_juice.scalar_utils.block.registry;
 
-import lemon_juice.scalar_utils.block.custom.AbstractRuneshifterBlock;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.item.custom.block_item.AbstractRuneboosterBlockItem;
 import lemon_juice.scalar_utils.item.custom.block_item.AbstractRunedropperBlockItem;

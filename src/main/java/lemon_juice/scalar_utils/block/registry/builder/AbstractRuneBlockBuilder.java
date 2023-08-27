@@ -1,7 +1,8 @@
-package lemon_juice.scalar_utils.block.registry;
+package lemon_juice.scalar_utils.block.registry.builder;
 
-import lemon_juice.scalar_utils.block.custom.AbstractRuneboosterBlock;
-import lemon_juice.scalar_utils.block.custom.AbstractRuneshifterBlock;
+import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneboosterBlock;
+import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneshifterBlock;
+import lemon_juice.scalar_utils.block.registry.ModBlockRegistry;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 

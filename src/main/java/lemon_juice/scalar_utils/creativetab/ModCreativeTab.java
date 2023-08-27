@@ -2,16 +2,19 @@ package lemon_juice.scalar_utils.creativetab;
 
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
-import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
-import lemon_juice.scalar_utils.block.custom.AbstractRuneboosterBlock;
-import lemon_juice.scalar_utils.block.custom.AbstractRunedropperBlock;
-import lemon_juice.scalar_utils.block.custom.AbstractRuneshifterBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.AbstractLampBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.AbstractRedstoneTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.AbstractTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.AbstractRedstoneWallTorchBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.AbstractWallTorchBlock;
+import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneboosterBlock;
+import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRunedropperBlock;
+import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneshifterBlock;
 import lemon_juice.scalar_utils.creativetab.util.CreativeTabUtils;
 import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -47,8 +50,8 @@ public class ModCreativeTab {
             .icon(() -> new ItemStack(CreativeTabUtils.getRainbowLampItem()))
             .build());
 
-    public static void registerTabs(BuildCreativeModeTabContentsEvent event){
-        if(event.getTab() == SCALAR_UTILS_AGRICULTURE_TAB.get()){
+    public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTab() == SCALAR_UTILS_AGRICULTURE_TAB.get()) {
             event.accept(ModItems.FLOUR.get());
             event.accept(ModItems.CARROT_SEEDS.get());
             event.accept(ModItems.FLAX_SEEDS.get());
@@ -56,7 +59,7 @@ public class ModCreativeTab {
             event.accept(ModItems.RICE.get());
         }
 
-        if(event.getTab() == SCALAR_UTILS_ARSENAL_TAB.get()){
+        if (event.getTab() == SCALAR_UTILS_ARSENAL_TAB.get()) {
             event.accept(ModItems.GLASS_CUTTER.get());
             event.accept(ModItems.RUNECARVING_KNIFE.get());
 
@@ -117,27 +120,27 @@ public class ModCreativeTab {
             event.accept(ModItems.NECRONITE_TUNNELER.get());
         }
 
-        if(event.getTab() == SCALAR_UTILS_BLOCKS_TAB.get()){
+        if (event.getTab() == SCALAR_UTILS_BLOCKS_TAB.get()) {
             event.accept(ModBlocks.CLEAR_GLASS.get());
             event.accept(ModBlocks.CLEAR_GLASS_PANE.get());
             event.accept(ModBlocks.REINFORCED_GLASS.get());
             event.accept(ModBlocks.REINFORCED_GLASS_PANE.get());
             event.accept(ModBlocks.REINFORCED_OBSIDIAN.get());
 
-            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
-                if(block.get() instanceof AbstractRuneboosterBlock)
+            for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if (block.get() instanceof AbstractRuneboosterBlock)
                     event.accept(block.get());
 
-            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
-                if(block.get() instanceof AbstractRunedropperBlock)
+            for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if (block.get() instanceof AbstractRunedropperBlock)
                     event.accept(block.get());
 
-            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
-                if(block.get() instanceof AbstractRuneshifterBlock)
+            for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if (block.get() instanceof AbstractRuneshifterBlock)
                     event.accept(block.get());
         }
 
-        if(event.getTab() == SCALAR_UTILS_ITEMS_TAB.get()){
+        if (event.getTab() == SCALAR_UTILS_ITEMS_TAB.get()) {
             event.accept(ModItems.CHAINMAIL.get());
             event.accept(ModItems.BLAZING_END_ROD.get());
             event.accept(ModItems.GLOVES.get());
@@ -153,21 +156,17 @@ public class ModCreativeTab {
             event.accept(ModItems.STONE_ROD.get());
         }
 
-        if(event.getTab() == SCALAR_UTILS_LIGHTING_TAB.get()){
-            for(RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
-                if(block.get() instanceof AbstractLampBlock)
+        if (event.getTab() == SCALAR_UTILS_LIGHTING_TAB.get()) {
+            for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if (block.get() instanceof AbstractLampBlock)
                     event.accept(block.get());
 
-            event.accept(ModItems.STONE_TORCH.get());
-            event.accept(ModItems.REDSTONE_STONE_TORCH.get());
-            event.accept(ModItems.SOUL_STONE_TORCH.get());
+            for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if (block.get() instanceof AbstractTorchBlock || block.get() instanceof AbstractWallTorchBlock ||
+                        block.get() instanceof AbstractRedstoneTorchBlock || block.get() instanceof AbstractRedstoneWallTorchBlock) {
+                    event.accept(block.get());
 
-            event.accept(ModItems.TINY_TORCH.get());
-            event.accept(ModItems.TINY_STONE_TORCH.get());
-            event.accept(ModItems.TINY_REDSTONE_TORCH.get());
-            event.accept(ModItems.TINY_REDSTONE_STONE_TORCH.get());
-            event.accept(ModItems.TINY_SOUL_TORCH.get());
-            event.accept(ModItems.TINY_SOUL_STONE_TORCH.get());
+                }
         }
     }
 

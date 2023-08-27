@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.block.crop;
+package lemon_juice.scalar_utils.block.custom.crop;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;

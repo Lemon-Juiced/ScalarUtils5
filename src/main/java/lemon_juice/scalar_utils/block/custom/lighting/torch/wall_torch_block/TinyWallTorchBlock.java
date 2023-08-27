@@ -1,16 +1,15 @@
-package lemon_juice.scalar_utils.block.torches;
+package lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.RedstoneWallTorchBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -18,12 +17,12 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Map;
 
-public class TinyRedstoneWallTorchBlock extends RedstoneWallTorchBlock {
+public class TinyWallTorchBlock extends AbstractWallTorchBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-    private static final Map<Direction, VoxelShape> AABBS = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.box(5.5D, 3.0D, 11.0D, 10.5D, 10.0D, 16.0D), Direction.SOUTH, Block.box(5.5D, 3.0D, 0.0D, 10.5D, 10.0D, 5.0D), Direction.WEST, Block.box(11.0D, 3.0D, 5.5D, 16.0D, 10.0D, 10.5D), Direction.EAST, Block.box(0.0D, 3.0D, 5.5D, 5.0D, 10.0D, 10.5D)));
+    private static final Map<Direction, VoxelShape> AABBS = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, box(5.5D, 3.0D, 11.0D, 10.5D, 10.0D, 16.0D), Direction.SOUTH, box(5.5D, 3.0D, 0.0D, 10.5D, 10.0D, 5.0D), Direction.WEST, box(11.0D, 3.0D, 5.5D, 16.0D, 10.0D, 10.5D), Direction.EAST, box(0.0D, 3.0D, 5.5D, 5.0D, 10.0D, 10.5D)));
 
-    public TinyRedstoneWallTorchBlock(Properties properties) {
-        super(properties);
+    public TinyWallTorchBlock(Properties properties, ParticleOptions particleOptions) {
+        super(properties, particleOptions);
     }
 
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext context) {
@@ -32,11 +31,6 @@ public class TinyRedstoneWallTorchBlock extends RedstoneWallTorchBlock {
 
     public static VoxelShape getShape(BlockState blockState) {
         return AABBS.get(blockState.getValue(FACING));
-    }
-
-    @Override
-    public int getSignal(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, Direction direction) {
-        return blockState.getValue(LIT) && Direction.UP != direction ? 5 : 0;
     }
 
     @Override

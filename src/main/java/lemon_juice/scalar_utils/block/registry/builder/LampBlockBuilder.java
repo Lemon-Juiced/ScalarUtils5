@@ -1,7 +1,7 @@
-package lemon_juice.scalar_utils.block.registry;
+package lemon_juice.scalar_utils.block.registry.builder;
 
 import lemon_juice.scalar_utils.block.ModBlocks;
-import lemon_juice.scalar_utils.block.custom.AbstractLampBlock;
+import lemon_juice.scalar_utils.block.custom.lighting.AbstractLampBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
