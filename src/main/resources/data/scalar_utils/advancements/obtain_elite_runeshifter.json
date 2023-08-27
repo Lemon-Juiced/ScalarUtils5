@@ -1,0 +1,55 @@
+{
+  "parent": "scalar_utils:obtain_advanced_runeshifter",
+  "criteria": {
+    "elite_runeshifter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "scalar_utils:elite_runebooster_north"
+            ]
+          },
+          {
+            "items": [
+              "scalar_utils:elite_runebooster_south"
+            ]
+          },
+          {
+            "items": [
+              "scalar_utils:elite_runebooster_west"
+            ]
+          },
+          {
+            "items": [
+              "scalar_utils:elite_runebooster_east"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.scalar_utils.obtain_elite_runeshifter.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "scalar_utils:elite_runeshifter_north"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.scalar_utils.obtain_elite_runeshifter.title"
+    }
+  },
+  "requirements": [
+    [
+      "elite_runeshifter"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}
