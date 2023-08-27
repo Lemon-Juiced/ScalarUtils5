@@ -1,0 +1,10 @@
+Authors: Lemon_Juiced
+Textures: Lemon_Juiced, TechDahTurtle, and _ForgeUser8592662 (mandarins)
+Translators: Lemon_Juiced (en_us.json), Moonvvell (uk_ua.json)
+
+Bug Squashers:
+Kaledoss (CurseForge)
+SDUBZ (GitHub)
+Zedrimar (CurseForge and GitHub)
+
+Special Thanks: The Scalar Team (Past, Present, and Future)
