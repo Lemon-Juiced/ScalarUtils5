@@ -6,22 +6,10 @@
         "items": [
           {
             "items": [
-              "scalar_utils:advanced_runebooster_north"
-            ]
-          },
-          {
-            "items": [
-              "scalar_utils:advanced_runebooster_south"
-            ]
-          },
-          {
-            "items": [
-              "scalar_utils:advanced_runebooster_west"
-            ]
-          },
-          {
-            "items": [
-              "scalar_utils:advanced_runebooster_east"
+              "scalar_utils:advanced_runeshifter_north",
+              "scalar_utils:advanced_runeshifter_south",
+              "scalar_utils:advanced_runeshifter_west",
+              "scalar_utils:advanced_runeshifter_east"
             ]
           }
         ]
