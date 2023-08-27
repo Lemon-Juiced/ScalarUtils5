@@ -128,6 +128,11 @@ public class ModCreativeTab {
             event.accept(ModBlocks.ELITE_RUNEDROPPER.get());
             event.accept(ModBlocks.ULTIMATE_RUNEDROPPER.get());
             event.accept(ModBlocks.TRANSCENDENT_RUNEDROPPER.get());
+
+            event.accept(ModBlocks.RUNESHIFTER_NORTH);
+            event.accept(ModBlocks.RUNESHIFTER_SOUTH);
+            event.accept(ModBlocks.RUNESHIFTER_WEST);
+            event.accept(ModBlocks.RUNESHIFTER_EAST);
         }
 
         if(event.getTab() == SCALAR_UTILS_ITEMS_TAB.get()){

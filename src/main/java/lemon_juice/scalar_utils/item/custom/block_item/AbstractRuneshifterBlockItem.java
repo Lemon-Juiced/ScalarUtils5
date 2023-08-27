@@ -27,13 +27,6 @@ public class AbstractRuneshifterBlockItem extends BlockItem {
             default -> {}
         }
 
-
-        if (blocks == 5) components.add(Component.translatable("tooltip.scalar_utils.basic_runedropper"));
-        else if (blocks == 10) components.add(Component.translatable("tooltip.scalar_utils.advanced_runedropper"));
-        else if (blocks == 15) components.add(Component.translatable("tooltip.scalar_utils.elite_runedropper"));
-        else if (blocks == 20) components.add(Component.translatable("tooltip.scalar_utils.ultimate_runedropper"));
-        else components.add(Component.translatable("tooltip.scalar_utils.transcendent_runedropper"));
-
         super.appendHoverText(stack, level, components, flag);
     }
 }

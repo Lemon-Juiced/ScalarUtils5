@@ -23,8 +23,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static lemon_juice.scalar_utils.block.registry.ModBlockRegistry.registerRuneboosterBlock;
-import static lemon_juice.scalar_utils.block.registry.ModBlockRegistry.registerRunedropperBlock;
+import static lemon_juice.scalar_utils.block.registry.ModBlockRegistry.*;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ScalarUtils.MOD_ID);
@@ -76,10 +75,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> TRANSCENDENT_RUNEDROPPER = registerRunedropperBlock("transcendent_runedropper", () -> new AbstractRunedropperBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), 1000), 1000);
 
     // Runeshifter
-    public static final RegistryObject<Block> RUNESHIFTER_NORTH = registerBlock("runeshifter_north", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "north"));
-    public static final RegistryObject<Block> RUNESHIFTER_SOUTH = registerBlock("runeshifter_south", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "south"));
-    public static final RegistryObject<Block> RUNESHIFTER_WEST = registerBlock("runeshifter_west", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "west"));
-    public static final RegistryObject<Block> RUNESHIFTER_EAST = registerBlock("runeshifter_east", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "east"));
+    public static final RegistryObject<Block> RUNESHIFTER_NORTH = registerRuneshifterBlock("runeshifter_north", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "north"), "north");
+    public static final RegistryObject<Block> RUNESHIFTER_SOUTH = registerRuneshifterBlock("runeshifter_south", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "south"), "south");
+    public static final RegistryObject<Block> RUNESHIFTER_WEST = registerRuneshifterBlock("runeshifter_west", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "west"), "west");
+    public static final RegistryObject<Block> RUNESHIFTER_EAST = registerRuneshifterBlock("runeshifter_east", () -> new AbstractRuneshifterBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), "east"), "east");
 
     /* Torches */
     // Redstone Stone Torch

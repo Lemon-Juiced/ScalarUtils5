@@ -12,6 +12,10 @@
     "scalar_utils:advanced_runedropper",
     "scalar_utils:elite_runedropper",
     "scalar_utils:ultimate_runedropper",
-    "scalar_utils:transcendent_runedropper"
+    "scalar_utils:transcendent_runedropper",
+    "scalar_utils:runeshifter_north",
+    "scalar_utils:runeshifter_south",
+    "scalar_utils:runeshifter_west",
+    "scalar_utils:runeshifter_east"
   ]
 }
