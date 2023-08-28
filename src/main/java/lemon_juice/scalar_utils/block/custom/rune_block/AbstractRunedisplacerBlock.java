@@ -25,12 +25,14 @@ public class AbstractRunedisplacerBlock extends Block {
 
             // Then check if the player is shifting
             if(player.isShiftKeyDown()){
-                Block displaceLocation = isValidBlockBelow(player);
+                int yDisplacementPos = isValidBlockBelow(level, blockPos);
+                player.setPos(playerX, yDisplacementPos, playerZ);
             }
 
             // Then check if the player is jumping (if their y velocity is greater than nothing)
             if(player.getDeltaMovement().y() >= 0){
-
+                int yDisplacementPos = isValidBlockBelow(level, blockPos);
+                player.setPos(playerX, yDisplacementPos, playerZ);
             }
         }
 
@@ -38,59 +40,59 @@ public class AbstractRunedisplacerBlock extends Block {
     }
 
     /**
-     * Returns a valid block above the current block
+     * Returns a valid block's y position above the current block
      * This requires checking that the block is correct and that there is two blocks of air above it
      *
-     * @param player The player
-     * @return a valid block above the current block, or null if one does not exist
+     * @param level The current level
+     * @param blockPos The position of the current block
+     * @return a valid block's y position above the current block, or 0 if one does not exist
      */
-    private Block isValidBlockAbove(Player player) {
-        BlockPos blockPos = player.getOnPos();
-        Block finalBlock = null; //Stays null if no valid block could be found
+    private int isValidBlockAbove(Level level, BlockPos blockPos) {
+        int y = 0; //Stays null if no valid block could be found
 
         // Decrement by 64 because world goes to -64 (this will be changed to account for the block limit)
         for (int i = 0; i < blockPos.getY() - 64; i++) {
-            Block blockAti = player.level().getBlockState(blockPos).getBlock();
-            Block blockAbove = player.level().getBlockState(blockPos.above(i)).getBlock();
-            Block blockAboveBlockAbove = player.level().getBlockState(blockPos.above(i).above(i)).getBlock();
+            Block blockAti = level.getBlockState(blockPos).getBlock();
+            Block blockAbove = level.getBlockState(blockPos.above(i)).getBlock();
+            Block blockAboveBlockAbove = level.getBlockState(blockPos.above(i).above(i)).getBlock();
 
             if(isRunedisplacer(blockAti)){
                 if(isAir(blockAbove) && isAir(blockAboveBlockAbove)) {
-                    finalBlock = player.level().getBlockState(blockPos.above(i)).getBlock();
+                    y = blockPos.above(i).getY();
                     break;
                 }
             }
         }
 
-        return finalBlock;
+        return y;
     }
 
     /**
-     * Returns a valid block below the current block
+     * Returns a valid block's y position below the current block
      * This requires checking that the block is correct and that there is two blocks of air above it
      *
-     * @param player The player
+     * @param level The current level
+     * @param blockPos The position of the current block
      * @return a valid block below the current block, or null if one does not exist
      */
-    private Block isValidBlockBelow(Player player) {
-        BlockPos blockPos = player.getOnPos();
-        Block finalBlock = null; //Stays null if no valid block could be found
+    private int isValidBlockBelow(Level level, BlockPos blockPos) {
+        int y = 0; //Stays null if no valid block could be found
 
         // Increment by 64 because world goes to -64 (this will be changed to account for the block limit)
         for (int i = 0; i < blockPos.getY() + 64; i++) {
-            Block blockBelow = player.level().getBlockState(blockPos.below(i)).getBlock();
-            Block blockAti = player.level().getBlockState(blockPos).getBlock();
-            Block blockAbove = player.level().getBlockState(blockPos.above(i)).getBlock();
+            Block blockBelow = level.getBlockState(blockPos.below(i)).getBlock();
+            Block blockAti = level.getBlockState(blockPos).getBlock();
+            Block blockAbove = level.getBlockState(blockPos.above(i)).getBlock();
 
             if(isRunedisplacer(blockBelow)){
                 if(isAir(blockAti) && isAir(blockAbove)) {
-                    finalBlock = player.level().getBlockState(blockPos).getBlock();
+                    y = blockPos.getY();
                     break;
                 }
             }
         }
 
-        return finalBlock;
+        return y;
     }
 
     private boolean isRunedisplacer(Block block) {
