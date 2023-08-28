@@ -10,10 +10,20 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class AbstractRunedisplacerBlock extends Block {
     private final int blockLimit;
+    private final String tier;
 
-    public AbstractRunedisplacerBlock(Properties properties, int blockLimit) {
+    public AbstractRunedisplacerBlock(Properties properties, int blockLimit, String tier) {
         super(properties);
         this.blockLimit = blockLimit;
+        this.tier = tier;
+    }
+
+    public String getTier(){
+        return tier;
+    }
+
+    public int getBlockLimit(){
+        return blockLimit;
     }
 
     @Override

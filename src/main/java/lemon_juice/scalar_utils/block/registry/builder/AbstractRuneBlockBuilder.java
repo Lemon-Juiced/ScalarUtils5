@@ -53,7 +53,7 @@ public class AbstractRuneBlockBuilder {
         int[] blockLimit = {10, 20, 30, 40, 320};
         for (int i = 0; i < runeTiers.length ; i++) {
             int finalI = i;
-            ModBlockRegistry.registerRunedisplacerBlock(runeTiers[i] + "_runedisplacer", () -> new AbstractRunedisplacerBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), blockLimit[finalI]), blockLimit[i]);
+            ModBlockRegistry.registerRunedisplacerBlock(runeTiers[i] + "_runedisplacer", () -> new AbstractRunedisplacerBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), blockLimit[finalI], runeTiers[finalI]), blockLimit[i]);
         }
     }
 
