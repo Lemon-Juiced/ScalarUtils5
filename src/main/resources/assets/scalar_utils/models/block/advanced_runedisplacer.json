@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "side": "scalar_utils:block/advanced_runedisplacer_side",
+    "front": "scalar_utils:block/advanced_runedisplacer_side",
+    "top":"scalar_utils:block/advanced_runebooster_bottom",
+    "bottom":"scalar_utils:block/advanced_runebooster_bottom"
+  }
+}

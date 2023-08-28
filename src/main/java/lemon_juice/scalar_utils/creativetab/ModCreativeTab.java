@@ -8,6 +8,7 @@ import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.Abstract
 import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.AbstractRedstoneWallTorchBlock;
 import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.AbstractWallTorchBlock;
 import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneboosterBlock;
+import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRunedisplacerBlock;
 import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRunedropperBlock;
 import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneshifterBlock;
 import lemon_juice.scalar_utils.creativetab.util.CreativeTabUtils;
@@ -137,6 +138,10 @@ public class ModCreativeTab {
 
             for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
                 if (block.get() instanceof AbstractRuneshifterBlock)
+                    event.accept(block.get());
+
+            for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries())
+                if (block.get() instanceof AbstractRunedisplacerBlock)
                     event.accept(block.get());
         }
 

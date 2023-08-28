@@ -2,6 +2,7 @@ package lemon_juice.scalar_utils.block.registry;
 
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.item.custom.block_item.AbstractRuneboosterBlockItem;
+import lemon_juice.scalar_utils.item.custom.block_item.AbstractRunedisplacerBlockItem;
 import lemon_juice.scalar_utils.item.custom.block_item.AbstractRunedropperBlockItem;
 import lemon_juice.scalar_utils.item.custom.block_item.AbstractRuneshifterBlockItem;
 import net.minecraft.world.item.Item;
@@ -22,6 +23,16 @@ public class ModBlockRegistry {
 
     private static <T extends Block> RegistryObject<Item> registerRuneboosterBlockItem(String name, RegistryObject<T> block, int seconds) {
         return ModItems.ITEMS.register(name, () -> new AbstractRuneboosterBlockItem(block.get(), new Item.Properties(), seconds));
+    }
+
+    public static <T extends Block> RegistryObject<T> registerRunedisplacerBlock(String name, Supplier<T> block, int blocks) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerRunedisplacerBlockItem(name, toReturn, blocks);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerRunedisplacerBlockItem(String name, RegistryObject<T> block, int blocks) {
+        return ModItems.ITEMS.register(name, () -> new AbstractRunedisplacerBlockItem(block.get(), new Item.Properties(), blocks));
     }
 
     public static <T extends Block> RegistryObject<T> registerRunedropperBlock(String name, Supplier<T> block, int blocks) {

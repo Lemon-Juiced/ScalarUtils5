@@ -1,6 +1,7 @@
 package lemon_juice.scalar_utils.block.registry.builder;
 
 import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneboosterBlock;
+import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRunedisplacerBlock;
 import lemon_juice.scalar_utils.block.custom.rune_block.AbstractRuneshifterBlock;
 import lemon_juice.scalar_utils.block.registry.ModBlockRegistry;
 import net.minecraft.world.level.block.Blocks;
@@ -46,11 +47,23 @@ public class AbstractRuneBlockBuilder {
     }
 
     /**
+     * Registers a Runedisplacer block for all tiers in <code>runeTiers</code>
+     */
+    public static void runeDisplacerBlockBuilder(){
+        int[] blockLimit = {10, 20, 30, 40, 320};
+        for (int i = 0; i < runeTiers.length ; i++) {
+            int finalI = i;
+            ModBlockRegistry.registerRunedisplacerBlock(runeTiers[i] + "_runedisplacer", () -> new AbstractRunedisplacerBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops().strength(1.5F, 6.0F), blockLimit[finalI]), blockLimit[i]);
+        }
+    }
+
+    /**
      * Runs all runeBlockBuilder methods
      */
     public static void registerAllRuneBlocks(){
         runeboosterBlockBuilder();
         runedropperBlockBuilder();
         runeshifterBlockBuilder();
+        runeDisplacerBlockBuilder();
     }
 }
