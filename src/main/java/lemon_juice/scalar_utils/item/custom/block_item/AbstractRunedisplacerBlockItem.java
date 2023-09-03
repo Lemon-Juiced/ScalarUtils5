@@ -25,6 +25,8 @@ public class AbstractRunedisplacerBlockItem extends BlockItem {
         else if (blockLimit == 40) components.add(Component.translatable("tooltip.scalar_utils.ultimate_runedisplacer"));
         else components.add(Component.translatable("tooltip.scalar_utils.transcendent_runedisplacer"));
 
+        components.add(Component.translatable("tooltip.scalar_utils.wip"));
+
         super.appendHoverText(stack, level, components, flag);
     }
 }
