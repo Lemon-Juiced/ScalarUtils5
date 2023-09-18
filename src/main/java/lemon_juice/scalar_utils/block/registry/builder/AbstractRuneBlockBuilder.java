@@ -64,6 +64,6 @@ public class AbstractRuneBlockBuilder {
         runeboosterBlockBuilder();
         runedropperBlockBuilder();
         runeshifterBlockBuilder();
-        runeDisplacerBlockBuilder();
+        //runeDisplacerBlockBuilder();
     }
 }
