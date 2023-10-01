@@ -94,17 +94,17 @@ dependencies {
     minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
 
     // JEI
-    compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.0.0.15")
-    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.0.0.15")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-common:15.0.0.15")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.0.0.15")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.2-common-api:16.0.0.28")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.2-forge-api:16.0.0.28")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.2-common:16.0.0.28")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.2-forge:16.0.0.28")
 
     // Curios Dependency
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.2.0-beta.3+1.20.1")
-    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.2.0-beta.3+1.20.1:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:6.0.0+1.20.2")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:6.0.0+1.20.2:api")
 
     // Lemon Core Dependency
-    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4659057")
+    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4767911")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
