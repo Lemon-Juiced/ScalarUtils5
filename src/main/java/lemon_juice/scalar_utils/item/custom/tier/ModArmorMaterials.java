@@ -15,64 +15,64 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    /*
-    LEATHER("leather", 5, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
-        protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
-        protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 2);
-        protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 3);
-        protectionFunctionForType.put(ArmorItem.Type.HELMET, 1);
-    }), 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
-        return Ingredient.of(Items.LEATHER);
-    }),
-    CHAIN("chainmail", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
-        protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
-        protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 4);
-        protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 5);
-        protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
-    }), 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.of(Items.IRON_INGOT);
-    }),
-    IRON("iron", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
-        protectionFunctionForType.put(ArmorItem.Type.BOOTS, 2);
-        protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 5);
-        protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 6);
-        protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
-    }), 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
-        return Ingredient.of(Items.IRON_INGOT);
-    }),
-    GOLD("gold", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
-        protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
-        protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 3);
-        protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 5);
-        protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
-    }), 25, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
-        return Ingredient.of(Items.GOLD_INGOT);
-    }),
-    DIAMOND("diamond", 33, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
-        protectionFunctionForType.put(ArmorItem.Type.BOOTS, 3);
-        protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 6);
-        protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 8);
-        protectionFunctionForType.put(ArmorItem.Type.HELMET, 3);
-    }), 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
-        return Ingredient.of(Items.DIAMOND);
-    }),
-    TURTLE("turtle", 25, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
-        protectionFunctionForType.put(ArmorItem.Type.BOOTS, 2);
-        protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 5);
-        protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 6);
-        protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
-    }), 9, SoundEvents.ARMOR_EQUIP_TURTLE, 0.0F, 0.0F, () -> {
-        return Ingredient.of(Items.SCUTE);
-    }),
-    NETHERITE("netherite", 37, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
-        protectionFunctionForType.put(ArmorItem.Type.BOOTS, 3);
-        protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 6);
-        protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 8);
-        protectionFunctionForType.put(ArmorItem.Type.HELMET, 3);
-    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
-        return Ingredient.of(Items.NETHERITE_INGOT);
-    });
-    */
+    /** Vanilla Armor Tiers:
+     * LEATHER("leather", 5, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
+     *         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
+     *         protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 2);
+     *         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 3);
+     *         protectionFunctionForType.put(ArmorItem.Type.HELMET, 1);
+     *     }), 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
+     *         return Ingredient.of(Items.LEATHER);
+     *     }),
+     *     CHAIN("chainmail", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
+     *         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
+     *         protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 4);
+     *         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 5);
+     *         protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
+     *     }), 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+     *         return Ingredient.of(Items.IRON_INGOT);
+     *     }),
+     *     IRON("iron", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
+     *         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 2);
+     *         protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 5);
+     *         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 6);
+     *         protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
+     *     }), 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+     *         return Ingredient.of(Items.IRON_INGOT);
+     *     }),
+     *     GOLD("gold", 7, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
+     *         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 1);
+     *         protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 3);
+     *         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 5);
+     *         protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
+     *     }), 25, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
+     *         return Ingredient.of(Items.GOLD_INGOT);
+     *     }),
+     *     DIAMOND("diamond", 33, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
+     *         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 3);
+     *         protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 6);
+     *         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 8);
+     *         protectionFunctionForType.put(ArmorItem.Type.HELMET, 3);
+     *     }), 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+     *         return Ingredient.of(Items.DIAMOND);
+     *     }),
+     *     TURTLE("turtle", 25, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
+     *         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 2);
+     *         protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 5);
+     *         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 6);
+     *         protectionFunctionForType.put(ArmorItem.Type.HELMET, 2);
+     *     }), 9, SoundEvents.ARMOR_EQUIP_TURTLE, 0.0F, 0.0F, () -> {
+     *         return Ingredient.of(Items.SCUTE);
+     *     }),
+     *     NETHERITE("netherite", 37, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
+     *         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 3);
+     *         protectionFunctionForType.put(ArmorItem.Type.LEGGINGS, 6);
+     *         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 8);
+     *         protectionFunctionForType.put(ArmorItem.Type.HELMET, 3);
+     *     }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
+     *         return Ingredient.of(Items.NETHERITE_INGOT);
+     *     });
+     */
 
     NECRONITE("necronite", 42, Util.make(new EnumMap<>(ArmorItem.Type.class), (protectionFunctionForType) -> {
         protectionFunctionForType.put(ArmorItem.Type.BOOTS, 4);
