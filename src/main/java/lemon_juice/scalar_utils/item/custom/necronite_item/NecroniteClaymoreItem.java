@@ -1,7 +1,7 @@
 package lemon_juice.scalar_utils.item.custom.necronite_item;
 
 import lemon_juice.scalar_utils.item.custom.ClaymoreItem;
-import lemon_juice.scalar_utils.item.custom.tiers.ModTiers;
+import lemon_juice.scalar_utils.item.custom.tier.ModTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;

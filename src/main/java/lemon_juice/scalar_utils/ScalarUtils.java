@@ -5,7 +5,7 @@ import lemon_juice.scalar_utils.creativetab.ModCreativeTab;
 import lemon_juice.scalar_utils.handler.MobDropHandler;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.loot.ModLootModifiers;
-import lemon_juice.scalar_utils.tags.ModTags;
+import lemon_juice.scalar_utils.tag.ModTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

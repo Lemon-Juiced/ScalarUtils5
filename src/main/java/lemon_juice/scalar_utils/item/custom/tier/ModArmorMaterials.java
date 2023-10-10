@@ -1,7 +1,7 @@
-package lemon_juice.scalar_utils.item.custom.tiers;
+package lemon_juice.scalar_utils.item.custom.tier;
 
 import lemon_juice.scalar_utils.ScalarUtils;
-import lemon_juice.scalar_utils.tags.ModTags;
+import lemon_juice.scalar_utils.tag.ModTags;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

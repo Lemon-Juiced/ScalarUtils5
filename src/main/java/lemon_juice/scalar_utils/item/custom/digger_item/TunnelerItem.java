@@ -1,8 +1,8 @@
 package lemon_juice.scalar_utils.item.custom.digger_item;
 
-import lemon_juice.scalar_utils.item.custom.digger_item.util.DataTags;
 import lemon_juice.scalar_utils.item.custom.digger_item.util.UtilShape;
-import lemon_juice.scalar_utils.item.custom.tiers.ModTiers;
+import lemon_juice.scalar_utils.item.custom.tier.ModTiers;
+import lemon_juice.scalar_utils.tag.ModTags;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -30,7 +30,7 @@ public class TunnelerItem extends DiggerItem {
     final Tier tier;
 
     public TunnelerItem(Tier tier, Properties properties, int radius) {
-        super(1.0F, 1.0F, tier, DataTags.WITH_HAMMER, properties);
+        super(1.0F, 1.0F, tier, ModTags.Blocks.WITH_HAMMER, properties);
         this.radius = radius;
         this.tier = tier;
     }

@@ -1,10 +1,8 @@
-package lemon_juice.scalar_utils.item.custom.tiers;
+package lemon_juice.scalar_utils.item.custom.tier;
 
 import lemon_juice.scalar_utils.ScalarUtils;
-import lemon_juice.scalar_utils.tags.ModTags;
+import lemon_juice.scalar_utils.tag.ModTags;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
