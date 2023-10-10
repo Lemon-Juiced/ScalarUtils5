@@ -94,9 +94,9 @@ public class ModCreativeTab {
             event.accept(ModItems.RUNIC_DECANTER_OF_ENDLESS_WATER.get());
 
             event.accept(ModItems.NECRONITE_SWORD.get());
-            event.accept(ModItems.NECRONITE_SHOVEL.get());
             event.accept(ModItems.NECRONITE_PICKAXE.get());
             event.accept(ModItems.NECRONITE_AXE.get());
+            event.accept(ModItems.NECRONITE_SHOVEL.get());
             event.accept(ModItems.NECRONITE_HOE.get());
 
             event.accept(ModItems.NECRONITE_HELMET.get());
