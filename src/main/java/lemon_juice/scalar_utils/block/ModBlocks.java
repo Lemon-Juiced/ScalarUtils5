@@ -41,7 +41,7 @@ public class ModBlocks {
     // Reinforced Blocks
     public static final RegistryObject<Block> REINFORCED_GLASS = registerBlock("reinforced_glass", () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
     public static final RegistryObject<Block> REINFORCED_GLASS_PANE = registerBlock("reinforced_glass_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(50.0F, 3600000.0F).noOcclusion()));
-    public static final RegistryObject<Block> REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops().strength(50.0F, 3600000.0F)));
+    public static final RegistryObject<Block> REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops().strength(50.0F, 3600000.0F).requiresCorrectToolForDrops()));
 
     /* Torches */
     // Redstone Stone Torch
