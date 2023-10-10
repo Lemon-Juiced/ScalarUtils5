@@ -27,11 +27,15 @@ public class ModTags {
     }
 
     public static class Blocks {
-        public static final TagKey<Block> NEEDS_NECRONITE_TOOL = tag("needs_necronite_tool");
+        //public static final TagKey<Block> NEEDS_NECRONITE_TOOL = tag("needs_necronite_tool");
+        public static final TagKey<Block> NEEDS_NECRONITE_TOOL = forgeTag("needs_necronite_tool");
         public static final TagKey<Block> WITH_HAMMER = BlockTags.create(new ResourceLocation("minecraft:mineable/tunneler"));
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(ScalarUtils.MOD_ID, name));
+        }
+        private static TagKey<Block> forgeTag(String name) {
+            return BlockTags.create(new ResourceLocation("forge", name));
         }
     }
 }
