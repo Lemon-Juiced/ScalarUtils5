@@ -36,7 +36,7 @@ minecraft {
 
         client {
             property 'forge.enabledGameTestNamespaces', mod_id
-            // For Curios Dependency
+            // For Curios & Patchouli Dependencies
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
         }
@@ -84,7 +84,11 @@ dependencies {
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.2.0-beta.3+1.20.1:api")
 
     // Lemon Core Dependency
-    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4790353")
+    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4792322")
+
+    //Patchouli Optional Dependency
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE")
 }
 
 tasks.named('processResources', ProcessResources).configure {

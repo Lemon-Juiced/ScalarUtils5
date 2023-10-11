@@ -1,0 +1,16 @@
+{
+  "name": "Runic Plate",
+  "icon": "scalar_utils:runic_plate",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runic Plates are one of the most important crafting ingredients in Scalar Utils 5. It is used in all rune magic and their creations."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plate",
+      "text": "Above is the crafting recipe to acquire Runic Plates."
+    }
+  ]
+}

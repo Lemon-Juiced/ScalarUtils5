@@ -1,0 +1,16 @@
+{
+  "name": "Pendant",
+  "icon": "scalar_utils:pendant",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Pendants are a runic-crafting ingredient in Scalar Utils 5. It is used in all Runic Pendants."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/pendant",
+      "text": "Above is the crafting recipe to acquire Pendants."
+    }
+  ]
+}

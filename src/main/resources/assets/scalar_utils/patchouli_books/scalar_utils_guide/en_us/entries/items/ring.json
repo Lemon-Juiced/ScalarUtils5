@@ -1,0 +1,16 @@
+{
+  "name": "Ring",
+  "icon": "scalar_utils:ring",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Rings are a runic-crafting ingredient in Scalar Utils 5. It is used in all Runic Rings."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/ring",
+      "text": "Above is the crafting recipe to acquire Rings."
+    }
+  ]
+}

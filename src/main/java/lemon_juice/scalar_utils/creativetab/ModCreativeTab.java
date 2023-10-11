@@ -74,6 +74,8 @@ public class ModCreativeTab {
             event.accept(ModItems.RUNIC_FIRE_PLATE.get());
             event.accept(ModItems.RUNIC_WATER_PLATE.get());
 
+            event.accept(ModItems.RUNE_OF_THE_TEMPLATE.get());
+
             event.accept(ModItems.RUNIC_GLOVES_OF_HEALING.get());
             event.accept(ModItems.RUNIC_GLOVES_OF_SPEED.get());
             event.accept(ModItems.RUNIC_GLOVES_OF_STRENGTH.get());
@@ -157,7 +159,6 @@ public class ModCreativeTab {
             event.accept(ModItems.WHEAT_SLIME_BALL.get());
             event.accept(ModItems.RUNIC_PLATE.get());
             event.accept(ModItems.RUNIC_DIAMOND.get());
-            event.accept(ModItems.RUNE_OF_THE_TEMPLATE.get());
             event.accept(ModItems.STONE_ROD.get());
         }
 

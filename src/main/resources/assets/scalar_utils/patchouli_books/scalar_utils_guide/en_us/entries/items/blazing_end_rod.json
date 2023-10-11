@@ -1,0 +1,16 @@
+{
+  "name": "Blazing End Rod",
+  "icon": "scalar_utils:blazing_end_rod",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Blazing End Rods are a high-end crafting ingredient in Scalar Utils 5. They are used in all necronite tools and weapons."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/blazing_end_rod",
+      "text": "Above is the crafting recipe to acquire Blazing End Rods."
+    }
+  ]
+}
