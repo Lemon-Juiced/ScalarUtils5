@@ -1,0 +1,36 @@
+{
+  "name": "Runic Rings",
+  "icon": "scalar_utils:runic_angel_ring",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runic Pendants are powerful pieces of equipment that can be used for a permanent buff."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_angel_ring",
+      "text": "Above is the crafting recipe to acquire a Runic Angel Ring. This is the most powerful of all runic jewelries as it allows you to gain the ability to fly."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_ring_of_healing",
+      "text": "Above is the crafting recipe to acquire a Runic Healing Ring, which can give you regeneration."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_ring_of_speed",
+      "text": "Above is the crafting recipe to acquire a Runic Speed Ring, which can give you swiftness."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_ring_of_strength",
+      "text": "Above is the crafting recipe to acquire a Runic Strength Ring, which can give you strength."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_ring_of_wisdom",
+      "text": "Above is the crafting recipe to acquire a Runic Wisdom Ring, which can give you better deals."
+    }
+  ]
+}

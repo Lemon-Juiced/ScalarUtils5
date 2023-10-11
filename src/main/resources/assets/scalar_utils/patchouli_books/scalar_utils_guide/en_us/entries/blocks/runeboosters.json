@@ -1,0 +1,28 @@
+{
+  "name": "Runeboosters",
+  "icon": "scalar_utils:transcendent_runebooster",
+  "category": "scalar_utils:blocks_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runeboosters are Scalar Utils 5's alternatives to elevators, that allow you to float for a set amount of time in the air, usually going up at a rate of 1 block/sec."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runebooster/basic_runebooster",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runebooster/advanced_runebooster",
+      "text": "Above are the crafting recipes to acquire a Basic Runebooster and an Advanced Runebooster."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runebooster/elite_runebooster",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runebooster/ultimate_runebooster",
+      "text": "Above are the crafting recipes to acquire an Elite Runebooster and an Ultimate Runebooster."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runebooster/transcendent_runebooster",
+      "text": "Above is the crafting recipe to acquire a Transcendent Runebooster."
+    }
+  ]
+}

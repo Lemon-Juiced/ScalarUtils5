@@ -1,0 +1,21 @@
+{
+  "name": "Reinforced Obsidian",
+  "icon": "scalar_utils:reinforced_glass",
+  "category": "scalar_utils:blocks_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Reinforced Obsidian is a building block in Scalar Utils 5 that is blast resistant."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/reinforced_obsidian",
+      "text": "Above is the crafting recipe to acquire Reinforced Obsidian."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "scalar_utils:mod_recipes/smelting/reinforced_glass",
+      "text": "You can use Reinforced Obsidian to make Reinforced Glass with the recipe above."
+    }
+  ]
+}

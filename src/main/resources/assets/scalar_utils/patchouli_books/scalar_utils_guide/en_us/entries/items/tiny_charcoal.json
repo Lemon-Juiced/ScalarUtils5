@@ -1,0 +1,21 @@
+{
+  "name": "Tiny Charcoal",
+  "icon": "lemon_core:tiny_charcoal",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Tiny Charcoal are a fragment of a piece of charcoal, each piece of Tiny Charcoal can smelt one item."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "lemon_core:crafting/decompacting/other/charcoal_decompacting",
+      "text": "Above is the crafting recipe to acquire Tiny Charcoal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "lemon_core:crafting/compacting/other/tiny_charcoal_compacting",
+      "text": "You can also use Tiny Charcoal to make Charcoal with the recipe above."
+    }
+  ]
+}

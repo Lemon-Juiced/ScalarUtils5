@@ -10,12 +10,8 @@
     {
       "type": "patchouli:crafting",
       "recipe": "scalar_utils:mod_recipes/crafting/stone_rod_from_cobblestone",
-      "text": "Above is the first crafting recipe to acquire Stone Rods."
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "scalar_utils:mod_recipes/crafting/stone_rod_from_stone",
-      "text": "Above is the second crafting recipe to acquire Stone Rods."
+      "recipe2": "scalar_utils:mod_recipes/crafting/stone_rod_from_stone",
+      "text": "Above are crafting recipes to acquire Stone Rods."
     }
   ]
 }

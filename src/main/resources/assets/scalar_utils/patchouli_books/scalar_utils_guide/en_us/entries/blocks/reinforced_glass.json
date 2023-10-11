@@ -1,0 +1,21 @@
+{
+  "name": "Reinforced Glass",
+  "icon": "scalar_utils:reinforced_glass",
+  "category": "scalar_utils:blocks_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Reinforced Glass is a building block in Scalar Utils 5 that is blast resistant."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "scalar_utils:mod_recipes/smelting/reinforced_glass",
+      "text": "Above is the crafting recipe to acquire Reinforced Glass."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/reinforced_glass_panes",
+      "text": "You can use Reinforced Glass to make Reinforced Glass Panes with the recipe above."
+    }
+  ]
+}

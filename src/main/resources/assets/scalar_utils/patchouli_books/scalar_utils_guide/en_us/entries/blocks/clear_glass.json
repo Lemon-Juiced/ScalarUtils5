@@ -1,0 +1,21 @@
+{
+  "name": "Clear Glass",
+  "icon": "scalar_utils:clear_glass",
+  "category": "scalar_utils:blocks_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Clear Glass is a building block in Scalar Utils 5 that is completely clear, other than its border."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "scalar_utils:mod_recipes/smelting/clear_glass",
+      "text": "Above is the crafting recipe to acquire Clear Glass."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/clear_glass_panes",
+      "text": "You can use Clear Glass to make Clear Glass Panes with the recipe above."
+    }
+  ]
+}

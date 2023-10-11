@@ -1,0 +1,16 @@
+{
+  "name": "Glass Cutter",
+  "icon": "scalar_utils:glass_cutter",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Glass Cutters can be used to break glass (and ice) and recollect the item."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/glass_cutter",
+      "text": "Above is the crafting recipe to acquire a Glass Cutter."
+    }
+  ]
+}

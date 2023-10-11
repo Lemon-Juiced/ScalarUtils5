@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Rings are a runic-crafting ingredient in Scalar Utils 5. It is used in all Runic Rings."
+      "text": "Rings are a runic-crafting ingredient in Scalar Utils 5. They is used in all Runic Rings."
     },
     {
       "type": "patchouli:crafting",

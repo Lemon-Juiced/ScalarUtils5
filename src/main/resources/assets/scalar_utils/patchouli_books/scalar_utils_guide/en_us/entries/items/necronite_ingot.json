@@ -1,0 +1,28 @@
+{
+  "name": "Necronite Ingot",
+  "icon": "lemon_core:necronite_ingot",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Necronite Ingots are a high-end crafting ingredient in Scalar Utils 5. They are used in all necronite armor, tools, and weapons."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/necronite_ingot",
+      "text": "Above is the crafting recipe to acquire Necronite Ingots."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "lemon_core:crafting/decompacting/block/necronite_block_decompacting",
+      "recipe2": "lemon_core:crafting/compacting/nuggets/necronite_nuggets_compacting",
+      "text": "Above are alternative crafting recipes to acquire Necronite Ingots."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "lemon_core:crafting/compacting/ingots/necronite_ingot_compacting",
+      "recipe2": "lemon_core:crafting/decompacting/ingot/necronite_ingots_decompacting",
+      "text": "You can also use Necronite Ingots to make Necronite Blocks and Necronite Nuggets with the recipes above."
+    }
+  ]
+}

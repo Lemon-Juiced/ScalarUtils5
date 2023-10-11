@@ -1,0 +1,31 @@
+{
+  "name": "Runic Gloves",
+  "icon": "scalar_utils:runic_healing_gloves",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runic Gloves are powerful pieces of equipment that can be used for a permanent buff."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_gloves_of_healing",
+      "text": "Above is the crafting recipe to acquire Runic Healing Gloves, which can give you regeneration."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_gloves_of_speed",
+      "text": "Above is the crafting recipe to acquire Runic Speed Gloves, which can give you swiftness."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_gloves_of_strength",
+      "text": "Above is the crafting recipe to acquire Runic Strength Gloves, which can give you strength."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_gloves_of_wisdom",
+      "text": "Above is the crafting recipe to acquire Runic Wisdom Gloves, which can give you better deals."
+    }
+  ]
+}

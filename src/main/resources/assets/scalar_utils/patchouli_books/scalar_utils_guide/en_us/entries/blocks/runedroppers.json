@@ -1,0 +1,28 @@
+{
+  "name": "Runedroppers",
+  "icon": "scalar_utils:transcendent_runedropper",
+  "category": "scalar_utils:blocks_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runedroppers are Scalar Utils 5's alternatives to elevators, that allow you to absorb a set number of blocks worth of fall damage"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runedropper/basic_runedropper",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runedropper/advanced_runedropper",
+      "text": "Above are the crafting recipes to acquire a Basic Runedropper and an Advanced Runedropper."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runedropper/elite_runedropper",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runedropper/ultimate_runedropper",
+      "text": "Above are the crafting recipes to acquire an Elite Runedropper and an Ultimate Runedropper."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runedropper/transcendent_runedropper",
+      "text": "Above is the crafting recipe to acquire a Transcendent Runedropper."
+    }
+  ]
+}

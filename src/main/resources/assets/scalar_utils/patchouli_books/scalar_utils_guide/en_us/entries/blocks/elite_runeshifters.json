@@ -1,0 +1,35 @@
+{
+  "name": "Elite Runeshifters",
+  "icon": "scalar_utils:elite_runeshifter_north",
+  "category": "scalar_utils:blocks_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runeshfters are Scalar Utils 5's alternatives to conveyor belts, that carry entities at progressively faster speeds. Runeshifters however are locked to a cardinal direction at their creation, however this is no problem as one runeshifter can be crafted into another."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/crafting/elite_runeshifter_north",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/crafting/elite_runeshifter_east",
+      "text": "Above are the crafting recipes to acquire an Elite Runeshifter (North) and an Elite Runeshifter (East)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/crafting/elite_runeshifter_west",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/crafting/elite_runeshifter_south",
+      "text": "Above are the crafting recipes to acquire an Elite Runeshifter (West) and an Elite Runeshifter (South)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/converting/elite_runeshifter_north_from_west",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/converting/elite_runeshifter_east_from_north",
+      "text": "Above are the alternative crafting recipes to acquire an Elite Runeshifter (North) and an Elite Runeshifter (East)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/converting/elite_runeshifter_west_from_south",
+      "recipe2": "scalar_utils:mod_recipes/crafting/rune_blocks/runeshifter/elite/converting/elite_runeshifter_south_from_east",
+      "text": "Above are the alternative crafting recipes to acquire an Elite Runeshifter (West) and an Elite Runeshifter (South)."
+    }
+  ]
+}

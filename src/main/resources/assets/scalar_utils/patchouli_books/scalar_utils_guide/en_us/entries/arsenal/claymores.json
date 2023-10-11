@@ -1,0 +1,46 @@
+{
+  "name": "Claymores",
+  "icon": "scalar_utils:necronite_claymore",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Claymores are slow and heavy but can be used to decapitate mobs... I'd say that's a fair trade."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_claymores/wooden_claymore",
+      "text": "Above is the crafting recipe to acquire a Wooden Claymore."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_claymores/stone_claymore",
+      "text": "Above is the crafting recipe to acquire a Stone Claymore."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_claymores/iron_claymore",
+      "text": "Above is the crafting recipe to acquire an Iron Claymore."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_claymores/golden_claymore",
+      "text": "Above is the crafting recipe to acquire a Golden Claymore."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_claymores/diamond_claymore",
+      "text": "Above is the crafting recipe to acquire a Diamond Claymore."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "scalar_utils:netherite_claymore",
+      "text": "Netherite Claymores are acquired just like any other Netherite Tool."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/necronite/necronite_claymore",
+      "text": "Above is the crafting recipe to acquire a Necronite Claymore."
+    }
+  ]
+}

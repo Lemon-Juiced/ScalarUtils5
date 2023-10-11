@@ -1,0 +1,34 @@
+{
+  "name": "Necronite Tools",
+  "icon": "scalar_utils:necronite_sword",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Necronite Tools are more powerful than Netherite, but very difficult to acquire."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/necronite/necronite_sword",
+      "recipe2": "scalar_utils:mod_recipes/crafting/tools/necronite/necronite_pickaxe",
+      "text": "Above are the crafting recipes to acquire a Necronite Sword and a Necronite Pickaxe."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/necronite/necronite_axe1",
+      "recipe2": "scalar_utils:mod_recipes/crafting/tools/necronite/necronite_axe2",
+      "text": "Above are the alternative crafting recipes to acquire a Necronite Axe."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/necronite/necronite_shovel",
+      "text": "Above is the crafting recipe to acquire a Necronite Shovel."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/armor/necronite_hoe1",
+      "recipe2": "scalar_utils:mod_recipes/crafting/armor/necronite_hoe2",
+      "text": "Above are the alternative crafting recipes to acquire a Necronite Hoe."
+    }
+  ]
+}

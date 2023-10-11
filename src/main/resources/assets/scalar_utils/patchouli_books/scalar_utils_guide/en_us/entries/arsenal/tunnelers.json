@@ -1,0 +1,46 @@
+{
+  "name": "Tunnelers",
+  "icon": "scalar_utils:necronite_tunneler",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Tunnelers can be used to clear massive areas of land quickly, by breaking blocks in an AOE."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_tunnelers/wooden_tunneler",
+      "text": "Above is the crafting recipe to acquire a Wooden Tunneler."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_tunnelers/stone_tunneler",
+      "text": "Above is the crafting recipe to acquire a Stone Tunneler."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_tunnelers/iron_tunneler",
+      "text": "Above is the crafting recipe to acquire an Iron Tunneler."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_tunnelers/golden_tunneler",
+      "text": "Above is the crafting recipe to acquire a Golden Tunneler."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/vanilla_tunnelers/diamond_tunneler",
+      "text": "Above is the crafting recipe to acquire a Diamond Tunneler."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "scalar_utils:netherite_tunneler",
+      "text": "Netherite Tunnelers are acquired just like any other Netherite Tool."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/necronite/necronite_tunneler",
+      "text": "Above is the crafting recipe to acquire a Necronite Tunneler."
+    }
+  ]
+}
