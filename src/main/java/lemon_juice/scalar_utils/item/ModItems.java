@@ -105,15 +105,15 @@ public class ModItems {
     public static final RegistryObject<Item> WHEAT_SLIME_BALL = ITEMS.register("wheat_slime_ball", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
 
     // Torch BlockItems
+    public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> REDSTONE_STONE_TORCH = ITEMS.register("redstone_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.REDSTONE_STONE_TORCH.get(), ModBlocks.REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> SOUL_STONE_TORCH = ITEMS.register("soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.SOUL_STONE_TORCH.get(), ModBlocks.SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_REDSTONE_STONE_TORCH = ITEMS.register("tiny_redstone_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_REDSTONE_STONE_TORCH.get(), ModBlocks.TINY_REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_TORCH.get(), ModBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> TINY_REDSTONE_TORCH = ITEMS.register("tiny_redstone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_REDSTONE_TORCH.get(), ModBlocks.TINY_REDSTONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_SOUL_STONE_TORCH = ITEMS.register("tiny_soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_SOUL_STONE_TORCH.get(), ModBlocks.TINY_SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> TINY_SOUL_TORCH = ITEMS.register("tiny_soul_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_SOUL_TORCH.get(), ModBlocks.TINY_SOUL_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
     public static final RegistryObject<Item> TINY_STONE_TORCH = ITEMS.register("tiny_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_STONE_TORCH.get(), ModBlocks.TINY_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_TORCH.get(), ModBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_REDSTONE_STONE_TORCH = ITEMS.register("tiny_redstone_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_REDSTONE_STONE_TORCH.get(), ModBlocks.TINY_REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_SOUL_STONE_TORCH = ITEMS.register("tiny_soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_SOUL_STONE_TORCH.get(), ModBlocks.TINY_SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     // Cleavers
     public static final RegistryObject<Item> WOODEN_CLAYMORE = ITEMS.register("wooden_claymore", () -> new ClaymoreItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
