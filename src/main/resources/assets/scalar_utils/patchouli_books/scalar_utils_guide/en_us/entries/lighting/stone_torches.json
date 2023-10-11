@@ -1,0 +1,41 @@
+{
+  "name": "Stone Torches",
+  "icon": "scalar_utils:stone_torch",
+  "category": "scalar_utils:lighting_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Scalar Utils 5 offers a variety of torches with a stone base, referred to as Stone Torches."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/torches/stone_torch",
+      "text": "Above is the crafting recipe to acquire the Stone Torch."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/torches/redstone_stone_torch",
+      "text": "Above is the crafting recipe to acquire the Redstone Stone Torch."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/torches/soul_stone_torch",
+      "text": "Above is the crafting recipe to acquire the Soul Stone Torch."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/torches/tiny_stone_torch",
+      "text": "Above is the crafting recipe to acquire the Tiny Stone Torch."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/torches/tiny_redstone_stone_torch",
+      "text": "Above is the crafting recipe to acquire the Tiny Redstone Stone Torch."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/torches/tiny_soul_stone_torch",
+      "text": "Above is the crafting recipe to acquire the Tiny Soul Stone Torch."
+    }
+  ]
+}
