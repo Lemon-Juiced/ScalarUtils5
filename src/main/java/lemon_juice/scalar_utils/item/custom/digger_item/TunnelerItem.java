@@ -1,5 +1,6 @@
 package lemon_juice.scalar_utils.item.custom.digger_item;
 
+import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.item.custom.digger_item.util.UtilShape;
 import lemon_juice.scalar_utils.item.custom.tier.ModTiers;
 import lemon_juice.scalar_utils.tag.ModTags;
@@ -139,6 +140,7 @@ public class TunnelerItem extends DiggerItem {
         else if(tier == net.minecraft.world.item.Tiers.IRON) return Math.max(Items.IRON_PICKAXE.getDestroySpeed(stack, state), Items.IRON_SHOVEL.getDestroySpeed(stack, state));
         else if(tier == net.minecraft.world.item.Tiers.GOLD) return Math.max(Items.GOLDEN_PICKAXE.getDestroySpeed(stack, state), Items.GOLDEN_SHOVEL.getDestroySpeed(stack, state));
         else if(tier == net.minecraft.world.item.Tiers.DIAMOND) return Math.max(Items.DIAMOND_PICKAXE.getDestroySpeed(stack, state), Items.DIAMOND_SHOVEL.getDestroySpeed(stack, state));
-        else return Math.max(Items.NETHERITE_PICKAXE.getDestroySpeed(stack, state), Items.NETHERITE_SHOVEL.getDestroySpeed(stack, state));
+        else if(tier == Tiers.NETHERITE) return Math.max(Items.NETHERITE_PICKAXE.getDestroySpeed(stack, state), Items.NETHERITE_SHOVEL.getDestroySpeed(stack, state));
+        else return Math.max(ModItems.NECRONITE_PICKAXE.get().getDestroySpeed(stack, state), ModItems.NECRONITE_SHOVEL.get().getDestroySpeed(stack, state));
     }
 }
