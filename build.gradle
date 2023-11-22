@@ -83,8 +83,13 @@ dependencies {
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.2.0-beta.3+1.20.1")
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.2.0-beta.3+1.20.1:api")
 
+    // Lembrary Dependency
+    compileOnly fg.deobf("curse.maven:lembrary-937474:4888861")
+    runtimeOnly fg.deobf("curse.maven:lembrary-937474:4888861")
+
     // Lemon Core Dependency
-    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4792322")
+    compileOnly fg.deobf("curse.maven:lemon-core-840168:4889146")
+    runtimeOnly fg.deobf("curse.maven:lemon-core-840168:4889146")
 
     //Patchouli Optional Dependency
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE:api")

@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.block.custom.crop;
 
-import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.item.ScalarUtilsItems;
 import net.minecraft.world.level.ItemLike;
 
 public class FlaxCropBlock extends AbstractBaseCropBlock {
@@ -11,7 +11,7 @@ public class FlaxCropBlock extends AbstractBaseCropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.FLAX_SEEDS.get();
+        return ScalarUtilsItems.FLAX_SEEDS.get();
     }
 
 }

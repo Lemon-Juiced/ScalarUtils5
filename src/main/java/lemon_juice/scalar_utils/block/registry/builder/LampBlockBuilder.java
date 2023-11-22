@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.block.registry.builder;
 
-import lemon_juice.scalar_utils.block.ModBlocks;
+import lemon_juice.scalar_utils.block.ScalarUtilsBlocks;
 import lemon_juice.scalar_utils.block.custom.lighting.AbstractLampBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -15,7 +15,7 @@ public class LampBlockBuilder {
      */
     public static void lampBlockBuilder(){
         for (int i = 0; i < colors.length; i++) {
-            ModBlocks.registerBlock(colors[i] + "_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
+            ScalarUtilsBlocks.registerBlock(colors[i] + "_lamp", () -> new AbstractLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(state -> state.getValue(AbstractLampBlock.LIT) ? 15: 0).strength(0.3F).sound(SoundType.GLASS)));
         }
     }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ii",
+    " Ni",
+    "/  "
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:ingots/necronite"
+    },
+    "N": {
+      "item": "lemon_core:netherite_ore_crushing_hammer"
+    },
+    "/": {
+      "item": "scalar_utils:blazing_end_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:necronite_ore_crushing_hammer",
+    "count": 1
+  }
+}

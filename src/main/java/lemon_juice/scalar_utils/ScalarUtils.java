@@ -1,11 +1,10 @@
 package lemon_juice.scalar_utils;
 
-import lemon_juice.scalar_utils.block.ModBlocks;
-import lemon_juice.scalar_utils.creativetab.ModCreativeTab;
-import lemon_juice.scalar_utils.handler.MobDropHandler;
-import lemon_juice.scalar_utils.item.ModItems;
-import lemon_juice.scalar_utils.loot.ModLootModifiers;
-import lemon_juice.scalar_utils.tag.ModTags;
+import lemon_juice.scalar_utils.block.ScalarUtilsBlocks;
+import lemon_juice.scalar_utils.creativetab.ScalarUtilsCreativeTabs;
+import lemon_juice.scalar_utils.item.ScalarUtilsItems;
+import lemon_juice.scalar_utils.loot.ScalarUtilsLootModifiers;
+import lemon_juice.scalar_utils.tag.ScalarUtilsTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,20 +26,19 @@ public class ScalarUtils {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register Items & Blocks
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ScalarUtilsItems.register(modEventBus);
+        ScalarUtilsBlocks.register(modEventBus);
 
         // Register Creative Tab
-        ModCreativeTab.register(modEventBus);
-        modEventBus.addListener(ModCreativeTab::registerTabs);
+        ScalarUtilsCreativeTabs.register(modEventBus);
+        modEventBus.addListener(ScalarUtilsCreativeTabs::registerTabs);
 
         // Register Global Loot Modifiers
-        ModLootModifiers.register(modEventBus);
+        ScalarUtilsLootModifiers.register(modEventBus);
 
         // Register Tags
-        ModTags.init();
+        ScalarUtilsTags.init();
 
-        // Register commonSetup (Mob Drops from Cleavers)
         modEventBus.addListener(this::commonSetup);
 
         // Registers enqueueIMC (Curios)
@@ -49,10 +47,7 @@ public class ScalarUtils {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-        // Registers Mob Drops from Cleavers
-        MinecraftForge.EVENT_BUS.register(new MobDropHandler());
-    }
+    private void commonSetup(final FMLCommonSetupEvent event) {}
 
     //InterModQueue For Curios
     private void enqueueIMC(InterModEnqueueEvent event) {

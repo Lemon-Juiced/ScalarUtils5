@@ -1,7 +1,7 @@
 package lemon_juice.scalar_utils.item.custom.tier;
 
 import lemon_juice.scalar_utils.ScalarUtils;
-import lemon_juice.scalar_utils.tag.ModTags;
+import lemon_juice.scalar_utils.tag.ScalarUtilsTags;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -80,7 +80,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 9);
         protectionFunctionForType.put(ArmorItem.Type.HELMET, 4);
     }), 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.2F, () -> {
-        return Ingredient.of(ModTags.Items.INGOTS_NECRONITE);
+        return Ingredient.of(ScalarUtilsTags.Items.INGOTS_NECRONITE);
     });
 
     public static final StringRepresentable.EnumCodec<net.minecraft.world.item.ArmorMaterials> CODEC = StringRepresentable.fromEnum(net.minecraft.world.item.ArmorMaterials::values);

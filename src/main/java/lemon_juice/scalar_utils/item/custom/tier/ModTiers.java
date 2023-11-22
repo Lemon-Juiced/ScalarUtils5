@@ -1,7 +1,7 @@
 package lemon_juice.scalar_utils.item.custom.tier;
 
 import lemon_juice.scalar_utils.ScalarUtils;
-import lemon_juice.scalar_utils.tag.ModTags;
+import lemon_juice.scalar_utils.tag.ScalarUtilsTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
@@ -22,5 +22,5 @@ public class ModTiers {
      * NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {return Ingredient.of(Items.NETHERITE_INGOT);});
      */
 
-    public static final Tier NECRONITE_TIER = TierSortingRegistry.registerTier(new ForgeTier(5, -1, 12.0F, 5.0F, 25, ModTags.Blocks.NEEDS_NECRONITE_TOOL, () -> Ingredient.of(ModTags.Items.INGOTS_NECRONITE)), new ResourceLocation(ScalarUtils.MOD_ID, "necronite"), List.of(Tiers.NETHERITE), List.of());
+    public static final Tier NECRONITE_TIER = TierSortingRegistry.registerTier(new ForgeTier(5, -1, 12.0F, 5.0F, 25, ScalarUtilsTags.Blocks.NEEDS_NECRONITE_TOOL, () -> Ingredient.of(ScalarUtilsTags.Items.INGOTS_NECRONITE)), new ResourceLocation(ScalarUtils.MOD_ID, "necronite"), List.of(Tiers.NETHERITE), List.of());
 }

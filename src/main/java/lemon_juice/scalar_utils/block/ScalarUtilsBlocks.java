@@ -11,7 +11,7 @@ import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.Abs
 import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.TinyRedstoneWallTorchBlock;
 import lemon_juice.scalar_utils.block.custom.lighting.torch.torch_block.TinyTorchBlock;
 import lemon_juice.scalar_utils.block.custom.lighting.torch.wall_torch_block.TinyWallTorchBlock;
-import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.item.ScalarUtilsItems;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -27,7 +27,7 @@ import java.util.function.Supplier;
 import static lemon_juice.scalar_utils.block.registry.builder.AbstractRuneBlockBuilder.registerAllRuneBlocks;
 import static lemon_juice.scalar_utils.block.registry.builder.LampBlockBuilder.lampBlockBuilder;
 
-public class ModBlocks {
+public class ScalarUtilsBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ScalarUtils.MOD_ID);
 
     // Clear Glass
@@ -87,7 +87,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return ScalarUtilsItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

@@ -1,7 +1,9 @@
 package lemon_juice.scalar_utils.item;
 
+import lemon_juice.item.custom.OreCrushingHammerItem;
+import lemon_juice.item.custom.TunnelerItem;
 import lemon_juice.scalar_utils.ScalarUtils;
-import lemon_juice.scalar_utils.block.ModBlocks;
+import lemon_juice.scalar_utils.block.ScalarUtilsBlocks;
 import lemon_juice.scalar_utils.item.custom.AbstractSlimeballAlternativeItem;
 import lemon_juice.scalar_utils.item.custom.ClaymoreItem;
 import lemon_juice.scalar_utils.item.custom.FlourItem;
@@ -11,7 +13,6 @@ import lemon_juice.scalar_utils.item.custom.curios_item.*;
 import lemon_juice.scalar_utils.item.custom.decanter_item.DecanterOfEndlessFireItem;
 import lemon_juice.scalar_utils.item.custom.decanter_item.DecanterOfEndlessWaterItem;
 import lemon_juice.scalar_utils.item.custom.digger_item.GlassCutterItem;
-import lemon_juice.scalar_utils.item.custom.digger_item.TunnelerItem;
 import lemon_juice.scalar_utils.item.custom.necronite_item.*;
 import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
@@ -22,7 +23,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItems {
+public class ScalarUtilsItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ScalarUtils.MOD_ID);
 
     // Crafting Items
@@ -79,7 +80,6 @@ public class ModItems {
     public static final RegistryObject<Item> RUNIC_DECANTER_OF_ENDLESS_FIRE = ITEMS.register("runic_decanter_of_endless_fire", () -> new DecanterOfEndlessFireItem(new Item.Properties()));
     public static final RegistryObject<Item> RUNIC_DECANTER_OF_ENDLESS_WATER = ITEMS.register("runic_decanter_of_endless_water", () -> new DecanterOfEndlessWaterItem(new Item.Properties()));
 
-
     // Runic Plates
     public static final RegistryObject<Item> RUNIC_PLATE = ITEMS.register("runic_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUNIC_BOOSTER_PLATE = ITEMS.register("runic_booster_plate", () -> new RunicBoosterPlateItem(new Item.Properties()));
@@ -94,10 +94,10 @@ public class ModItems {
     public static final RegistryObject<Item> RUNE_OF_THE_TEMPLATE = ITEMS.register("rune_of_the_template", () -> new Item(new Item.Properties()));
 
     // Seeds
-    public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new ItemNameBlockItem(ModBlocks.FLAX_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new ItemNameBlockItem(ScalarUtilsBlocks.FLAX_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CARROT_SEEDS = ITEMS.register("carrot_seeds", () -> new ItemNameBlockItem(Blocks.CARROTS, new Item.Properties()));
     public static final RegistryObject<Item> POTATO_SEEDS = ITEMS.register("potato_seeds", () -> new ItemNameBlockItem(Blocks.POTATOES, new Item.Properties()));
-    public static final RegistryObject<Item> RICE = ITEMS.register("rice", () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice", () -> new ItemNameBlockItem(ScalarUtilsBlocks.RICE_CROP.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
 
     // Slimeball Alternatives
     public static final RegistryObject<Item> GELATIN = ITEMS.register("gelatin", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
@@ -105,15 +105,15 @@ public class ModItems {
     public static final RegistryObject<Item> WHEAT_SLIME_BALL = ITEMS.register("wheat_slime_ball", () -> new AbstractSlimeballAlternativeItem(new Item.Properties()));
 
     // Torch BlockItems
-    public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.STONE_TORCH.get(), ModBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> REDSTONE_STONE_TORCH = ITEMS.register("redstone_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.REDSTONE_STONE_TORCH.get(), ModBlocks.REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> SOUL_STONE_TORCH = ITEMS.register("soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.SOUL_STONE_TORCH.get(), ModBlocks.SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_TORCH.get(), ModBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_REDSTONE_TORCH = ITEMS.register("tiny_redstone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_REDSTONE_TORCH.get(), ModBlocks.TINY_REDSTONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_SOUL_TORCH = ITEMS.register("tiny_soul_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_SOUL_TORCH.get(), ModBlocks.TINY_SOUL_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_STONE_TORCH = ITEMS.register("tiny_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_STONE_TORCH.get(), ModBlocks.TINY_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_REDSTONE_STONE_TORCH = ITEMS.register("tiny_redstone_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_REDSTONE_STONE_TORCH.get(), ModBlocks.TINY_REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
-    public static final RegistryObject<Item> TINY_SOUL_STONE_TORCH = ITEMS.register("tiny_soul_stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.TINY_SOUL_STONE_TORCH.get(), ModBlocks.TINY_SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.STONE_TORCH.get(), ScalarUtilsBlocks.STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> REDSTONE_STONE_TORCH = ITEMS.register("redstone_stone_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.REDSTONE_STONE_TORCH.get(), ScalarUtilsBlocks.REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> SOUL_STONE_TORCH = ITEMS.register("soul_stone_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.SOUL_STONE_TORCH.get(), ScalarUtilsBlocks.SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("tiny_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.TINY_TORCH.get(), ScalarUtilsBlocks.TINY_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_REDSTONE_TORCH = ITEMS.register("tiny_redstone_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.TINY_REDSTONE_TORCH.get(), ScalarUtilsBlocks.TINY_REDSTONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_SOUL_TORCH = ITEMS.register("tiny_soul_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.TINY_SOUL_TORCH.get(), ScalarUtilsBlocks.TINY_SOUL_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_STONE_TORCH = ITEMS.register("tiny_stone_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.TINY_STONE_TORCH.get(), ScalarUtilsBlocks.TINY_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_REDSTONE_STONE_TORCH = ITEMS.register("tiny_redstone_stone_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.TINY_REDSTONE_STONE_TORCH.get(), ScalarUtilsBlocks.TINY_REDSTONE_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> TINY_SOUL_STONE_TORCH = ITEMS.register("tiny_soul_stone_torch", () -> new StandingAndWallBlockItem(ScalarUtilsBlocks.TINY_SOUL_STONE_TORCH.get(), ScalarUtilsBlocks.TINY_SOUL_STONE_WALL_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     // Cleavers
     public static final RegistryObject<Item> WOODEN_CLAYMORE = ITEMS.register("wooden_claymore", () -> new ClaymoreItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
@@ -124,7 +124,6 @@ public class ModItems {
     public static final RegistryObject<Item> NETHERITE_CLAYMORE = ITEMS.register("netherite_claymore", () -> new ClaymoreItem(Tiers.NETHERITE, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> NECRONITE_CLAYMORE = ITEMS.register("necronite_claymore", () -> new NecroniteClaymoreItem(new Item.Properties()));
 
-
     // Tunnelers
     public static final RegistryObject<Item> WOODEN_TUNNELER = ITEMS.register("wooden_tunneler", () -> new TunnelerItem(Tiers.WOOD, new Item.Properties(), 1));
     public static final RegistryObject<Item> STONE_TUNNELER = ITEMS.register("stone_tunneler", () -> new TunnelerItem(Tiers.STONE, new Item.Properties(), 1));
@@ -133,6 +132,9 @@ public class ModItems {
     public static final RegistryObject<Item> DIAMOND_TUNNELER = ITEMS.register("diamond_tunneler", () -> new TunnelerItem(net.minecraft.world.item.Tiers.DIAMOND, new Item.Properties(), 2));
     public static final RegistryObject<Item> NETHERITE_TUNNELER = ITEMS.register("netherite_tunneler", () -> new TunnelerItem(Tiers.NETHERITE, new Item.Properties(), 3));
     public static final RegistryObject<Item> NECRONITE_TUNNELER = ITEMS.register("necronite_tunneler", () -> new NecroniteTunnelerItem(new Item.Properties(), 4));
+
+    // Ore Crushing Hammer
+    public static final RegistryObject<Item> NECRONITE_ORE_CRUSHING_HAMMER = ITEMS.register("necronite_ore_crushing_hammer", () -> new OreCrushingHammerItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
