@@ -1,0 +1,57 @@
+{
+  "name": "Runic Plates",
+  "icon": "scalar_utils:runic_plate",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runic Plates are powerful one-time use tools that can be used for a temporary buff. Some of which can be used to craft other more complex runic tools."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_booster_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Booster Plate, which can give you a jump boost."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_dropper_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Dropper Plate, which can give you slow falling."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_healing_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Healing Plate, which can give you regeneration."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_speed_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Speed Plate, which can give you swiftness."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_strength_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Strength Plate, which can give you strength."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_wisdom_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Wisdom Plate, which can give you better deals."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_fire_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Fire Plate, which can conjure fire when used."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/runic_water_plate",
+      "text": "Above is the crafting recipe to acquire a Runic Fire Plate, which can conjure water when used."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_plates/rune_of_the_template",
+      "recipe2": "scalar_utils:mod_recipes/crafting/template_trims/netherite_upgrade_trim_template",
+      "text": "Above is the crafting recipe to acquire a Rune of the Template, which can be used to duplicate armor trims."
+    }
+  ]
+}

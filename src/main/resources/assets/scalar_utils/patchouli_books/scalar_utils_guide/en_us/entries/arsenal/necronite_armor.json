@@ -1,0 +1,23 @@
+{
+  "name": "Necronite Armor",
+  "icon": "scalar_utils:necronite_chestplate",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Necronite Armor is more powerful than Netherite, but very difficult to acquire."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/armor/necronite_helmet",
+      "recipe2": "scalar_utils:mod_recipes/crafting/armor/necronite_chestplate",
+      "text": "Above are the crafting recipes to acquire a Necronite Helmet and a Necronite Chestplate."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/armor/necronite_leggings",
+      "recipe2": "scalar_utils:mod_recipes/crafting/armor/necronite_boots",
+      "text": "Above are the crafting recipes to acquire Necronite Leggings and Necronite Boots."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Potato Seeds",
+  "icon": "scalar_utils:potato_seeds",
+  "category": "scalar_utils:agriculture_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Potato Seeds can be planted to get potatoes. They can be found by breaking tall grass."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/potato_seeds_from_potato",
+      "text": "Here is an alternative way of acquiring potato seeds."
+    }
+  ]
+}

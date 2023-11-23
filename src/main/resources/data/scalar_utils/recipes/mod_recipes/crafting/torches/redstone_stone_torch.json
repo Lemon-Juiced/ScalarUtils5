@@ -13,7 +13,7 @@
     }
   },
   "result": {
-    "item": "lemon_core:redstone_stone_torch",
+    "item": "scalar_utils:redstone_stone_torch",
     "count": 4
   }
 }

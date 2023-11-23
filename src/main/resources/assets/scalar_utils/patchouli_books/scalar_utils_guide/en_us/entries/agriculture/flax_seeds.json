@@ -1,0 +1,11 @@
+{
+  "name": "Flax Seeds",
+  "icon": "scalar_utils:flax_seeds",
+  "category": "scalar_utils:agriculture_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Flax Seeds can be planted to get string. They can be found by breaking tall grass."
+    }
+  ]
+}

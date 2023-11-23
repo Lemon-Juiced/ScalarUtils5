@@ -1,0 +1,16 @@
+{
+  "name": "Runic Diamond",
+  "icon": "scalar_utils:runic_diamond",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runic Diamonds are a high-end crafting ingredient in Scalar Utils 5. It can be used to make Runes of the Template."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_diamond",
+      "text": "Above is the crafting recipe to acquire Runic Diamond."
+    }
+  ]
+}

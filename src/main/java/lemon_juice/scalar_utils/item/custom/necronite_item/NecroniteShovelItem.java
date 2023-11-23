@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.item.custom.necronite_item;
 
-import lemon_juice.scalar_utils.item.custom.tiers.ModTiers;
+import lemon_juice.item.tier.LembraryTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NecroniteShovelItem extends ShovelItem {
     public NecroniteShovelItem(Properties properties) {
-        super(ModTiers.NECRONITE_TIER, 1.5f, -3.0f, properties);
+        super(LembraryTiers.NECRONITE_TIER, 1.5f, -3.0f, properties);
     }
 
     @Override

@@ -1,0 +1,31 @@
+{
+  "name": "Rice",
+  "icon": "scalar_utils:rice",
+  "category": "scalar_utils:agriculture_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Rice can be planted to get more Rice, which has many uses. They can be found by breaking tall grass."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rice_slime_ball_from_water",
+      "text": "You can use Rice to make Rice Slimeballs with the recipe above."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/sugar_from_rice",
+      "text": "You can use Rice to make Sugar with the recipe above."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/paper_from_rice1",
+      "text": "You can use Rice to make Paper with the recipe above."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/paper_from_rice2",
+      "text": "You can also use Rice to make Paper with the recipe above."
+    }
+  ]
+}

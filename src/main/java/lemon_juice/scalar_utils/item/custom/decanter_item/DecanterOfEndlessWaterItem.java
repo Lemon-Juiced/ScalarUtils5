@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.item.custom.decanter_item;
 
-import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.item.ScalarUtilsItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -66,7 +66,7 @@ public class DecanterOfEndlessWaterItem extends BucketItem {
     }
 
     public static ItemStack getEmptySuccessItem(ItemStack itemStack, Player player) {
-        return !player.getAbilities().instabuild ? new ItemStack(ModItems.RUNIC_DECANTER_OF_ENDLESS_WATER.get()) : itemStack;
+        return !player.getAbilities().instabuild ? new ItemStack(ScalarUtilsItems.RUNIC_DECANTER_OF_ENDLESS_WATER.get()) : itemStack;
     }
 
     @Override
@@ -81,7 +81,7 @@ public class DecanterOfEndlessWaterItem extends BucketItem {
 
     @Override
     public ItemStack getCraftingRemainingItem(ItemStack itemStack) {
-        return new ItemStack(ModItems.RUNIC_DECANTER_OF_ENDLESS_WATER.get());
+        return new ItemStack(ScalarUtilsItems.RUNIC_DECANTER_OF_ENDLESS_WATER.get());
     }
 
     @Override

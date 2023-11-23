@@ -1,0 +1,96 @@
+{
+  "name": "Lamps",
+  "icon": "scalar_utils:rainbow_lamp",
+  "category": "scalar_utils:lighting_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Scalar Utils 5 offers a variety of different colored-lights."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/rainbow_lamp",
+      "text": "Above is the crafting recipe to acquire the Rainbow Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/white_lamp",
+      "text": "Above is the crafting recipe to acquire the White Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/light_gray_lamp",
+      "text": "Above is the crafting recipe to acquire the Light Gray Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/gray_lamp",
+      "text": "Above is the crafting recipe to acquire the Gray Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/black_lamp",
+      "text": "Above is the crafting recipe to acquire the Black Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/brown_lamp",
+      "text": "Above is the crafting recipe to acquire the Brown Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/red_lamp",
+      "text": "Above is the crafting recipe to acquire the Red Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/orange_lamp",
+      "text": "Above is the crafting recipe to acquire the Orange Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/yellow_lamp",
+      "text": "Above is the crafting recipe to acquire the Yellow Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/lime_lamp",
+      "text": "Above is the crafting recipe to acquire the Lime Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/green_lamp",
+      "text": "Above is the crafting recipe to acquire the Green Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/cyan_lamp",
+      "text": "Above is the crafting recipe to acquire the Cyan Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/light_blue_lamp",
+      "text": "Above is the crafting recipe to acquire the Light Blue Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/blue_lamp",
+      "text": "Above is the crafting recipe to acquire the Blue Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/purple_lamp",
+      "text": "Above is the crafting recipe to acquire the Purple Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/magenta_lamp",
+      "text": "Above is the crafting recipe to acquire the Magenta Lamp."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/lamps/pink_lamp",
+      "text": "Above is the crafting recipe to acquire the Pink Lamp."
+    }
+  ]
+}

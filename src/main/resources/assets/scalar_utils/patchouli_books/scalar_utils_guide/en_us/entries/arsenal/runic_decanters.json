@@ -1,0 +1,21 @@
+{
+  "name": "Runic Decanter",
+  "icon": "scalar_utils:runic_decanter_of_endless_fire",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runic Decanters are powerful pieces of equipment that can be used to conjure an element."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_decanter_of_endless_fire",
+      "text": "Above is the crafting recipe to acquire a Runic Decanter of Endless Fire, which can conjure fire when used."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_decanter_of_endless_water",
+      "text": "Above is the crafting recipe to acquire a Runic Decanter of Endless Water, which can conjure water when used."
+    }
+  ]
+}

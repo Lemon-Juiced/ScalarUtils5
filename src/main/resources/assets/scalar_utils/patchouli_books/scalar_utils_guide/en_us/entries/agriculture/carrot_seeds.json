@@ -1,0 +1,16 @@
+{
+  "name": "Carrot Seeds",
+  "icon": "scalar_utils:carrot_seeds",
+  "category": "scalar_utils:agriculture_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Carrot Seeds can be planted to get carrots. They can be found by breaking tall grass."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/carrot_seeds_from_carrot",
+      "text": "Here is an alternative way of acquiring carrot seeds."
+    }
+  ]
+}

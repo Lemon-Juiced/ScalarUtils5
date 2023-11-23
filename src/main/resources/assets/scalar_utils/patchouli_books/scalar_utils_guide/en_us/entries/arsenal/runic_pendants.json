@@ -1,0 +1,31 @@
+{
+  "name": "Runic Pendant",
+  "icon": "scalar_utils:runic_healing_pendant",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Runic Pendants are powerful pieces of equipment that can be used for a permanent buff."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_pendant_of_healing",
+      "text": "Above is the crafting recipe to acquire a Runic Healing Pendant, which can give you regeneration."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_pendant_of_speed",
+      "text": "Above is the crafting recipe to acquire a Runic Speed Pendant, which can give you swiftness."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_pendant_of_strength",
+      "text": "Above is the crafting recipe to acquire a Runic Strength Pendant, which can give you strength."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/runic_jewelries/runic_pendant_of_wisdom",
+      "text": "Above is the crafting recipe to acquire a Runic Wisdom Pendant, which can give you better deals."
+    }
+  ]
+}

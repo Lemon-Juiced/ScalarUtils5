@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "scalar_utils:item/necronite_helmet",
-    "layer1": "minecraft:trims/items/helmet_lapis_iron"
+    "layer1": "minecraft:trims/items/helmet_trim_lapis"
   }
 }

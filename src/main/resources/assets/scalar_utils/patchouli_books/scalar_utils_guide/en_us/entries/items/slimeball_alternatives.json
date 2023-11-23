@@ -1,0 +1,26 @@
+{
+  "name": "Slimeball Alternatives",
+  "icon": "minecraft:slime_ball",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Scalar Utils 5 offers a variety of different ways of getting slimeballs if you're having problems getting the real deal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/gelatin_from_water",
+      "text": "Above is the crafting recipe to acquire Gelatin."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/rice_slime_ball_from_water",
+      "text": "Above is the crafting recipe to acquire Rice Slimeballs."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/wheat_slime_ball_from_water",
+      "text": "Above is the crafting recipe to acquire Wheat Slimeballs."
+    }
+  ]
+}

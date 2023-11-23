@@ -1,0 +1,26 @@
+{
+  "name": "Flour",
+  "icon": "scalar_utils:flour",
+  "category": "scalar_utils:agriculture_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Flour is a versatile crafting ingredient in Scalar Utils 5 that has many uses."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/flour_from_wheat",
+      "text": "Above is the crafting recipe to acquire Flour."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/wheat_slime_ball_from_water",
+      "text": "You can use Flour to make Wheat Slimeballs with the recipe above."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "scalar_utils:mod_recipes/smelting/bread_from_flour",
+      "text": "You can use Flour to make Bread with the recipe above, or the equivalent Smoker recipe."
+    }
+  ]
+}

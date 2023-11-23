@@ -1,0 +1,16 @@
+{
+  "name": "Rune Carving Knife",
+  "icon": "scalar_utils:runecarving_knife",
+  "category": "scalar_utils:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Rune Carving Knifes can be used to carve runes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/tools/runecarving_knife",
+      "text": "Above is the crafting recipe to acquire a Rune Carving Knife."
+    }
+  ]
+}

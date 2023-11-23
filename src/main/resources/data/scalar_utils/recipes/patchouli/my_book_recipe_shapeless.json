@@ -1,0 +1,12 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "scalar_utils:runic_plate"
+    }
+  ],
+  "book": "scalar_utils:scalar_utils_guide"
+}

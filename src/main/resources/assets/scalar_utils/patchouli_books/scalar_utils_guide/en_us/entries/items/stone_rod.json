@@ -1,0 +1,17 @@
+{
+  "name": "Stone Rod",
+  "icon": "scalar_utils:stone_rod",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Stone Rods are a crafting ingredient in Scalar Utils 5. They are primarily used to make stone torches."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "scalar_utils:mod_recipes/crafting/stone_rod_from_cobblestone",
+      "recipe2": "scalar_utils:mod_recipes/crafting/stone_rod_from_stone",
+      "text": "Above are crafting recipes to acquire Stone Rods."
+    }
+  ]
+}

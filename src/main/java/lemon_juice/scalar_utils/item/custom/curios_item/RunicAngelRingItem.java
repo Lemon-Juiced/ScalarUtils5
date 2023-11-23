@@ -1,6 +1,6 @@
 package lemon_juice.scalar_utils.item.custom.curios_item;
 
-import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.item.ScalarUtilsItems;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -79,8 +79,18 @@ public class RunicAngelRingItem extends Item {
             }
 
             @Override
+            public void curioTick(String identifier, int index, LivingEntity livingEntity) {
+                if (livingEntity instanceof Player) {
+                    Player player = ((Player) livingEntity);
+                    if (!player.getAbilities().mayfly) {
+                        startFlight(player);
+                    }
+                }
+            }
+
+            @Override
             public boolean canEquip(String identifier, LivingEntity livingEntity) {
-                return !CuriosApi.getCuriosHelper().findEquippedCurio(ModItems.RUNIC_ANGEL_RING.get(), livingEntity).isPresent();
+                return !CuriosApi.getCuriosHelper().findEquippedCurio(ScalarUtilsItems.RUNIC_ANGEL_RING.get(), livingEntity).isPresent();
             }
         };
 

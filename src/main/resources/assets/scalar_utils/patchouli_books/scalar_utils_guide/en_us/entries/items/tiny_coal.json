@@ -1,0 +1,21 @@
+{
+  "name": "Tiny Coal",
+  "icon": "lemon_core:tiny_coal",
+  "category": "scalar_utils:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Tiny Coal are a fragment of a piece of coal, each piece of Tiny Coal can smelt one item."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "lemon_core:crafting/decompacting/other/coal_decompacting",
+      "text": "Above is the crafting recipe to acquire Tiny Coal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "lemon_core:crafting/compacting/other/tiny_coal_compacting",
+      "text": "You can also use Tiny Coal to make Coal with the recipe above."
+    }
+  ]
+}
